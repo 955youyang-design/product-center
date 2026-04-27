@@ -1,0 +1,22 @@
+node_modules
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.vite-temp/
+.DS_Store
+*.local
+*.log
+pnpm-debug.log*
+
+# Local editor state
+.idea/
+.history/
+
+# Local automation or AI state
+.agent/
+.agents/
+.claude/
+.codex/
+.superpowers/
+skills-lock.json

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: var(--font-sans);
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .page-shell {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .glass-panel {
+    @apply border border-slate-200 bg-white/80 shadow-sm backdrop-blur-md;
+  }
+
+  .surface-panel {
+    @apply overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all duration-200;
+  }
+
+  .surface-panel:hover {
+    @apply -translate-y-px shadow-md;
+  }
+
+  .table-head-cell {
+    @apply px-5 py-3 text-left text-[10px] font-black uppercase tracking-widest text-slate-500;
+  }
+
+  .table-body-cell {
+    @apply px-5 py-3 align-middle text-sm font-medium text-slate-700;
+  }
+
+  .mono-value {
+    @apply font-mono tabular-nums;
+  }
+
+  .surface-panel input,
+  .surface-panel select,
+  .surface-panel textarea {
+    @apply border-slate-200 bg-white;
+  }
+
+  .surface-panel button:focus-visible,
+  .surface-panel input:focus-visible,
+  .surface-panel select:focus-visible,
+  .surface-panel textarea:focus-visible {
+    @apply outline-none ring-4 ring-blue-500/10;
+  }
+}

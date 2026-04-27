@@ -1,0 +1,4640 @@
+# 商品中台 docs 六层文档汇总
+
+生成时间：2026-04-23
+汇总范围：docs/00-总览层、docs/01-端产品层、docs/02-专题机制层、docs/03-页面设计层、docs/04-数据与接口层、docs/05-验收与测试层
+说明：仅汇总文档文件（*.md、*.txt），不包含 .DS_Store、.gitkeep 等系统或占位文件。
+
+## 源文件清单
+
+0001. docs/00-总览层/00-文档总览与目录定义.md
+0002. docs/00-总览层/01-产品总述.md
+0003. docs/00-总览层/02-业务模型与角色协同.md
+0004. docs/00-总览层/03-状态流转机制说明.md
+0005. docs/00-总览层/04-整体业务流程图.md
+0006. docs/00-总览层/05-文档治理与Agent要求.md
+0007. docs/00-总览层/06-问题清单与确认记录.md
+0008. docs/00-总览层/07-项目交付索引与当前有效版本清单.md
+0009. docs/00-总览层/08-需求追踪矩阵.md
+0010. docs/00-总览层/09-评审签收与交付门槛.md
+0011. docs/00-总览层/10-文档达标清单与菜单路由调整建议.md
+0012. docs/01-端产品层/00-端产品层说明与校验结论.md
+0013. docs/01-端产品层/05-平台电脑端产品文档.md
+0014. docs/01-端产品层/06-各端功能总清单.md
+0015. docs/02-专题机制层/01-标准化导入机制.md
+0016. docs/02-专题机制层/02-商品维护与类目联动机制.md
+0017. docs/02-专题机制层/03-库存同步与分配机制.md
+0018. docs/02-专题机制层/04-权限与审计机制.md
+0019. docs/02-专题机制层/05-店铺配置生效与版本机制.md
+0020. docs/03-页面设计层/00-页面设计说明.md
+0021. docs/03-页面设计层/平台电脑端/01-产品管理-页面组.md
+0022. docs/03-页面设计层/平台电脑端/02-素材管理-页面组.md
+0023. docs/03-页面设计层/平台电脑端/03-商品管理-页面组.md
+0024. docs/03-页面设计层/平台电脑端/04-库存管理-页面组.md
+0025. docs/03-页面设计层/平台电脑端/05-配置管理-页面组.md
+0026. docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md
+0027. docs/03-页面设计层/平台电脑端/产品管理/01-产品列表页.md
+0028. docs/03-页面设计层/平台电脑端/产品管理/02-新建产品页.md
+0029. docs/03-页面设计层/平台电脑端/产品管理/03-产品详情页.md
+0030. docs/03-页面设计层/平台电脑端/产品管理/04-产品导入页.md
+0031. docs/03-页面设计层/平台电脑端/产品管理/05-导入记录页.md
+0032. docs/03-页面设计层/平台电脑端/商品管理/01-渠道商品列表页.md
+0033. docs/03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md
+0034. docs/03-页面设计层/平台电脑端/商品管理/03-批量修改工作台.md
+0035. docs/03-页面设计层/平台电脑端/商品管理/04-历史发布记录占位页.md
+0036. docs/03-页面设计层/平台电脑端/商品管理/05-渠道商品详情页列表.md
+0037. docs/03-页面设计层/平台电脑端/库存管理/01-库存列表页.md
+0038. docs/03-页面设计层/平台电脑端/库存管理/02-库存详情页.md
+0039. docs/03-页面设计层/平台电脑端/库存管理/03-库存调整记录页.md
+0040. docs/03-页面设计层/平台电脑端/素材管理/01-素材列表页.md
+0041. docs/03-页面设计层/平台电脑端/素材管理/02-素材详情页.md
+0042. docs/03-页面设计层/平台电脑端/配置管理/01-配置列表页.md
+0043. docs/03-页面设计层/平台电脑端/配置管理/02-系统配置详情页.md
+0044. docs/03-页面设计层/平台电脑端/配置管理/03-渠道配置详情页.md
+0045. docs/03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md
+0046. docs/03-页面设计层/平台电脑端/配置管理/05-导入模板配置页.md
+0047. docs/03-页面设计层/平台电脑端/配置管理/06-操作日志页.md
+0048. docs/04-数据与接口层/01-核心对象定义.md
+0049. docs/04-数据与接口层/02-逻辑数据模型.md
+0050. docs/04-数据与接口层/03-字段字典.md
+0051. docs/04-数据与接口层/04-状态与枚举字典.md
+0052. docs/04-数据与接口层/05-接口清单.md
+0053. docs/04-数据与接口层/06-事件与日志清单.md
+0054. docs/04-数据与接口层/07-表设计建议.md
+0055. docs/04-数据与接口层/08-图书素材装包规范.md
+0056. docs/04-数据与接口层/附件/图书类素材目录模板/SKU编码.txt
+0057. docs/04-数据与接口层/附件/图书类素材目录模板/图书信息.txt
+0058. docs/05-验收与测试层/01-MVP验收标准.md
+0059. docs/05-验收与测试层/02-主流程测试场景.md
+0060. docs/05-验收与测试层/03-异常流程测试场景.md
+0061. docs/05-验收与测试层/04-权限与状态流转测试场景.md
+0062. docs/05-验收与测试层/05-回归范围.md
+
+
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/00-文档总览与目录定义.md
+================================================================================
+
+# 图书多渠道商品中台-文档总览与目录定义
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 00-文档总览与目录定义.md |
+| doc_id | DOC-OVERVIEW-INDEX |
+| doc_slug | project-doc-index |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 项目文档目录 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 产品经理、产品 Agent、研发、测试 |
+| 上游文档 | ../../product_agent_standards/01_unified_standard.md；../../product_agent_standards/04_layered_docs_spec.md；../baselines/00-feature-list.md |
+| 下游文档 | ../01-端产品层/；../02-专题机制层/；../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 文档目标
+
+- 给当前项目提供统一文档入口，明确每层文档解决什么问题。
+- 指定当前权威基线来源和下游引用关系，避免并行稿件互相覆盖。
+- 明确哪些文件是当前范围，哪些文件只是增强预留或候选归档。
+
+## 2. 当前目录结构
+
+| 目录 | 定位 |
+|---|---|
+| docs/baselines/ | 当前功能清单、页面树和功能承载图权威源。 |
+| docs/00-总览层/ | 产品目标、角色、流程、问题清单、追踪矩阵和交付治理。 |
+| docs/01-端产品层/ | 按端汇总当前有效功能与页面映射关系。 |
+| docs/02-专题机制层/ | 导入、商品维护、库存同步、权限审计等跨页机制。 |
+| docs/03-页面设计层/ | 页面组与单页说明，直接服务前端实现。 |
+| docs/04-数据与接口层/ | 对象、字段、状态、接口、事件与表结构建议。 |
+| docs/05-验收与测试层/ | MVP 验收标准、测试场景和回归范围。 |
+
+## 3. 当前基线引用
+
+| 基线 | 文件 | 当前版本 | 作用 |
+|---|---|---|---|
+| 功能清单表 | ../baselines/00-feature-list.md | BSL-2026-04-20-A | 权威范围源 |
+| 页面树表 | ../baselines/01-page-tree.md | BSL-2026-04-20-A | 页面组织与入口关系 |
+| 功能承载图 | ../baselines/02-functional-carrying-diagram.md | BSL-2026-04-20-A | 页面组、动作、规则与机制承接关系 |
+
+## 4. 当前文档状态约定
+
+| 状态 | 说明 |
+|---|---|
+| 当前范围 | 一期必须覆盖，研发、测试和交付都要纳入。 |
+| 增强预留 | 一期建议保留完整文档，但不作为 MVP 阻断条件。 |
+| 候选归档 | 保留历史路径或占位文档，不纳入当前基线和前端任务。 |
+
+## 5. 使用要求
+
+- 任何范围、页面、机制变化先回写 baselines，再回写 00-05 层文档。
+- 页面相关实现与前端任务必须优先引用 03-页面设计层和 04-数据与接口层，不直接凭功能表开工。
+- 候选归档文件只保留路径和历史上下文，不作为当前交付输入。
+- 当前项目的文档治理、Agent 工作顺序和问题确认要求，统一以 `05-文档治理与Agent要求.md` 为准。
+
+
+================================================================================
+FILE END: docs/00-总览层/00-文档总览与目录定义.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/01-产品总述.md
+================================================================================
+
+# 图书多渠道商品中台-产品总述
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-产品总述.md |
+| doc_id | DOC-PRODUCT-SUMMARY |
+| doc_slug | product-summary |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 产品总述 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 商品运营、渠道运营、库存运营、系统管理员 |
+| 所属功能 | 产品管理、商品管理、库存管理、配置管理、素材管理 |
+| 关联机制 | 标准化导入、商品维护与类目联动、库存同步与分配、权限与审计 |
+| 上游文档 | ../baselines/00-feature-list.md；../baselines/01-page-tree.md |
+| 下游文档 | 02-业务模型与角色协同.md；04-整体业务流程图.md；../01-端产品层/05-平台电脑端产品文档.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 产品目标
+
+当前一期的目标，是让运营团队通过统一后台：
+
+- 通过标准模板把多渠道、多店铺商品信息导入中台。
+- 以产品为中心归集同一产品在多个渠道、多个店铺下的不同售卖信息。
+- 在统一页面维护渠道商品差异信息、库存和店铺级规则。
+
+## 2. 当前业务边界
+
+### 2.1 当前范围
+
+- 产品列表、产品详情、产品导入、导入记录。
+- 商家编码关联规则。
+- 渠道商品列表、渠道商品详情页列表、渠道商品详情、店铺级类目动态适配规则。
+- 库存列表，以及库存详情、库存调整记录的增强底稿。
+- 配置列表、店铺配置详情。
+- 素材列表、素材详情、新增产品、批量修改的增强底稿。
+
+### 2.2 当前不做
+
+- 历史独立发布相关页面仅保留归档说明，不纳入一期交付。
+- 不做系统级配置详情、渠道配置详情、导入模板独立配置页和独立操作日志页。
+- 不做多仓调拨、组合包库存、复杂价格策略和审批流。
+
+## 3. 当前支持渠道与对象
+
+| 维度 | 当前口径 |
+|---|---|
+| 渠道 | 淘宝、拼多多、抖音、快手 |
+| 主对象 | 产品、产品 SKU、渠道商品、渠道商品 SKU、商品详情页、库存、店铺配置、导入任务、素材 |
+| 关联主键 | 商家编码；SKU 维度建议补充商家 SKU 编码；商品详情页按渠道商品关联 |
+| 商品范围 | 同一产品在不同渠道/店铺下的售卖信息差异维护，以及同一商品下多详情页记录管理 |
+
+## 4. 一期价值
+
+- 减少多渠道商品资料重复维护。
+- 把商品详情页从单商品编辑页中拆开，统一管理详情页版本和上传动作。
+- 把店铺级类目规则、运费模板和发货时效前置沉淀，避免导入后返工。
+- 让库存和渠道商品围绕同一产品主档查看和维护。
+
+
+================================================================================
+FILE END: docs/00-总览层/01-产品总述.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/02-业务模型与角色协同.md
+================================================================================
+
+# 图书多渠道商品中台-业务模型与角色协同
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-业务模型与角色协同.md |
+| doc_id | DOC-BIZ-ROLE-MODEL |
+| doc_slug | business-role-model |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 角色与业务模型 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 商品运营、渠道运营、库存运营、系统管理员 |
+| 上游文档 | 01-产品总述.md；../baselines/00-feature-list.md |
+| 下游文档 | ../02-专题机制层/；../03-页面设计层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 角色分工
+
+| 角色 | 核心职责 | 主要页面 | 关键结果 |
+|---|---|---|---|
+| 商品运营 | 维护产品主档、下载模板、执行导入、处理商家编码关联 | 产品列表、产品详情、产品导入、导入记录 | 产品主档和导入任务闭环 |
+| 渠道运营 | 维护渠道商品售卖差异、处理类目与属性联动、管理商品详情页内容与版本、执行批量修改 | 渠道商品列表、渠道商品详情页列表、渠道商品详情、批量修改 | 渠道商品售卖信息、详情页内容和素材引用关系正确 |
+| 库存运营 | 维护库存总览、人工调整库存、发起同步、查看调整记录 | 库存列表、库存详情、库存调整记录 | 库存正确且同步状态可追踪 |
+| 系统管理员 | 维护店铺级规则配置与生效状态 | 配置列表、店铺配置详情 | 店铺级类目、运费模板和时效配置稳定生效 |
+
+## 2. 核心对象协同
+
+| 对象 | 由谁主导 | 谁消费 | 协同说明 |
+|---|---|---|---|
+| 产品 | 商品运营 | 渠道运营、库存运营 | 产品是多渠道商品和库存归集中心。 |
+| 渠道商品 | 渠道运营 | 库存运营 | 同一产品在不同渠道/店铺下可有多条渠道商品记录。 |
+| 商品详情页 | 渠道运营 | 渠道运营、商品运营 | 同一产品在不同渠道会形成多个渠道商品，因此会有多套详情页；单个渠道商品下最多允许 3 个详情页，详情页内容可编辑，且可复用素材列表中的图片。 |
+| 店铺配置 | 系统管理员 | 商品运营、渠道运营 | 配置决定导入模板字段口径和详情页动态字段范围。 |
+| 库存 | 库存运营 | 渠道运营 | 库存围绕渠道商品 SKU 维护，但在中台统一展示。 |
+| 导入任务 | 商品运营 | 系统管理员、渠道运营 | 导入任务沉淀导入结果、错误原因和关联处理结论。 |
+
+## 3. 协同链路
+
+1. 系统管理员先维护店铺配置。
+2. 商品运营按渠道下载模板，执行导入并确认商家编码关联。
+3. 渠道运营在渠道商品详情页维护售卖字段，在渠道商品详情页列表统一维护详情页内容、版本、当前使用状态和素材复用关系。
+4. 库存运营在库存列表统一处理库存与同步结果。
+
+
+================================================================================
+FILE END: docs/00-总览层/02-业务模型与角色协同.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/03-状态流转机制说明.md
+================================================================================
+
+# 图书多渠道商品中台-状态流转机制说明
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-状态流转机制说明.md |
+| doc_id | DOC-STATE-FLOW |
+| doc_slug | state-flow |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 状态流转说明 |
+| 适用端 | 平台电脑端 |
+| 关联对象 | 导入任务、产品、渠道商品、商品详情页、库存、店铺配置 |
+| 上游文档 | ../04-数据与接口层/04-状态与枚举字典.md；../02-专题机制层/ |
+| 下游文档 | ../03-页面设计层/；../05-验收与测试层/04-权限与状态流转测试场景.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 导入任务状态
+
+| 状态 | 含义 | 进入条件 | 可操作 |
+|---|---|---|---|
+| draft | 已创建未校验 | 上传文件后 | 下载模板、重新上传、执行校验 |
+| validating | 校验中 | 点击执行校验后 | 仅可查看进度 |
+| validate_failed | 校验失败 | 模板或数据校验未通过 | 下载错误报告、重新上传 |
+| ready_to_execute | 校验通过待确认 | 校验全部通过或仅存在可忽略告警 | 确认导入 |
+| executing | 导入执行中 | 点击确认导入后 | 查看导入进度 |
+| completed | 导入完成 | 导入成功落库 | 查看导入记录、跳转产品详情 |
+| execute_failed | 导入失败 | 落库或关联处理失败 | 查看失败原因、重新发起导入 |
+
+## 2. 渠道商品状态
+
+| 状态 | 含义 | 说明 |
+|---|---|---|
+| draft | 草稿 | 导入后尚未补齐全部售卖信息。 |
+| ready | 可售资料齐备 | 标题、价格、类目和详情页关联等满足售卖条件。 |
+| on_shelf | 已上架 | 渠道侧处于上架状态。 |
+| off_shelf | 已下架 | 渠道侧处于下架状态。 |
+| locked | 锁定 | 受外部平台或内部规则限制，仅可查看。 |
+
+## 3. 库存同步状态
+
+| 状态 | 含义 | 页面表现 |
+|---|---|---|
+| idle | 未同步 | 列表显示默认状态。 |
+| pending | 待同步 | 触发同步后进入待处理。 |
+| syncing | 同步中 | 按钮禁用并展示进度文案。 |
+| success | 同步成功 | 展示最近同步成功时间。 |
+| failed | 同步失败 | 高亮失败原因并允许重新同步。 |
+
+## 4. 店铺配置状态
+
+| 状态 | 含义 | 说明 |
+|---|---|---|
+| draft | 草稿 | 已保存但未生效。 |
+| active | 生效中 | 当前店铺正在使用的配置版本。 |
+| inactive | 停用 | 历史配置，仅供查看和复制。 |
+
+## 5. 商品详情页使用状态
+
+| 状态 | 含义 | 说明 |
+|---|---|---|
+| current | 当前使用 | 当前作为商品详情生效的详情页记录，同一商品同时最多一条。 |
+| history | 历史版本 | 保留历史详情页记录，便于追溯和再次选择。 |
+
+
+================================================================================
+FILE END: docs/00-总览层/03-状态流转机制说明.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/04-整体业务流程图.md
+================================================================================
+
+# 图书多渠道商品中台-整体业务流程图
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-整体业务流程图.md |
+| doc_id | DOC-BIZ-FLOW |
+| doc_slug | business-flow |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 业务流程图 |
+| 适用端 | 平台电脑端 |
+| 上游文档 | 01-产品总述.md；02-业务模型与角色协同.md；../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | ../02-专题机制层/；../03-页面设计层/；../05-验收与测试层/02-主流程测试场景.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 总览流程图
+
+```mermaid
+flowchart LR
+  A["系统管理员维护店铺配置"] --> B["商品运营进入产品导入页"]
+  B --> C["选择渠道并下载模板"]
+  C --> D["整理导入数据并上传文件"]
+  D --> E["执行校验"]
+  E --> F{"校验是否通过"}
+  F -- "否" --> G["查看错误报告并修正重传"]
+  G --> D
+  F -- "是" --> H["系统按商家编码建立关联"]
+  H --> I["确认导入"]
+  I --> J["写入产品、商品、库存、素材"]
+  J --> K["导入记录页查看结果"]
+  K --> L["渠道运营维护商品字段与详情页"]
+  L --> M["库存运营维护库存并触发同步"]
+```
+
+## 2. 业务线拆分说明
+
+- 导入业务线：承接模板下载、上传校验、商家编码关联和导入落库。
+- 商品维护业务线：承接导入后商品的单条编辑、商品详情页管理、规则联动和增强批量修改。
+- 库存业务线：承接库存查看、人工调整和同步回写。
+- 配置业务线：承接店铺级规则配置及其对导入和编辑的影响。
+
+## 3. 导入业务线时序图
+
+```mermaid
+sequenceDiagram
+  actor Admin as 系统管理员
+  actor Operator as 商品运营
+  participant ConfPage as 店铺配置详情
+  participant ImportPage as 产品导入页
+  participant ImportMech as 标准化导入机制
+  participant TemplateAPI as 模板下载接口
+  participant ImportAPI as 导入任务接口
+  participant ImportObj as 导入任务对象
+  participant ProdObj as 产品商品库存对象
+
+  Admin->>ConfPage: 维护店铺规则配置
+  ConfPage->>ImportMech: 发布店铺级规则
+  Operator->>ImportPage: 选择渠道和店铺
+  ImportPage->>TemplateAPI: 获取模板 profile 与模板文件
+  TemplateAPI-->>ImportPage: 返回模板字段口径
+  Operator->>ImportPage: 上传导入文件并执行校验
+  ImportPage->>ImportAPI: 创建导入任务并发起校验
+  ImportAPI->>ImportObj: 写入 draft 和 validating
+  ImportMech->>ImportObj: 执行字段校验与商家编码关联
+  ImportObj-->>ImportPage: 返回校验结果
+  Operator->>ImportPage: 确认导入
+  ImportPage->>ImportAPI: 执行导入
+  ImportAPI->>ProdObj: 写入产品、渠道商品、库存、素材
+  ImportAPI->>ImportObj: 回写 completed
+```
+
+## 4. 商品维护业务线时序图
+
+```mermaid
+sequenceDiagram
+  actor ChannelOp as 渠道运营
+  participant ItemList as 渠道商品列表
+  participant DetailList as 渠道商品详情页列表
+  participant ItemDetail as 渠道商品详情
+  participant DetailAPI as 商品详情页接口
+  participant AssetList as 素材列表
+  participant BatchPage as 批量修改工作台
+  participant ItemMech as 商品维护与类目联动机制
+  participant ItemAPI as 渠道商品接口
+  participant RuleAPI as 类目动态适配接口
+  participant ItemObj as 渠道商品对象
+
+  ChannelOp->>ItemList: 按渠道、店铺、状态筛选
+  ItemList->>ItemAPI: 查询渠道商品列表
+  ItemAPI-->>ItemList: 返回命中结果
+  ChannelOp->>ItemDetail: 打开单条商品详情
+  ItemDetail->>RuleAPI: 获取店铺级类目 profile
+  RuleAPI-->>ItemDetail: 返回动态字段范围
+  ChannelOp->>ItemDetail: 修改标题、价格、属性和履约信息
+  ItemDetail->>ItemAPI: 保存商品详情
+  ItemAPI->>ItemObj: 回写渠道商品
+  ItemAPI->>ItemMech: 记录规则联动和审计信息
+  ChannelOp->>DetailList: 进入渠道商品详情页列表并按商品筛选
+  DetailList->>DetailAPI: 查询详情页列表与当前使用版本
+  DetailAPI-->>DetailList: 返回详情页记录
+  ChannelOp->>DetailList: 上传新详情页并设为当前使用
+  DetailList->>DetailAPI: 创建详情页记录并关联渠道商品
+  DetailAPI->>ItemObj: 回写当前使用详情页关联
+  DetailAPI-->>AssetList: 详情素材沉淀到素材列表
+  opt 增强批量修改
+    ChannelOp->>BatchPage: 进入批量修改工作台
+    BatchPage->>ItemAPI: 预览命中范围并执行批量修改
+    ItemAPI->>ItemObj: 批量回写字段
+  end
+```
+
+## 5. 库存业务线时序图
+
+```mermaid
+sequenceDiagram
+  actor InvOp as 库存运营
+  participant InvList as 库存列表
+  participant InvMech as 库存同步与分配机制
+  participant InvAPI as 库存接口
+  participant SyncTask as 同步任务
+  participant InvObj as 库存对象
+  participant InvLog as 库存日志对象
+
+  InvOp->>InvList: 按产品、渠道、店铺、SKU 筛选
+  InvList->>InvAPI: 查询库存列表
+  InvAPI-->>InvList: 返回库存快照
+  InvOp->>InvList: 发起人工调整
+  InvList->>InvAPI: 提交库存调整
+  InvAPI->>InvObj: 更新库存快照
+  InvAPI->>InvLog: 写入调整日志
+  InvOp->>InvList: 触发库存同步
+  InvList->>InvAPI: 发起同步请求
+  InvAPI->>SyncTask: 创建同步任务
+  SyncTask->>InvMech: 等待外部结果
+  InvMech->>InvObj: 回写 success 或 failed
+  InvObj-->>InvList: 展示同步状态
+```
+
+## 6. 配置业务线时序图
+
+```mermaid
+sequenceDiagram
+  actor Admin as 系统管理员
+  participant ConfList as 配置列表
+  participant ConfDetail as 店铺配置详情
+  participant ItemMech as 商品维护与类目联动机制
+  participant ConfAPI as 店铺配置接口
+  participant ConfObj as 店铺配置对象
+  participant ImportPage as 产品导入页
+  participant ItemDetail as 渠道商品详情
+
+  Admin->>ConfList: 进入配置列表并筛选
+  ConfList->>ConfAPI: 查询店铺配置
+  ConfAPI-->>ConfList: 返回配置列表
+  Admin->>ConfDetail: 打开店铺配置详情
+  Admin->>ConfDetail: 维护类目、属性、运费模板、时效
+  ConfDetail->>ConfAPI: 保存配置
+  ConfAPI->>ConfObj: 回写 draft、active、inactive
+  ConfAPI->>ItemMech: 发布新配置版本
+  ItemMech-->>ImportPage: 更新模板字段范围
+  ItemMech-->>ItemDetail: 更新动态字段范围
+```
+
+
+================================================================================
+FILE END: docs/00-总览层/04-整体业务流程图.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/05-文档治理与Agent要求.md
+================================================================================
+
+# 图书多渠道商品中台-文档治理与Agent要求
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-文档治理与Agent要求.md |
+| doc_id | DOC-DOC-GOVERNANCE |
+| doc_slug | doc-governance-agent-rules |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 文档治理与 Agent 要求 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 产品经理、产品 Agent、研发、测试 |
+| 上游文档 | ../../product_agent_standards/01_unified_standard.md；../../product_agent_standards/04_layered_docs_spec.md；../../product_agent_standards/14_delivery_index_spec.md |
+| 下游文档 | ../baselines/；../00-总览层/07-项目交付索引与当前有效版本清单.md；../03-页面设计层/99-页面开发脚手架定义.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 文档治理目标
+
+- 保证当前项目的功能范围、页面范围、机制、数据、测试始终围绕同一套基线推进。
+- 让后续产品 Agent 接手时，能沿同一文档结构继续补写和维护，而不是重建体系。
+- 控制中文文档名、菜单名、页面名经常变动时的稳定引用问题。
+
+## 2. 基本治理原则
+
+1. 基线优先：任何范围变化先回写 `docs/baselines/`，再回写 00-05 层文档。
+2. 稳定标识优先：`feature_id`、`page_id`、`page_group_id`、`route_key`、`menu_key`、`doc_id` 必须优先保持稳定。
+3. 中文名称可调：中文文档标题、中文菜单名称、中文页面名称可以调整，但不得因为名称微调频繁改稳定标识。
+4. 当前范围和增强预留分开写：增强底稿可以保留，但不得写成当前已交付。
+5. 候选归档单独标识：历史路径允许保留，但必须明确 `archive-candidate`，不得混入当前交付链路。
+
+## 3. 变更回写顺序
+
+当产品范围发生变化时，必须按以下顺序回写：
+
+1. `docs/baselines/00-feature-list.md`
+2. `docs/baselines/01-page-tree.md`
+3. `docs/baselines/02-functional-carrying-diagram.md`
+4. `docs/00-总览层/`
+5. `docs/01-端产品层/`
+6. `docs/02-专题机制层/`
+7. `docs/03-页面设计层/`
+8. `docs/04-数据与接口层/`
+9. `docs/05-验收与测试层/`
+10. `docs/00-总览层/07-项目交付索引与当前有效版本清单.md`
+
+## 4. 问题确认要求
+
+- 文档阶段遇到不确定项时，必须先登记到 `docs/00-总览层/06-问题清单与确认记录.md`。
+- 每个问题至少写清：问题内容、影响范围、阻塞等级、默认处理方式、待确认角色、当前状态。
+- 如果用户已经在对话中确认，必须把确认结论回写到确认记录表，并同步更新受影响文档。
+- 未确认但不阻塞推进的问题，可以按默认口径继续，但必须保留记录。
+- 阻塞研发实施的问题，必须在 `09-评审签收与交付门槛.md` 中体现。
+
+## 5. Agent 工作要求
+
+- 新任务开始前，先读 `docs/baselines/` 和 `07-项目交付索引与当前有效版本清单.md`。
+- 续写或改写文档时，只在 `docs/` 规范路径下落文档。
+- 新增文档必须同步进入交付索引。
+- 修改已有文档时，必须同步更新 `doc_version`、`更新时间`，必要时更新 `doc_status`。
+- 页面、机制、数据、测试之间出现追踪断链时，优先修正 `08-需求追踪矩阵.md`。
+- 涉及页面开发映射时，必须同步检查 `03-页面设计层/平台电脑端/99-页面开发脚手架定义.md`。
+
+## 6. 命名与路径要求
+
+- 文档文件名统一使用 `NN-中文主题.md`。
+- 页面设计层按 `平台电脑端/一级功能/页面组/NN-文档主题.md` 组织。
+- 中文文档名可以调整，但路径变更必须少做，避免破坏引用链。
+- 如确实需要改路径，必须同步回写：
+  - `00-文档总览与目录定义.md`
+  - `07-项目交付索引与当前有效版本清单.md`
+  - `08-需求追踪矩阵.md`
+  - 受影响上游/下游文档
+
+## 7. 交付检查要求
+
+每次文档阶段交付前，至少检查以下项目：
+
+- 基线三件套是否一致
+- 当前范围页面是否都有页面文档
+- 当前范围机制是否有专题机制文档
+- 当前范围对象/接口/测试是否能追踪到
+- 当前阻塞问题是否已登记
+- 交付索引是否包含本轮新增或改写文档
+
+## 8. 当前项目特别约束
+
+- 当前一期支持淘宝、拼多多、抖音、快手四渠道导入。
+- 商品管理承接导入后的全渠道商品统一管理和编辑，不限定单一渠道。
+- 历史独立发布相关页面仅保留占位说明，不纳入当前交付链路。
+
+
+================================================================================
+FILE END: docs/00-总览层/05-文档治理与Agent要求.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/06-问题清单与确认记录.md
+================================================================================
+
+# 图书多渠道商品中台-问题清单与确认记录
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 06-问题清单与确认记录.md |
+| doc_id | DOC-ISSUE-LOG |
+| doc_slug | issue-log |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 问题清单与确认记录 |
+| 上游文档 | ../../product_agent_standards/10_issue_confirmation_spec.md；../baselines/00-feature-list.md |
+| 下游文档 | ../02-专题机制层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 当前问题清单
+
+| issue_id | 问题类型 | 问题内容 | 影响范围 | 阻塞等级 | 默认处理方式 | 待确认角色 | 待确认人 | 当前状态 | 备注 |
+|---|---|---|---|---|---|---|---|---|---|
+| ISSUE-001 | 对象字段 | 商家编码是否同时要求覆盖 SKU 级别映射。 | 导入机制、逻辑数据模型、字段字典 | L3-不阻塞当前推进 | 当前按产品级商家编码为必填，SKU 级建议补充商家 SKU 编码但不阻塞一期。 | 产品经理 | 待定 | 待确认 | 如后续确认强制 SKU 级映射，需要回写模板字段和接口。 |
+| ISSUE-002 | 机制规则 | 模板下载时是否必须先选择店铺，还是只选渠道即可。 | 产品导入页、标准化导入机制、模板字段说明 | L3-不阻塞当前推进 | 当前要求至少选择渠道；如已选店铺则带出更精确的类目字段模板。 | 产品经理 | 待定 | 待确认 | 当前前端默认支持渠道必选、店铺可选。 |
+| ISSUE-003 | 机制规则 | 店铺配置变更后的生效时点是立即生效还是新导入任务生效。 | 店铺配置详情、导入机制、测试场景、配置版本机制 | L2-阻塞研发实施 | 当前按新导入任务生效、已创建任务不回溯处理。 | 产品经理、系统管理员 | 待定 | 待确认 | 需要在研发前锁定。 |
+| ISSUE-004 | 范围问题 | 库存是否需要多仓维度。 | 库存管理、数据模型、接口清单 | L3-不阻塞当前推进 | 一期按单库存池处理，不引入多仓模型。 | 产品经理 | 待定 | 已默认推进 | 作为后续扩展项。 |
+| ISSUE-005 | 范围问题 | 一期导入支持的渠道范围是否锁定为淘宝、拼多多、抖音、快手。 | 功能清单、页面树、客户说明、导入机制 | L2-阻塞范围说明 | 当前按四渠道导入锁定，不再保留单渠道口径。 | 产品经理 | 已确认 | 已确认 | 已回写功能清单和客户说明。 |
+| ISSUE-006 | 范围问题 | 商品管理是否只针对某单一渠道，还是承接导入后的全渠道商品统一管理与编辑。 | 产品总述、商品管理页面组、渠道商品列表、渠道商品详情 | L2-阻塞页面设计 | 当前按导入后的全渠道商品统一管理与编辑推进。 | 产品经理 | 已确认 | 已确认 | 已回写商品管理相关文档。 |
+
+## 2. 当前确认记录
+
+| issue_id | 确认方式 | 确认结论 | 确认人 | 确认角色 | 确认时间 | 影响文档 | 是否已回写 | 关闭状态 |
+|---|---|---|---|---|---|---|---|---|
+| ISSUE-004 | 本轮范围确认 | 一期不做多仓库存。 | 当前会话默认结论 | 产品经理 | 2026-04-20 | 总览层、数据层、测试层 | 是 | 已关闭 |
+| ISSUE-005 | 本轮范围确认 | 一期导入支持淘宝、拼多多、抖音、快手四渠道。 | 当前会话确认 | 产品经理 | 2026-04-21 | baselines、总览层、端产品层、客户讲解 | 是 | 已关闭 |
+| ISSUE-006 | 本轮范围确认 | 商品管理承接导入后的全渠道商品统一管理和编辑。 | 当前会话确认 | 产品经理 | 2026-04-21 | 总览层、页面设计层、机制层 | 是 | 已关闭 |
+
+
+================================================================================
+FILE END: docs/00-总览层/06-问题清单与确认记录.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/07-项目交付索引与当前有效版本清单.md
+================================================================================
+
+# 图书多渠道商品中台-项目交付索引与当前有效版本清单
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 07-项目交付索引与当前有效版本清单.md |
+| doc_id | DOC-DELIVERY-INDEX |
+| doc_slug | delivery-index |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 交付索引 |
+| 上游文档 | ../../product_agent_standards/14_delivery_index_spec.md；../baselines/99-baseline-change-log.md |
+| 下游文档 | 全部当前项目文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 当前有效说明
+
+- `current-effective` 和 `draft-review-ready` 视为当前有效文档集合。
+- `enhancement-reserved` 视为增强底稿，当前不作为 MVP 阻断范围。
+- `archive-candidate` 视为候选归档文件，仅保留路径与历史上下文。
+
+## 2. 交付索引
+
+| artifact_id | artifact_name | file_path | artifact_type | current_version | doc_status | baseline_version | supersedes | archive_path | owner |
+|---|---|---|---|---|---|---|---|---|---|
+| docs::00-总览层::00-文档总览与目录定义.md | 00-文档总览与目录定义.md | docs/00-总览层/00-文档总览与目录定义.md | overview | 2026-04-21-r2 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::01-产品总述.md | 01-产品总述.md | docs/00-总览层/01-产品总述.md | overview | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::02-业务模型与角色协同.md | 02-业务模型与角色协同.md | docs/00-总览层/02-业务模型与角色协同.md | overview | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::03-状态流转机制说明.md | 03-状态流转机制说明.md | docs/00-总览层/03-状态流转机制说明.md | overview | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::04-整体业务流程图.md | 04-整体业务流程图.md | docs/00-总览层/04-整体业务流程图.md | overview | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::05-文档治理与Agent要求.md | 05-文档治理与Agent要求.md | docs/00-总览层/05-文档治理与Agent要求.md | overview | 2026-04-21-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::06-问题清单与确认记录.md | 06-问题清单与确认记录.md | docs/00-总览层/06-问题清单与确认记录.md | overview | 2026-04-21-r2 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::08-需求追踪矩阵.md | 08-需求追踪矩阵.md | docs/00-总览层/08-需求追踪矩阵.md | overview | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::09-评审签收与交付门槛.md | 09-评审签收与交付门槛.md | docs/00-总览层/09-评审签收与交付门槛.md | overview | 2026-04-21-r2 | draft-review-ready | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::00-总览层::10-文档达标清单与菜单路由调整建议.md | 10-文档达标清单与菜单路由调整建议.md | docs/00-总览层/10-文档达标清单与菜单路由调整建议.md | overview | 2026-04-22-r1 | draft-review-ready | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::01-端产品层::00-端产品层说明与校验结论.md | 00-端产品层说明与校验结论.md | docs/01-端产品层/00-端产品层说明与校验结论.md | terminal | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::01-端产品层::05-平台电脑端产品文档.md | 05-平台电脑端产品文档.md | docs/01-端产品层/05-平台电脑端产品文档.md | terminal | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::01-端产品层::06-各端功能总清单.md | 06-各端功能总清单.md | docs/01-端产品层/06-各端功能总清单.md | terminal | 2026-04-21-r2 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::02-专题机制层::01-标准化导入机制.md | 01-标准化导入机制.md | docs/02-专题机制层/01-标准化导入机制.md | mechanism | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::02-专题机制层::02-商品维护与类目联动机制.md | 02-商品维护与类目联动机制.md | docs/02-专题机制层/02-商品维护与类目联动机制.md | mechanism | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::02-专题机制层::03-库存同步与分配机制.md | 03-库存同步与分配机制.md | docs/02-专题机制层/03-库存同步与分配机制.md | mechanism | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::02-专题机制层::04-权限与审计机制.md | 04-权限与审计机制.md | docs/02-专题机制层/04-权限与审计机制.md | mechanism | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::02-专题机制层::05-店铺配置生效与版本机制.md | 05-店铺配置生效与版本机制.md | docs/02-专题机制层/05-店铺配置生效与版本机制.md | mechanism | 2026-04-21-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::00-页面设计说明.md | 00-页面设计说明.md | docs/03-页面设计层/00-页面设计说明.md | page-design | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::01-产品管理-页面组.md | 01-产品管理-页面组.md | docs/03-页面设计层/平台电脑端/01-产品管理-页面组.md | page-group | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::02-素材管理-页面组.md | 02-素材管理-页面组.md | docs/03-页面设计层/平台电脑端/02-素材管理-页面组.md | page-group | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::03-商品管理-页面组.md | 03-商品管理-页面组.md | docs/03-页面设计层/平台电脑端/03-商品管理-页面组.md | page-group | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::04-库存管理-页面组.md | 04-库存管理-页面组.md | docs/03-页面设计层/平台电脑端/04-库存管理-页面组.md | page-group | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::05-配置管理-页面组.md | 05-配置管理-页面组.md | docs/03-页面设计层/平台电脑端/05-配置管理-页面组.md | page-group | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::99-页面开发脚手架定义.md | 99-页面开发脚手架定义.md | docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md | page-design | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::产品管理::01-产品列表页.md | 01-产品列表页.md | docs/03-页面设计层/平台电脑端/产品管理/01-产品列表页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::产品管理::02-新建产品页.md | 02-新建产品页.md | docs/03-页面设计层/平台电脑端/产品管理/02-新建产品页.md | page | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::产品管理::03-产品详情页.md | 03-产品详情页.md | docs/03-页面设计层/平台电脑端/产品管理/03-产品详情页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::产品管理::04-产品导入页.md | 04-产品导入页.md | docs/03-页面设计层/平台电脑端/产品管理/04-产品导入页.md | page | 2026-04-21-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::产品管理::05-导入记录页.md | 05-导入记录页.md | docs/03-页面设计层/平台电脑端/产品管理/05-导入记录页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::商品管理::01-渠道商品列表页.md | 01-渠道商品列表页.md | docs/03-页面设计层/平台电脑端/商品管理/01-渠道商品列表页.md | page | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::商品管理::02-渠道商品详情页.md | 02-渠道商品详情页.md | docs/03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md | page | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::商品管理::03-批量修改工作台.md | 03-批量修改工作台.md | docs/03-页面设计层/平台电脑端/商品管理/03-批量修改工作台.md | page | 2026-04-21-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::商品管理::04-历史发布记录占位页.md | 04-历史发布记录占位页.md | docs/03-页面设计层/平台电脑端/商品管理/04-历史发布记录占位页.md | page | 2026-04-21-r1 | archive-candidate | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::商品管理::05-渠道商品详情页列表.md | 05-渠道商品详情页列表.md | docs/03-页面设计层/平台电脑端/商品管理/05-渠道商品详情页列表.md | page | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::库存管理::01-库存列表页.md | 01-库存列表页.md | docs/03-页面设计层/平台电脑端/库存管理/01-库存列表页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::库存管理::02-库存详情页.md | 02-库存详情页.md | docs/03-页面设计层/平台电脑端/库存管理/02-库存详情页.md | page | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::库存管理::03-库存调整记录页.md | 03-库存调整记录页.md | docs/03-页面设计层/平台电脑端/库存管理/03-库存调整记录页.md | page | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::素材管理::01-素材列表页.md | 01-素材列表页.md | docs/03-页面设计层/平台电脑端/素材管理/01-素材列表页.md | page | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::素材管理::02-素材详情页.md | 02-素材详情页.md | docs/03-页面设计层/平台电脑端/素材管理/02-素材详情页.md | page | 2026-04-20-r1 | enhancement-reserved | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::01-配置列表页.md | 01-配置列表页.md | docs/03-页面设计层/平台电脑端/配置管理/01-配置列表页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::02-系统配置详情页.md | 02-系统配置详情页.md | docs/03-页面设计层/平台电脑端/配置管理/02-系统配置详情页.md | page | 2026-04-20-r1 | archive-candidate | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::03-渠道配置详情页.md | 03-渠道配置详情页.md | docs/03-页面设计层/平台电脑端/配置管理/03-渠道配置详情页.md | page | 2026-04-20-r1 | archive-candidate | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::04-店铺配置详情页.md | 04-店铺配置详情页.md | docs/03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md | page | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::05-导入模板配置页.md | 05-导入模板配置页.md | docs/03-页面设计层/平台电脑端/配置管理/05-导入模板配置页.md | page | 2026-04-20-r1 | archive-candidate | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::03-页面设计层::平台电脑端::配置管理::06-操作日志页.md | 06-操作日志页.md | docs/03-页面设计层/平台电脑端/配置管理/06-操作日志页.md | page | 2026-04-20-r1 | archive-candidate | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::01-核心对象定义.md | 01-核心对象定义.md | docs/04-数据与接口层/01-核心对象定义.md | data | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::02-逻辑数据模型.md | 02-逻辑数据模型.md | docs/04-数据与接口层/02-逻辑数据模型.md | data | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::03-字段字典.md | 03-字段字典.md | docs/04-数据与接口层/03-字段字典.md | data | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::04-状态与枚举字典.md | 04-状态与枚举字典.md | docs/04-数据与接口层/04-状态与枚举字典.md | data | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::05-接口清单.md | 05-接口清单.md | docs/04-数据与接口层/05-接口清单.md | data | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::06-事件与日志清单.md | 06-事件与日志清单.md | docs/04-数据与接口层/06-事件与日志清单.md | data | 2026-04-21-r2 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::07-表设计建议.md | 07-表设计建议.md | docs/04-数据与接口层/07-表设计建议.md | data | 2026-04-21-r2 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::04-数据与接口层::08-图书素材装包规范.md | 08-图书素材装包规范.md | docs/04-数据与接口层/08-图书素材装包规范.md | data | 2026-04-20-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::05-验收与测试层::01-MVP验收标准.md | 01-MVP验收标准.md | docs/05-验收与测试层/01-MVP验收标准.md | test | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::05-验收与测试层::02-主流程测试场景.md | 02-主流程测试场景.md | docs/05-验收与测试层/02-主流程测试场景.md | test | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::05-验收与测试层::03-异常流程测试场景.md | 03-异常流程测试场景.md | docs/05-验收与测试层/03-异常流程测试场景.md | test | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::05-验收与测试层::04-权限与状态流转测试场景.md | 04-权限与状态流转测试场景.md | docs/05-验收与测试层/04-权限与状态流转测试场景.md | test | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::05-验收与测试层::05-回归范围.md | 05-回归范围.md | docs/05-验收与测试层/05-回归范围.md | test | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::baselines::00-feature-list.md | 00-feature-list.md | docs/baselines/00-feature-list.md | baseline-feature-list | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::baselines::01-page-tree.md | 01-page-tree.md | docs/baselines/01-page-tree.md | baseline-page-tree | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::baselines::02-functional-carrying-diagram.md | 02-functional-carrying-diagram.md | docs/baselines/02-functional-carrying-diagram.md | baseline-carrying-diagram | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+| docs::baselines::99-baseline-change-log.md | 99-baseline-change-log.md | docs/baselines/99-baseline-change-log.md | baseline-change-log | 2026-04-22-r1 | current-effective | BSL-2026-04-20-A | - | - | 产品 Agent |
+
+
+================================================================================
+FILE END: docs/00-总览层/07-项目交付索引与当前有效版本清单.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/08-需求追踪矩阵.md
+================================================================================
+
+# 图书多渠道商品中台-需求追踪矩阵
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 08-需求追踪矩阵.md |
+| doc_id | DOC-TRACE-MATRIX |
+| doc_slug | trace-matrix |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 需求追踪矩阵 |
+| 上游文档 | ../../product_agent_standards/12_id_traceability_spec.md；../baselines/00-feature-list.md；../baselines/01-page-tree.md |
+| 下游文档 | ../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 追踪矩阵
+
+| feature_id | page_group_id | page_id | menu_key | route_key | route_name | route_path | menu_policy | mechanism_id | object_id | api_id | test_case_id | doc_ref | current_status | notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| FEAT-PROD-LIST | PGROUP-PROD | PG-PROD-LIST | menu.product | product.list | ProductList | /products/list | 一级菜单当前页 | MECH-AUTH-AUDIT | OBJ-PRODUCT | API-PROD-LIST-GET | TC-MAIN-001 | 03-页面设计层/平台电脑端/产品管理/01-产品列表页.md | 当前范围 | 产品主入口 |
+| FEAT-PROD-DETAIL | PGROUP-PROD | PG-PROD-DETAIL | - | product.detail | ProductDetail | /products/detail | 隐藏路由，active=`menu.product` | MECH-AUTH-AUDIT | OBJ-PRODUCT | API-PROD-DETAIL-PUT | TC-MAIN-001 | 03-页面设计层/平台电脑端/产品管理/03-产品详情页.md | 当前范围 | 产品主档维护 |
+| FEAT-PROD-IMPORT | PGROUP-PROD | PG-PROD-IMPORT | menu.product.import | product.import | ProductImport | /products/import | 二级菜单直达 | MECH-IMPORT-STD | OBJ-IMPORT-JOB | API-IMPORT-UPLOAD-POST | TC-MAIN-002 | 03-页面设计层/平台电脑端/产品管理/04-产品导入页.md | 当前范围 | 模板下载和导入执行 |
+| FEAT-PROD-IMPORT-LOG | PGROUP-PROD | PG-PROD-IMPORT-LOG | - | product.import_log | ProductImportRecords | /products/import-records | 导入页进入 | MECH-IMPORT-STD | OBJ-IMPORT-JOB | API-IMPORT-LIST-GET | TC-MAIN-003 | 03-页面设计层/平台电脑端/产品管理/05-导入记录页.md | 当前范围 | 导入结果回溯 |
+| FEAT-PROD-MERCHANT-LINK | PGROUP-PROD | - | - | - | - | - | 不单独建菜单或 route | MECH-IMPORT-STD | OBJ-IMPORT-JOB-LINE | API-MERCHANT-LINK-POST | TC-EXC-002 | 02-专题机制层/01-标准化导入机制.md | 当前范围 | 规则能力 |
+| FEAT-PROD-CREATE | PGROUP-PROD | ACTION-PROD-CREATE | menu.product.create | product.create | ProductCreate | /products/create | 列表按钮进入（增强预留） | MECH-AUTH-AUDIT | OBJ-PRODUCT | API-PROD-CREATE-POST | - | 03-页面设计层/平台电脑端/产品管理/02-新建产品页.md | 增强预留 | 手工补录入口 |
+| FEAT-ASSET-LIST | PGROUP-ASSET | PG-ASSET-LIST | menu.asset | asset.list | MaterialList | /materials/list | 一级菜单预留 badge | MECH-IMPORT-STD | OBJ-ASSET | API-ASSET-LIST-GET | - | 03-页面设计层/平台电脑端/素材管理/01-素材列表页.md | 增强预留 | 素材总览 |
+| FEAT-ASSET-DETAIL | PGROUP-ASSET | PG-ASSET-DETAIL | - | asset.detail | MaterialDetail | /materials/detail | 隐藏路由，active=`menu.asset` | MECH-IMPORT-STD | OBJ-ASSET | API-ASSET-DETAIL-GET | - | 03-页面设计层/平台电脑端/素材管理/02-素材详情页.md | 增强预留 | 素材查看 |
+| FEAT-ITEM-LIST | PGROUP-ITEM | PG-ITEM-LIST | menu.channel_item | item.list | ChannelItemList | /channel-items/list | 一级菜单当前页 | MECH-AUTH-AUDIT | OBJ-CHANNEL-ITEM | API-ITEM-LIST-GET | TC-MAIN-004 | 03-页面设计层/平台电脑端/商品管理/01-渠道商品列表页.md | 当前范围 | 商品总览 |
+| FEAT-ITEM-DETAIL-PAGE-LIST | PGROUP-ITEM | PG-ITEM-DETAIL-PAGE-LIST | menu.channel_item.detail_page_list | item.detail_page_list | ChannelItemDetailPageList | /channel-items/detail-pages | 二级菜单直达 | MECH-ITEM-MAINTAIN | OBJ-ITEM-DETAIL-PAGE | API-ITEM-DETAIL-PAGE-PUT | TC-MAIN-009 | 03-页面设计层/平台电脑端/商品管理/05-渠道商品详情页列表.md | 当前范围 | 商品详情页内容统一管理、版本切换与素材复用 |
+| FEAT-ITEM-DETAIL | PGROUP-ITEM | PG-ITEM-DETAIL | - | item.detail | ChannelItemDetail | /channel-items/detail | 隐藏路由，active=`menu.channel_item` | MECH-ITEM-MAINTAIN | OBJ-CHANNEL-ITEM | API-ITEM-DETAIL-PUT | TC-MAIN-005 | 03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md | 当前范围 | 单商品售卖字段维护 |
+| FEAT-ITEM-CATEGORY-RULE | PGROUP-ITEM | - | - | - | - | - | 不单独建菜单或 route | MECH-ITEM-MAINTAIN | OBJ-CATEGORY-PROFILE | API-ITEM-CATEGORY-PROFILE-GET | TC-EXC-003 | 02-专题机制层/02-商品维护与类目联动机制.md | 当前范围 | 店铺级类目动态适配 |
+| FEAT-ITEM-BATCH-EDIT | PGROUP-ITEM | ACTION-ITEM-BATCH-EDIT | menu.channel_item.batch_edit | item.batch_edit | ChannelItemBatchEdit | /channel-items/batch-edit | 二级菜单直达（增强预留） | MECH-ITEM-MAINTAIN | OBJ-CHANNEL-ITEM | API-ITEM-BATCH-EXECUTE-POST | TC-EXC-004 | 03-页面设计层/平台电脑端/商品管理/03-批量修改工作台.md | 增强预留 | 批量修改动作承接页 |
+| FEAT-INV-LIST | PGROUP-INV | PG-INV-LIST | menu.inventory | inventory.list | InventoryList | /inventory/list | 一级菜单当前页 | MECH-INV-SYNC | OBJ-INVENTORY | API-INV-LIST-GET | TC-MAIN-006 | 03-页面设计层/平台电脑端/库存管理/01-库存列表页.md | 当前范围 | 库存主入口 |
+| FEAT-INV-DETAIL | PGROUP-INV | PG-INV-DETAIL | - | inventory.detail | InventoryDetail | /inventory/detail | 增强预留隐藏路由，active=`menu.inventory` | MECH-INV-SYNC | OBJ-INVENTORY | API-INV-DETAIL-GET | - | 03-页面设计层/平台电脑端/库存管理/02-库存详情页.md | 增强预留 | 增强页 |
+| FEAT-INV-LOG | PGROUP-INV | PG-INV-LOG | menu.inventory.adjust_log | inventory.adjust_log | InventoryAdjustments | /inventory/adjustments | 二级菜单直达（增强预留） | MECH-INV-SYNC | OBJ-INVENTORY-LOG | API-INV-ADJUST-LOG-GET | - | 03-页面设计层/平台电脑端/库存管理/03-库存调整记录页.md | 增强预留 | 增强页 |
+| FEAT-CONF-LIST | PGROUP-CONF | PG-CONF-LIST | menu.config | config.list | StoreConfigList | /store-config/list | 一级菜单当前页 | MECH-AUTH-AUDIT | OBJ-SHOP-CONFIG | API-CONF-LIST-GET | TC-MAIN-007 | 03-页面设计层/平台电脑端/配置管理/01-配置列表页.md | 当前范围 | 配置主入口 |
+| FEAT-CONF-SHOP-DETAIL | PGROUP-CONF | PG-CONF-DETAIL | - | config.shop_detail | StoreConfigDetail | /store-config/detail | 隐藏路由，active=`menu.config` | MECH-ITEM-MAINTAIN | OBJ-SHOP-CONFIG | API-CONF-DETAIL-PUT | TC-MAIN-008 | 03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md | 当前范围 | 店铺规则配置 |
+
+
+================================================================================
+FILE END: docs/00-总览层/08-需求追踪矩阵.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/09-评审签收与交付门槛.md
+================================================================================
+
+# 图书多渠道商品中台-评审签收与交付门槛
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 09-评审签收与交付门槛.md |
+| doc_id | DOC-REVIEW-SIGNOFF |
+| doc_slug | review-signoff |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 评审与交付门槛 |
+| 上游文档 | ../../product_agent_standards/13_review_signoff_spec.md；07-项目交付索引与当前有效版本清单.md；06-问题清单与确认记录.md |
+| 下游文档 | 当前项目交付包 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | draft-review-ready |
+| 更新时间 | 2026-04-21 |
+
+## 1. 当前评审入口门槛自检
+
+| 检查项 | 结果 | 说明 |
+|---|---|---|
+| 三份输入基线 | 通过 | 功能清单、页面树、功能承载图已统一到当前范围。 |
+| 00-05 层文档 | 通过 | 已补齐端产品层核心章节，并补写多业务线时序图与文档治理要求。 |
+| 阻塞性问题 | 部分通过 | ISSUE-003 需在研发前确认生效时点。 |
+| 追踪关系 | 通过 | 已补齐产品详情、类目动态适配、增强预留能力的主链路追踪。 |
+| 候选归档说明 | 通过 | 范围外页面已明确标注为候选归档。 |
+
+## 2. 当前阻塞项
+
+| blocker_id | 来源 | 问题 | 当前默认口径 | 是否阻塞研发 |
+|---|---|---|---|---|
+| BLOCK-001 | ISSUE-003 | 店铺配置变更后的生效时点未最终确认 | 当前按新导入任务生效，已创建任务不回溯 | 是 |
+
+## 3. 评审意见记录模板
+
+| review_comment_id | 来源文档 | 问题级别 | 问题描述 | 责任人 | 当前状态 | 修订结论 | 复核人 | 关闭时间 |
+|---|---|---|---|---|---|---|---|---|
+| - | - | - | 待正式评审录入。 | - | 待评审 | - | - | - |
+
+## 4. 签收记录
+
+| package_version | 评审范围 | 签收人 | 签收结论 | blocker_count | exception_note | signed_at |
+|---|---|---|---|---|---|---|
+| 2026-04-21-r2 | 当前项目 docs/ 与 baselines/ | - | 待签收 | 1 | 需确认店铺配置变更生效时点。 | - |
+
+
+================================================================================
+FILE END: docs/00-总览层/09-评审签收与交付门槛.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/00-总览层/10-文档达标清单与菜单路由调整建议.md
+================================================================================
+
+# 图书多渠道商品中台-文档达标清单与菜单路由调整建议
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 10-文档达标清单与菜单路由调整建议.md |
+| doc_id | DOC-DOC-COMPLIANCE-CHECKLIST |
+| doc_slug | doc-compliance-checklist |
+| 文档层级 | 00-总览层 |
+| 文档对象 | 文档达标清单 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 产品经理、产品 Agent、研发、测试 |
+| 上游文档 | ../../product_agent_standards/01_unified_standard.md；../../product_agent_standards/06_output_checklist.md；../../product_agent_standards/16_navigation_naming_resilience_spec.md；../baselines/00-feature-list.md；../baselines/01-page-tree.md |
+| 下游文档 | ../01-端产品层/05-平台电脑端产品文档.md；../03-页面设计层/平台电脑端/99-页面开发脚手架定义.md；../00-总览层/09-评审签收与交付门槛.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | draft-review-ready |
+| 更新时间 | 2026-04-22 |
+
+## 1. 本轮整理目标
+
+- 按 `product_agent_standards` 回补 docs 规范字段和导航治理字段，避免菜单、路由、中文名称调整时断链。
+- 把功能清单、页面树、端产品文档、页面脚手架、追踪矩阵和交付索引打通成一条稳定的交付链。
+- 为后续前端开发重调菜单路由提供直接可执行的目标口径。
+
+## 2. 达标清单
+
+| 类别 | 检查项 | 标准来源 | 结果 | 证据 | 备注 |
+|---|---|---|---|---|---|
+| 基线 | 三份输入基线先于下游文档回写 | `01_unified_standard.md` | 通过 | `docs/baselines/00-02` | 功能清单、页面树、功能承载图均已存在并对齐。 |
+| 基线 | 页面、功能动作、规则能力分开治理 | `01_unified_standard.md` | 通过 | `docs/baselines/00-feature-list.md` | 页面树只保留页面节点，动作和规则能力继续挂功能清单与机制。 |
+| 页面树 | 页面树区分“Excel 来源入口关系”和“稳定键承接关系” | `16_navigation_naming_resilience_spec.md` | 通过 | `docs/baselines/01-page-tree.md` | 已把上游来源入口和下游稳定键分层表达。 |
+| 功能清单 | 功能清单补齐“功能到菜单入口承接口径” | `04_layered_docs_spec.md` | 通过 | `docs/baselines/00-feature-list.md` | 已明确产品导入、渠道商品详情页列表、批量修改、库存调整记录、新增产品的真实入口语义，并补充详情页内容管理与素材复用约束。 |
+| 端产品层 | 平台电脑端文档按基线重写导航入口摘要 | `04_layered_docs_spec.md` | 通过 | `docs/01-端产品层/05-平台电脑端产品文档.md` | 后续开发重调菜单路由时应优先遵守该摘要。 |
+| 页面设计层 | 页面脚手架与真实代码目录、路由名、权限常量对齐 | `09_page_scaffold_spec.md` | 通过 | `docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md` | 已修正旧的抽象目录名，与真实 `views/product-platform/*` 对齐。 |
+| 追踪链 | 追踪矩阵补齐 `route_name`、`route_path`、`menu_policy` | `12_id_traceability_spec.md`、`16_navigation_naming_resilience_spec.md` | 通过 | `docs/00-总览层/08-需求追踪矩阵.md` | 菜单和路由调整后仍可从功能追到页面、接口和测试。 |
+| 当前范围覆盖 | 当前范围页面文档覆盖完整 | `06_output_checklist.md` | 通过 | 10/10 页面已落文档 | 产品 4、商品 3、库存 1、配置 2。 |
+| 预留覆盖 | 增强预留页面 / 动作文档覆盖完整 | `06_output_checklist.md` | 通过 | 6/6 页面与动作已落文档 | 素材 2、库存 2、动作 2。 |
+| 索引 | 交付索引已同步更新本轮版本 | `14_delivery_index_spec.md` | 通过 | `docs/00-总览层/07-项目交付索引与当前有效版本清单.md` | 已纳入本轮修改文档和新清单文档。 |
+| 评审门槛 | 阻塞业务问题已完全闭环 | `06_output_checklist.md`、`09-评审签收与交付门槛.md` | 未通过 | `BLOCK-001 / ISSUE-003` | 店铺配置变更生效时点仍需业务拍板。 |
+
+## 3. 功能清单与页面树摘要
+
+| 项目 | 数量 / 范围 | 说明 |
+|---|---|---|
+| 一级功能 | 5 | 产品管理、商品管理、库存管理、配置管理、素材管理 |
+| 当前范围页面 | 10 | 产品 4、商品 3、库存 1、配置 2 |
+| 增强预留页面 | 4 | 素材 2、库存 2 |
+| 增强预留动作 | 2 | 新增产品、批量修改 |
+| 当前一级菜单 | 5 | `menu.product`、`menu.channel_item`、`menu.inventory`、`menu.config`、`menu.asset` |
+| 当前范围二级菜单 | 2 | `menu.product.import`、`menu.channel_item.detail_page_list` |
+| 增强预留二级入口 | 2 | `menu.channel_item.batch_edit`、`menu.inventory.adjust_log` |
+| 默认隐藏页面路由 | 6 | 产品详情、导入记录、渠道商品详情、库存详情、店铺配置详情、素材详情 |
+| 动作入口治理 | 2 类 | `product.create` 为列表按钮进入；`item.batch_edit` 为增强预留二级入口 |
+| 兼容重定向 | 1 组 | `/overview`、`/overview/index` 仅作兼容，不进入页面树 |
+
+## 4. 对开发的菜单路由调整建议
+
+| 调整对象 | 文档口径 | 开发动作 |
+|---|---|---|
+| 一级导航容器 | 顶层顺序固定为产品、商品、库存、配置、素材 | 以 `nav_order=10/20/30/40/50` 回写 `product-platform.ts` 顶层容器顺序。 |
+| 顶层 redirect | 每个一级菜单容器都应 redirect 到当前默认叶子页 | 保持 `/products -> /products/list`、`/channel-items -> /channel-items/list`、`/inventory -> /inventory/list`、`/store-config -> /store-config/list`、`/materials -> /materials/list`。 |
+| 商品管理拆页 | `渠道商品详情` 只管单商品售卖字段；`渠道商品详情页列表` 统一管理全部商品详情页内容、版本和素材复用 | 新增 `/channel-items/detail-pages` 二级菜单路由，并让详情页数量/关联摘要统一跳该页；该页内需支持编辑工作区、当前版本切换和已有素材引用，不要继续把详情页内容编辑塞回 `/channel-items/detail`。 |
+| 详情 / 记录页 | 详情页、记录页的隐藏路由策略属于实现层 | 可以使用 `hideInMenu` + `activePath`，但不得把这种实现策略反写成上游入口事实。 |
+| 二级入口 | 产品导入、渠道商品详情页列表为当前范围二级菜单；批量修改、库存调整记录为增强预留二级入口 | `menu.product.import`、`menu.channel_item.detail_page_list` 当前可见；`menu.channel_item.batch_edit`、`menu.inventory.adjust_log` 在进入增强迭代时补齐。 |
+| 详情页管理约束 | 一个产品会映射多个渠道商品；单个渠道商品最多 3 个详情页 | 列表页要支持按产品聚合查看多个渠道商品的详情页，并在新建/上传/复制动作上直接做 3 条上限校验。 |
+| 素材复用 | 同一图片允许进入多个商品详情页 | 在详情页列表中提供素材选择/引用能力；素材原子维护仍归 `menu.asset`。 |
+| 预留顶层菜单 | `menu.asset` 当前允许显示 badge | 如果后续要做严格 MVP 导航，只隐藏菜单，不改 `page_id`、`menu_key`、`route_key`。 |
+| 预留动作路由 | 新增产品与批量修改的入口语义不同 | 新增产品维持“产品列表按钮进入”；批量修改如要独立路由，应挂在商品管理二级菜单，不要改写成列表按钮入口。 |
+| 历史 / 候选目录 | `overview/`、`system-config/`、`publish/`、`operations/`、`reports/` 不属于当前菜单树 | 开发不要再从这些目录反推当前路由；如要复用，先回写 baselines。 |
+
+## 5. 当前未闭环项
+
+| blocker_id | 问题 | 默认口径 | 影响 | 后续动作 |
+|---|---|---|---|---|
+| BLOCK-001 | 店铺配置变更后的生效时点未最终确认 | 当前按“新导入任务生效，已创建任务不回溯”处理 | 影响配置详情、导入模板、导入流程和验收口径 | 业务确认后回写 `06-问题清单与确认记录.md`、相关机制文档和验收文档 |
+
+
+================================================================================
+FILE END: docs/00-总览层/10-文档达标清单与菜单路由调整建议.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/01-端产品层/00-端产品层说明与校验结论.md
+================================================================================
+
+# 图书多渠道商品中台-端产品层说明与校验结论
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 00-端产品层说明与校验结论.md |
+| doc_id | DOC-TERMINAL-CHECK |
+| doc_slug | terminal-check |
+| 文档层级 | 01-端产品层 |
+| 文档对象 | 端产品层说明 |
+| 适用端 | 平台电脑端 |
+| 上游文档 | ../baselines/00-feature-list.md；../baselines/01-page-tree.md |
+| 下游文档 | 05-平台电脑端产品文档.md；06-各端功能总清单.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 当前端范围
+
+- 当前项目只有一个当前有效端：平台电脑端。
+- 所有当前范围页面、功能动作和规则能力都由平台电脑端承接。
+- 不存在独立移动端、商家端或消费者端交付物。
+
+## 2. 校验结论
+
+| 校验项 | 结果 | 说明 |
+|---|---|---|
+| 功能清单覆盖 | 通过 | 当前 feature 都能在端产品层找到归属。 |
+| 页面树覆盖 | 通过 | 当前 page_id 均有页面组或页面文档承接。 |
+| 范围外页面隔离 | 通过 | 历史发布页、系统配置页等已标为候选归档。 |
+
+
+================================================================================
+FILE END: docs/01-端产品层/00-端产品层说明与校验结论.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/01-端产品层/05-平台电脑端产品文档.md
+================================================================================
+
+# 图书多渠道商品中台-平台电脑端产品文档
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-平台电脑端产品文档.md |
+| doc_id | DOC-TERMINAL-PC |
+| doc_slug | terminal-pc-product-doc |
+| 文档层级 | 01-端产品层 |
+| 文档对象 | 端产品 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 商品运营、渠道运营、库存运营、系统管理员 |
+| 所属功能 | 产品管理、素材管理、商品管理、库存管理、配置管理 |
+| 所属页面组 | PGROUP-PROD、PGROUP-ASSET、PGROUP-ITEM、PGROUP-INV、PGROUP-CONF |
+| 关联机制 | MECH-IMPORT-STD、MECH-ITEM-MAINTAIN、MECH-INV-SYNC、MECH-AUTH-AUDIT |
+| 上游文档 | ../baselines/00-feature-list.md；../baselines/01-page-tree.md；../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | ../02-专题机制层/；../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 端定位
+
+平台电脑端是一体化中台的唯一当前交付端，用于承接产品导入、产品主档维护、导入后渠道商品编辑、库存统一维护和店铺级规则配置。
+
+## 2. 使用角色
+
+| 角色 | 核心目标 | 核心入口 | 关键产出 |
+|---|---|---|---|
+| 商品运营 | 完成产品主档维护和导入闭环 | 产品列表、产品导入、导入记录 | 产品主档、导入任务、关联处理结果 |
+| 渠道运营 | 维护导入后商品的渠道差异信息和详情页内容 | 渠道商品列表、渠道商品详情页列表、渠道商品详情 | 商品标题、价格、属性、详情页内容、素材复用关系、上下架信息 |
+| 库存运营 | 统一维护库存与同步结果 | 库存列表 | 库存快照、调整结果、同步状态 |
+| 系统管理员 | 维护店铺级规则配置 | 配置列表、店铺配置详情 | 生效中的类目、运费模板、发货时效等配置 |
+
+## 3. 核心场景
+
+| 场景 | 参与角色 | 场景说明 | 主要结果 |
+|---|---|---|---|
+| 多渠道商品标准化导入 | 商品运营、系统管理员 | 先维护店铺配置，再按渠道下载模板、上传校验并确认导入 | 产品、渠道商品、库存、素材统一落库 |
+| 渠道商品编辑与详情页维护 | 渠道运营 | 对已导入商品做单条字段编辑，并在渠道商品详情页列表统一管理详情页上传、内容编辑、版本切换和素材复用 | 导入后商品资料和详情内容持续可维护 |
+| 库存统一维护 | 库存运营 | 按产品、渠道、店铺、SKU 维度查看和调整库存，并触发同步 | 库存快照和同步状态可追踪 |
+| 店铺规则维护 | 系统管理员 | 按店铺维护类目动态适配、运费模板和时效配置 | 导入模板和商品详情字段范围保持一致 |
+
+## 4. 导航结构
+
+| 一级功能 | 当前一级入口 | 当前二级入口 | 非菜单页 / 动作页入口 | 当前状态 | 说明 |
+|---|---|---|---|---|---|
+| 产品管理 | 产品列表 | 产品导入 | 产品详情（列表内容进入）、导入记录（导入页进入）、新增产品（列表按钮进入，增强） | 当前范围 | 产品导入是独立二级菜单，不从产品列表主路径承接。 |
+| 商品管理 | 渠道商品列表 | 渠道商品详情页列表、批量修改（增强） | 渠道商品详情（列表内容进入） | 当前范围 | 渠道商品详情页列表是当前范围二级菜单；批量修改属于增强预留二级入口。 |
+| 库存管理 | 库存列表 | 库存调整记录（增强） | 库存详情（列表内容进入，增强） | 当前范围 | 库存调整记录属于增强预留二级入口。 |
+| 配置管理 | 配置列表 | - | 店铺配置详情（列表内容进入） | 当前范围 | 店铺配置详情是详情页，不单独作为菜单入口。 |
+| 素材管理 | 素材列表（增强） | - | 素材详情（列表内容进入，增强） | 增强预留 | 素材管理整体为增强预留。 |
+
+- 本节描述的是产品基线中的“入口语义”，不是当前前端目录结构本身。
+- 后续菜单路由调整必须先遵守上游入口关系，再决定隐藏路由、回挂父菜单等实现策略。
+
+## 5. 一级功能总表
+
+| 功能模块 | 主页面组 | 当前范围页面 | 增强预留 | 规则能力/动作 |
+|---|---|---|---|---|
+| 产品管理 | PGROUP-PROD | 产品列表、产品详情、产品导入、导入记录 | 新增产品 | 商家编码关联 |
+| 商品管理 | PGROUP-ITEM | 渠道商品列表、渠道商品详情页列表、渠道商品详情 | 批量修改 | 店铺级类目动态适配 |
+| 库存管理 | PGROUP-INV | 库存列表 | 库存详情、库存调整记录 | 库存调整、库存同步 |
+| 配置管理 | PGROUP-CONF | 配置列表、店铺配置详情 | - | 店铺级类目动态适配配置 |
+| 素材管理 | PGROUP-ASSET | - | 素材列表、素材详情 | - |
+
+## 6. 功能清单表
+
+| feature_id | 功能名称 | 节点类型 | 优先级 | 当前状态 | 主要承接位置 |
+|---|---|---|---|---|---|
+| FEAT-PROD | 产品管理 | 一级功能 | 0 | 当前范围 | PGROUP-PROD |
+| FEAT-PROD-LIST | 产品列表 | 页面 | 0 | 当前范围 | PG-PROD-LIST |
+| FEAT-PROD-DETAIL | 产品详情 | 页面 | 0 | 当前范围 | PG-PROD-DETAIL |
+| FEAT-PROD-IMPORT | 产品导入 | 页面 | 0 | 当前范围 | PG-PROD-IMPORT |
+| FEAT-PROD-IMPORT-LOG | 导入记录 | 页面 | 0 | 当前范围 | PG-PROD-IMPORT-LOG |
+| FEAT-PROD-MERCHANT-LINK | 商家编码关联 | 规则能力 | 0 | 当前范围 | MECH-IMPORT-STD |
+| FEAT-PROD-CREATE | 新增产品 | 功能动作 | 1 | 增强预留 | PGROUP-PROD |
+| FEAT-ASSET | 素材管理 | 一级功能 | 1 | 增强预留 | PGROUP-ASSET |
+| FEAT-ASSET-LIST | 素材列表 | 页面 | 1 | 增强预留 | PG-ASSET-LIST |
+| FEAT-ASSET-DETAIL | 素材详情 | 页面 | 1 | 增强预留 | PG-ASSET-DETAIL |
+| FEAT-ITEM | 商品管理 | 一级功能 | 0 | 当前范围 | PGROUP-ITEM |
+| FEAT-ITEM-LIST | 渠道商品列表 | 页面 | 0 | 当前范围 | PG-ITEM-LIST |
+| FEAT-ITEM-DETAIL | 渠道商品详情 | 页面 | 0 | 当前范围 | PG-ITEM-DETAIL |
+| FEAT-ITEM-DETAIL-PAGE-LIST | 渠道商品详情页列表 | 页面 | 0 | 当前范围 | PG-ITEM-DETAIL-PAGE-LIST |
+| FEAT-ITEM-CATEGORY-RULE | 店铺级类目动态适配 | 规则能力 | 0 | 当前范围 | MECH-ITEM-MAINTAIN |
+| FEAT-ITEM-BATCH-EDIT | 批量修改 | 功能动作 | 1 | 增强预留 | ACTION-ITEM-BATCH-EDIT |
+| FEAT-INV | 库存管理 | 一级功能 | 0 | 当前范围 | PGROUP-INV |
+| FEAT-INV-LIST | 库存列表 | 页面 | 0 | 当前范围 | PG-INV-LIST |
+| FEAT-INV-DETAIL | 库存详情 | 页面 | 1 | 增强预留 | PG-INV-DETAIL |
+| FEAT-INV-LOG | 库存调整记录 | 页面 | 1 | 增强预留 | PG-INV-LOG |
+| FEAT-CONF | 配置管理 | 一级功能 | 0 | 当前范围 | PGROUP-CONF |
+| FEAT-CONF-LIST | 配置列表 | 页面 | 0 | 当前范围 | PG-CONF-LIST |
+| FEAT-CONF-SHOP-DETAIL | 店铺配置详情 | 页面 | 0 | 当前范围 | PG-CONF-DETAIL |
+
+## 7. 页面树表
+
+| page_id | page_group_id | route_key | route_name | route_path | menu_key | active_menu_key | 菜单可见性 | 页面名称 | 页面类型 | 当前状态 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| PG-PROD-LIST | PGROUP-PROD | `product.list` | `ProductList` | `/products/list` | `menu.product` | `menu.product` | 显示 | 产品列表 | 列表页 | 当前范围 |
+| PG-PROD-DETAIL | PGROUP-PROD | `product.detail` | `ProductDetail` | `/products/detail` | - | `menu.product` | 隐藏 | 产品详情 | 详情页 | 当前范围 |
+| PG-PROD-IMPORT | PGROUP-PROD | `product.import` | `ProductImport` | `/products/import` | `menu.product.import` | `menu.product.import` | 显示 | 产品导入 | 工作页 | 当前范围 |
+| PG-PROD-IMPORT-LOG | PGROUP-PROD | `product.import_log` | `ProductImportRecords` | `/products/import-records` | - | `menu.product.import` | 隐藏 | 导入记录 | 记录页 | 当前范围 |
+| PG-ASSET-LIST | PGROUP-ASSET | `asset.list` | `MaterialList` | `/materials/list` | `menu.asset` | `menu.asset` | 显示(预留) | 素材列表 | 列表页 | 增强预留 |
+| PG-ASSET-DETAIL | PGROUP-ASSET | `asset.detail` | `MaterialDetail` | `/materials/detail` | - | `menu.asset` | 隐藏 | 素材详情 | 详情页 | 增强预留 |
+| PG-ITEM-LIST | PGROUP-ITEM | `item.list` | `ChannelItemList` | `/channel-items/list` | `menu.channel_item` | `menu.channel_item` | 显示 | 渠道商品列表 | 列表页 | 当前范围 |
+| PG-ITEM-DETAIL | PGROUP-ITEM | `item.detail` | `ChannelItemDetail` | `/channel-items/detail` | - | `menu.channel_item` | 隐藏 | 渠道商品详情 | 详情页 | 当前范围 |
+| PG-ITEM-DETAIL-PAGE-LIST | PGROUP-ITEM | `item.detail_page_list` | `ChannelItemDetailPageList` | `/channel-items/detail-pages` | `menu.channel_item.detail_page_list` | `menu.channel_item.detail_page_list` | 显示 | 渠道商品详情页列表 | 列表页 | 当前范围 |
+| PG-INV-LIST | PGROUP-INV | `inventory.list` | `InventoryList` | `/inventory/list` | `menu.inventory` | `menu.inventory` | 显示 | 库存列表 | 列表页 | 当前范围 |
+| PG-INV-DETAIL | PGROUP-INV | `inventory.detail` | `InventoryDetail` | `/inventory/detail` | - | `menu.inventory` | 隐藏 | 库存详情 | 详情页 | 增强预留 |
+| PG-INV-LOG | PGROUP-INV | `inventory.adjust_log` | `InventoryAdjustments` | `/inventory/adjustments` | `menu.inventory.adjust_log` | `menu.inventory.adjust_log` | 显示(预留) | 库存调整记录 | 记录页 | 增强预留 |
+| PG-CONF-LIST | PGROUP-CONF | `config.list` | `StoreConfigList` | `/store-config/list` | `menu.config` | `menu.config` | 显示 | 配置列表 | 列表页 | 当前范围 |
+| PG-CONF-DETAIL | PGROUP-CONF | `config.shop_detail` | `StoreConfigDetail` | `/store-config/detail` | - | `menu.config` | 隐藏 | 店铺配置详情 | 详情页 | 当前范围 |
+
+## 8. 功能承载图
+
+```mermaid
+graph LR
+  FEAT_PROD["产品管理"] --> PG_PROD["PGROUP-PROD"]
+  PG_PROD --> PROD_LIST["产品列表"]
+  PG_PROD --> PROD_DETAIL["产品详情"]
+  PG_PROD --> PROD_IMPORT["产品导入"]
+  PG_PROD --> PROD_LOG["导入记录"]
+  PG_PROD --> PROD_CREATE["新增产品(增强)"]
+  PG_PROD --> RULE_LINK["商家编码关联"]
+
+  FEAT_ITEM["商品管理"] --> PG_ITEM["PGROUP-ITEM"]
+  PG_ITEM --> ITEM_LIST["渠道商品列表"]
+  PG_ITEM --> ITEM_DETAIL["渠道商品详情"]
+  PG_ITEM --> ITEM_DETAIL_LIST["渠道商品详情页列表"]
+  PG_ITEM --> ITEM_BATCH["批量修改(增强)"]
+  PG_ITEM --> ITEM_RULE["店铺级类目动态适配"]
+
+  FEAT_INV["库存管理"] --> PG_INV["PGROUP-INV"]
+  PG_INV --> INV_LIST["库存列表"]
+  PG_INV --> INV_DETAIL["库存详情(增强)"]
+  PG_INV --> INV_LOG["库存调整记录(增强)"]
+
+  FEAT_CONF["配置管理"] --> PG_CONF["PGROUP-CONF"]
+  PG_CONF --> CONF_LIST["配置列表"]
+  PG_CONF --> CONF_DETAIL["店铺配置详情"]
+
+  FEAT_ASSET["素材管理(增强)"] --> PG_ASSET["PGROUP-ASSET"]
+  PG_ASSET --> ASSET_LIST["素材列表"]
+  PG_ASSET --> ASSET_DETAIL["素材详情"]
+```
+
+## 9. 页面组与页面映射关系
+
+| 页面组 | 当前范围页面 | 增强预留页面/动作 | 关联机制 |
+|---|---|---|---|
+| PGROUP-PROD | 产品列表、产品详情、产品导入、导入记录 | 新增产品 | MECH-IMPORT-STD、MECH-AUTH-AUDIT |
+| PGROUP-ITEM | 渠道商品列表、渠道商品详情页列表、渠道商品详情 | 批量修改 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| PGROUP-INV | 库存列表 | 库存详情、库存调整记录 | MECH-INV-SYNC、MECH-AUTH-AUDIT |
+| PGROUP-CONF | 配置列表、店铺配置详情 | - | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| PGROUP-ASSET | - | 素材列表、素材详情 | - |
+
+## 10. 跨端边界与协同关系
+
+- 当前仅交付平台电脑端，不存在与移动端、商家端、消费者端的并行页面拆分。
+- 外部渠道系统仍然是商品售卖和库存同步的目标系统，但不作为当前项目文档交付端。
+- 如果后续新增其他端，必须复用当前 `feature_id`、`page_id`、`route_key` 等稳定标识，不得重建一套平行命名。
+
+## 11. 优先级与版本范围
+
+| 优先级 | 范围说明 | 具体内容 |
+|---|---|---|
+| 0 | 一期必须覆盖 | 产品导入与记录、产品详情、渠道商品列表、渠道商品详情页列表、渠道商品详情、库存列表、配置列表与店铺配置详情、相关规则机制 |
+| 1 | 一期增强预留 | 新增产品、素材管理、批量修改、库存详情、库存调整记录 |
+
+## 12. 前端实现提醒
+
+- 当前仓库的前端目录和路由文件只是实现落点，不能反向覆盖产品基线中的来源入口关系。
+- 菜单路由调整时，应以 `docs/baselines/00-feature-list.md` 和 `docs/baselines/01-page-tree.md` 为上游事实：
+  产品导入和渠道商品详情页列表是当前范围二级菜单直达，批量修改是增强预留二级菜单直达，库存调整记录是增强预留二级菜单直达，新增产品是列表按钮进入。
+- `渠道商品详情页列表` 与 `渠道商品详情` 必须拆页：前者统一管理全部渠道商品的详情页内容、版本和素材复用，后者只维护单商品售卖字段。
+- 同一产品在多个渠道售卖时会形成多个渠道商品，因此会对应多套详情页；单个渠道商品最多允许 3 个详情页，前端需在列表页直接展示和管控该限制。
+- 详情页和记录页是否采用隐藏路由、`activePath` 或其他父菜单回挂方案，属于实现策略；实现时不得把这些策略写回成上游入口语义。
+- `overview/`、`system-config/`、`publish/`、`operations/`、`reports/` 属于历史或候选归档目录，不得作为当前菜单树和页面树输入。
+- 任何菜单排序、路径或显隐策略调整，都要同步回写 `docs/baselines/01-page-tree.md`、`docs/00-总览层/08-需求追踪矩阵.md` 和 `docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md`。
+
+
+================================================================================
+FILE END: docs/01-端产品层/05-平台电脑端产品文档.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/01-端产品层/06-各端功能总清单.md
+================================================================================
+
+# 图书多渠道商品中台-各端功能总清单
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 06-各端功能总清单.md |
+| doc_id | DOC-TERMINAL-FEATURE-LIST |
+| doc_slug | all-terminal-feature-list |
+| 文档层级 | 01-端产品层 |
+| 文档对象 | 端功能总清单 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 当前端清单
+
+| 端 | 当前状态 | 承接功能 | 备注 |
+|---|---|---|---|
+| 平台电脑端 | 当前范围 | 全部当前 feature | 唯一当前交付端。 |
+| 移动端 | 未纳入 | - | 当前不做。 |
+| 商家端 | 未纳入 | - | 当前不做。 |
+| 消费者端 | 未纳入 | - | 当前不做。 |
+
+## 2. 各端功能承接矩阵
+
+| 端 | 优先级 0 功能 | 优先级 1 功能 | 当前不承接 |
+|---|---|---|---|
+| 平台电脑端 | 产品管理、商品管理、库存管理、配置管理 | 素材管理、新增产品、批量修改、库存详情、库存调整记录 | 历史发布记录占位页、系统配置详情、渠道配置详情、导入模板配置页、操作日志页 |
+| 移动端 | - | - | 当前全部不承接 |
+| 商家端 | - | - | 当前全部不承接 |
+| 消费者端 | - | - | 当前全部不承接 |
+
+## 3. 当前跨端策略
+
+- 当前产品设计、交互和研发实现全部围绕平台电脑端展开。
+- 其他端在未进入基线前，不输出独立页面树和页面文档。
+- 若未来新增端，必须先回写 `docs/baselines/00-feature-list.md` 和 `docs/baselines/01-page-tree.md`，再落各端文档。
+
+
+================================================================================
+FILE END: docs/01-端产品层/06-各端功能总清单.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/02-专题机制层/01-标准化导入机制.md
+================================================================================
+
+# 图书多渠道商品中台-标准化导入机制
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-标准化导入机制.md |
+| doc_id | MECH-IMPORT-STD |
+| doc_slug | mech-import-std |
+| 文档层级 | 02-专题机制层 |
+| 文档对象 | 专题机制 |
+| 所属功能 | 跨页面机制 |
+| 关联页面 | PG-PROD-IMPORT、PG-PROD-IMPORT-LOG、PG-PROD-DETAIL |
+| 关联对象 | OBJ-PRODUCT、OBJ-CHANNEL-ITEM、OBJ-IMPORT-JOB、OBJ-ASSET、OBJ-INVENTORY |
+| 上游文档 | ../baselines/02-functional-carrying-diagram.md；../00-总览层/04-整体业务流程图.md |
+| 下游文档 | ../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 机制目标
+
+通过统一模板下载、导入校验、商家编码关联和落库流程，把多渠道多店铺商品信息标准化导入中台。
+
+## 2. 触发条件
+
+- 商品运营进入产品导入页下载模板
+- 上传导入文件并执行校验
+- 确认导入落库
+
+## 3. 流转规则
+
+- 1. 选择渠道后下载对应模板；如已选择店铺，则模板附带店铺级类目与属性字段口径。
+- 2. 上传导入包，系统解析产品、商品、SKU、素材和库存相关数据。
+- 3. 按渠道、店铺、类目规则校验必填项、类目属性、销售属性、运费模板、上下架状态和发货时效。
+- 4. 按商家编码建立产品与渠道商品的归集关系，对无法命中的记录输出异常。
+- 5. 确认导入后写入产品主档、渠道商品、素材引用、库存初始值和导入日志。
+
+## 4. 页面承接点
+
+| page_id | 页面名称 | 承接方式 |
+|---|---|---|
+| PG-PROD-IMPORT | 产品导入 | 页面触发或结果承接 |
+| PG-PROD-IMPORT-LOG | 导入记录 | 页面触发或结果承接 |
+| PG-PROD-DETAIL | 产品详情 | 页面触发或结果承接 |
+
+## 5. 对象与接口承接
+
+| 对象 / 接口 | 作用 |
+|---|---|
+| OBJ-PRODUCT | 机制涉及的核心对象 |
+| OBJ-CHANNEL-ITEM | 机制涉及的核心对象 |
+| OBJ-IMPORT-JOB | 机制涉及的核心对象 |
+| OBJ-ASSET | 机制涉及的核心对象 |
+| OBJ-INVENTORY | 机制涉及的核心对象 |
+| API-IMPORT-TEMPLATE-PROFILE-GET | 机制依赖接口 |
+| API-IMPORT-TEMPLATE-DOWNLOAD-GET | 机制依赖接口 |
+| API-IMPORT-UPLOAD-POST | 机制依赖接口 |
+| API-IMPORT-VALIDATE-POST | 机制依赖接口 |
+| API-IMPORT-EXECUTE-POST | 机制依赖接口 |
+| API-IMPORT-LIST-GET | 机制依赖接口 |
+
+## 6. 异常与回退
+
+- 模板字段缺失或列名不匹配时，任务停留在校验失败。
+- 商家编码无法命中现有产品或商品关系时，导入记录页展示未关联结果并允许人工修正后重新执行。
+- 店铺级类目规则版本过期时，不允许继续导入，必须先刷新模板。
+
+
+================================================================================
+FILE END: docs/02-专题机制层/01-标准化导入机制.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/02-专题机制层/02-商品维护与类目联动机制.md
+================================================================================
+
+# 图书多渠道商品中台-商品维护与类目联动机制
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-商品维护与类目联动机制.md |
+| doc_id | MECH-ITEM-MAINTAIN |
+| doc_slug | mech-item-maintain |
+| 文档层级 | 02-专题机制层 |
+| 文档对象 | 专题机制 |
+| 所属功能 | 跨页面机制 |
+| 关联页面 | PG-ITEM-LIST、PG-ITEM-DETAIL-PAGE-LIST、PG-ITEM-DETAIL、PG-CONF-DETAIL、ACTION-ITEM-BATCH-EDIT |
+| 关联对象 | OBJ-CHANNEL-ITEM、OBJ-ITEM-DETAIL-PAGE、OBJ-SHOP-CONFIG、OBJ-CATEGORY-PROFILE、OBJ-ASSET |
+| 上游文档 | ../baselines/02-functional-carrying-diagram.md；../00-总览层/04-整体业务流程图.md |
+| 下游文档 | ../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 机制目标
+
+围绕渠道商品详情、渠道商品详情页列表、批量修改入口和店铺规则配置，统一维护多渠道多店铺商品的售卖差异信息、详情页内容与版本，并动态控制可维护字段范围。
+
+## 2. 触发条件
+
+- 渠道运营进入渠道商品详情页
+- 渠道运营进入渠道商品详情页列表页
+- 渠道运营进入批量修改入口
+- 系统管理员维护店铺规则配置
+
+## 3. 流转规则
+
+- 1. 渠道商品详情页根据渠道、店铺和当前类目加载可维护字段范围。
+- 2. 渠道运营在渠道商品详情页修改标题、价格、类目属性、销售属性、运费模板、上下架状态和发货时效。
+- 3. 一个产品在多个渠道、店铺售卖会形成多个渠道商品；渠道商品详情页列表按渠道商品维度展示全部详情页记录，并可按产品聚合筛选查看。
+- 4. 同一渠道商品最多允许 3 个详情页，且同时最多只有 1 个当前使用版本；超限时禁止新建或上传。
+- 5. 渠道运营可在渠道商品详情页列表直接编辑详情页内容结构、设置当前使用版本，并把素材列表中的已有图片复用到多个商品详情页。
+- 6. 上传新详情页时，系统创建详情页记录并把原始内容拆解/落盘到素材列表，保留详情页与素材引用关系。
+- 7. 批量修改入口支持按筛选结果对标题、价格、批量上下架和库存执行批量动作。
+- 8. 系统把修改结果回写到渠道商品、详情页记录、素材引用关系和审计日志，并保留操作人与时间。
+
+## 4. 页面承接点
+
+| page_id | 页面名称 | 承接方式 |
+|---|---|---|
+| PG-ITEM-LIST | 渠道商品列表 | 页面触发或结果承接 |
+| PG-ITEM-DETAIL-PAGE-LIST | 渠道商品详情页列表 | 页面触发或结果承接 |
+| PG-ITEM-DETAIL | 渠道商品详情 | 页面触发或结果承接 |
+| PG-CONF-DETAIL | 店铺配置详情 | 页面触发或结果承接 |
+| ACTION-ITEM-BATCH-EDIT | 批量修改工作台 | 页面触发或结果承接 |
+
+## 5. 对象与接口承接
+
+| 对象 / 接口 | 作用 |
+|---|---|
+| OBJ-CHANNEL-ITEM | 机制涉及的核心对象 |
+| OBJ-ITEM-DETAIL-PAGE | 机制涉及的核心对象 |
+| OBJ-SHOP-CONFIG | 机制涉及的核心对象 |
+| OBJ-CATEGORY-PROFILE | 机制涉及的核心对象 |
+| OBJ-ASSET | 详情页素材归档对象 |
+| API-ITEM-LIST-GET | 机制依赖接口 |
+| API-ITEM-DETAIL-PAGE-LIST-GET | 机制依赖接口 |
+| API-ITEM-DETAIL-PAGE-DETAIL-GET | 机制依赖接口 |
+| API-ITEM-DETAIL-PAGE-UPLOAD-POST | 机制依赖接口 |
+| API-ITEM-DETAIL-PAGE-PUT | 机制依赖接口 |
+| API-ITEM-DETAIL-PAGE-ASSET-LINK-POST | 机制依赖接口 |
+| API-ITEM-DETAIL-GET | 机制依赖接口 |
+| API-ITEM-DETAIL-PUT | 机制依赖接口 |
+| API-ITEM-CATEGORY-PROFILE-GET | 机制依赖接口 |
+| API-ITEM-BATCH-PREVIEW-POST | 机制依赖接口 |
+| API-ITEM-BATCH-EXECUTE-POST | 机制依赖接口 |
+| API-CONF-DETAIL-PUT | 机制依赖接口 |
+
+## 6. 异常与回退
+
+- 切换店铺后类目规则不兼容时，强制用户重新选择类目并清空失效属性。
+- 商品详情页上传解析失败时，不允许创建详情页记录，也不允许把脏素材写入素材列表。
+- 单个渠道商品详情页数量达到 3 条后，不允许继续新建、上传或复制详情页。
+- 批量修改命中商品超过系统上限时，要求先缩小筛选范围再执行。
+- 渠道商品被外部系统锁定时，页面仅允许查看，不允许编辑或批量修改。
+
+
+================================================================================
+FILE END: docs/02-专题机制层/02-商品维护与类目联动机制.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/02-专题机制层/03-库存同步与分配机制.md
+================================================================================
+
+# 图书多渠道商品中台-库存同步与分配机制
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-库存同步与分配机制.md |
+| doc_id | MECH-INV-SYNC |
+| doc_slug | mech-inv-sync |
+| 文档层级 | 02-专题机制层 |
+| 文档对象 | 专题机制 |
+| 所属功能 | 跨页面机制 |
+| 关联页面 | PG-INV-LIST、PG-INV-DETAIL、PG-INV-LOG、PG-ITEM-DETAIL |
+| 关联对象 | OBJ-INVENTORY、OBJ-INVENTORY-LOG、OBJ-CHANNEL-ITEM-SKU |
+| 上游文档 | ../baselines/02-functional-carrying-diagram.md；../00-总览层/04-整体业务流程图.md |
+| 下游文档 | ../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 机制目标
+
+统一维护渠道商品库存，支持人工调整、同步外部渠道结果和查看库存变化记录。
+
+## 2. 触发条件
+
+- 库存运营在库存列表发起调整
+- 库存运营触发同步
+- 渠道商品详情查看关联库存
+
+## 3. 流转规则
+
+- 1. 库存列表按产品、渠道、店铺、SKU 聚合展示总库存、可用库存、锁定库存和可售库存。
+- 2. 人工调整时记录调整量、原因、操作人和时间，并更新库存快照。
+- 3. 触发同步后写入同步任务状态，等待外部渠道结果回写。
+- 4. 增强阶段开放库存详情与库存调整记录页查看完整台账。
+
+## 4. 页面承接点
+
+| page_id | 页面名称 | 承接方式 |
+|---|---|---|
+| PG-INV-LIST | 库存列表 | 页面触发或结果承接 |
+| PG-INV-DETAIL | 库存详情 | 页面触发或结果承接 |
+| PG-INV-LOG | 库存调整记录 | 页面触发或结果承接 |
+| PG-ITEM-DETAIL | 渠道商品详情 | 页面触发或结果承接 |
+
+## 5. 对象与接口承接
+
+| 对象 / 接口 | 作用 |
+|---|---|
+| OBJ-INVENTORY | 机制涉及的核心对象 |
+| OBJ-INVENTORY-LOG | 机制涉及的核心对象 |
+| OBJ-CHANNEL-ITEM-SKU | 机制涉及的核心对象 |
+| API-INV-LIST-GET | 机制依赖接口 |
+| API-INV-ADJUST-POST | 机制依赖接口 |
+| API-INV-SYNC-POST | 机制依赖接口 |
+| API-INV-DETAIL-GET | 机制依赖接口 |
+| API-INV-ADJUST-LOG-GET | 机制依赖接口 |
+
+## 6. 异常与回退
+
+- 库存同步失败时保留失败原因，列表中突出展示。
+- 调整后可售库存小于零时，不允许保存。
+- 同一库存记录存在未完成同步任务时，禁止重复发起同步。
+
+
+================================================================================
+FILE END: docs/02-专题机制层/03-库存同步与分配机制.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/02-专题机制层/04-权限与审计机制.md
+================================================================================
+
+# 图书多渠道商品中台-权限与审计机制
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-权限与审计机制.md |
+| doc_id | MECH-AUTH-AUDIT |
+| doc_slug | mech-auth-audit |
+| 文档层级 | 02-专题机制层 |
+| 文档对象 | 专题机制 |
+| 所属功能 | 跨页面机制 |
+| 关联页面 | PG-PROD-IMPORT、PG-ITEM-DETAIL、PG-INV-LIST、PG-CONF-DETAIL |
+| 关联对象 | OBJ-AUDIT-LOG、OBJ-IMPORT-JOB、OBJ-CHANNEL-ITEM、OBJ-INVENTORY、OBJ-SHOP-CONFIG |
+| 上游文档 | ../baselines/02-functional-carrying-diagram.md；../00-总览层/04-整体业务流程图.md |
+| 下游文档 | ../03-页面设计层/；../04-数据与接口层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 机制目标
+
+控制不同角色的查看与操作边界，并保证导入、编辑、批量修改、库存调整等关键动作可追溯。
+
+## 2. 触发条件
+
+- 用户访问任意菜单
+- 执行导入、编辑、库存调整、配置保存
+- 查看审计字段或失败日志
+
+## 3. 流转规则
+
+- 1. 路由与页面根据权限决定是否可见、可访问和是否可编辑。
+- 2. 提交动作时校验操作权限并写审计日志。
+- 3. 关键对象记录最后修改人、修改时间、来源页面和动作类型。
+
+## 4. 页面承接点
+
+| page_id | 页面名称 | 承接方式 |
+|---|---|---|
+| PG-PROD-IMPORT | 产品导入 | 页面触发或结果承接 |
+| PG-ITEM-DETAIL | 渠道商品详情 | 页面触发或结果承接 |
+| PG-INV-LIST | 库存列表 | 页面触发或结果承接 |
+| PG-CONF-DETAIL | 店铺配置详情 | 页面触发或结果承接 |
+
+## 5. 对象与接口承接
+
+| 对象 / 接口 | 作用 |
+|---|---|
+| OBJ-AUDIT-LOG | 机制涉及的核心对象 |
+| OBJ-IMPORT-JOB | 机制涉及的核心对象 |
+| OBJ-CHANNEL-ITEM | 机制涉及的核心对象 |
+| OBJ-INVENTORY | 机制涉及的核心对象 |
+| OBJ-SHOP-CONFIG | 机制涉及的核心对象 |
+| API-AUTH-ME-GET | 机制依赖接口 |
+| API-AUDIT-LIST-GET | 机制依赖接口 |
+
+## 6. 异常与回退
+
+- 无权限用户直接访问详情路由时返回无权限页。
+- 已提交但审计写入失败时，动作结果应回滚或转为失败状态。
+
+
+================================================================================
+FILE END: docs/02-专题机制层/04-权限与审计机制.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/02-专题机制层/05-店铺配置生效与版本机制.md
+================================================================================
+
+# 图书多渠道商品中台-店铺配置生效与版本机制
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-店铺配置生效与版本机制.md |
+| doc_id | MECH-CONF-VERSION |
+| doc_slug | mech-config-versioning |
+| 文档层级 | 02-专题机制层 |
+| 文档对象 | 专题机制 |
+| 所属功能 | 跨页面机制 |
+| 关联页面 | PG-CONF-DETAIL、PG-PROD-IMPORT、PG-ITEM-DETAIL |
+| 关联对象 | OBJ-SHOP-CONFIG、OBJ-CATEGORY-PROFILE、OBJ-IMPORT-JOB |
+| 上游文档 | ../00-总览层/04-整体业务流程图.md；../00-总览层/06-问题清单与确认记录.md |
+| 下游文档 | ../03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md；../03-页面设计层/平台电脑端/产品管理/04-产品导入页.md；../03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 机制目标
+
+统一定义店铺配置保存后的生效时点、版本切换规则，以及其对模板下载和商品详情动态字段的传播方式。
+
+## 2. 触发条件
+
+- 系统管理员在店铺配置详情页保存配置
+- 商品运营在产品导入页下载模板
+- 渠道运营在渠道商品详情页打开或切换类目
+
+## 3. 生效规则
+
+1. 店铺配置以版本化方式保存，状态分为 `draft`、`active`、`inactive`。
+2. 同一店铺同一渠道同一配置类型，在任一时点只允许一个 `active` 版本。
+3. 新保存的配置先进入 `draft`，经确认后切换为 `active`；原 `active` 版本自动转为 `inactive`。
+4. 模板下载始终读取当前 `active` 配置版本。
+5. 渠道商品详情页加载动态字段时，读取当前 `active` 配置版本。
+6. 已创建但未执行的导入任务，默认使用创建任务时快照的配置版本；是否允许追随最新版本，以 `ISSUE-003` 最终结论为准。
+
+## 4. 页面承接点
+
+| page_id | 页面名称 | 承接方式 |
+|---|---|---|
+| PG-CONF-DETAIL | 店铺配置详情 | 页面触发或结果承接 |
+| PG-PROD-IMPORT | 产品导入 | 页面触发或结果承接 |
+| PG-ITEM-DETAIL | 渠道商品详情 | 页面触发或结果承接 |
+
+## 5. 对象与接口承接
+
+| 对象 / 接口 | 作用 |
+|---|---|
+| OBJ-SHOP-CONFIG | 店铺配置版本主对象 |
+| OBJ-CATEGORY-PROFILE | 动态字段范围对象 |
+| OBJ-IMPORT-JOB | 导入任务快照承接对象 |
+| API-CONF-DETAIL-GET | 读取配置详情 |
+| API-CONF-DETAIL-PUT | 保存配置并切版本 |
+| API-IMPORT-TEMPLATE-PROFILE-GET | 返回模板字段 profile |
+| API-ITEM-CATEGORY-PROFILE-GET | 返回商品详情动态字段范围 |
+
+## 6. 异常与回退
+
+- 同一店铺存在两个 `active` 版本时，禁止继续发布新版本并要求人工处理。
+- 动态字段 profile 拉取失败时，导入页和详情页均禁止继续执行保存动作。
+- 配置保存成功但版本切换失败时，必须整体回滚，不允许出现“保存成功但未生效”的脏状态。
+
+
+================================================================================
+FILE END: docs/02-专题机制层/05-店铺配置生效与版本机制.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/00-页面设计说明.md
+================================================================================
+
+# 图书多渠道商品中台-页面设计说明
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 00-页面设计说明.md |
+| doc_id | DOC-PAGE-DESIGN-INTRO |
+| doc_slug | page-design-intro |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面设计说明 |
+| 适用端 | 平台电脑端 |
+| 上游文档 | ../baselines/01-page-tree.md；../baselines/02-functional-carrying-diagram.md；../01-端产品层/05-平台电脑端产品文档.md |
+| 下游文档 | 各页面组与单页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 当前页面设计层目标
+
+- 把页面树中的页面节点和功能清单中的动作、规则能力落到可实现的前端页面与交互结构。
+- 给前端明确每个页面的入口、布局、动作、字段和依赖接口。
+- 明确哪些页面是当前范围，哪些仅为增强底稿或候选归档。
+
+## 2. 当前页面组
+
+| 页面组 | 当前状态 | 主要页面 | 非页面能力 |
+|---|---|---|---|
+| 产品管理 | 当前范围 | 产品列表、产品详情、产品导入、导入记录 | 新增产品、商家编码关联 |
+| 商品管理 | 当前范围 | 渠道商品列表、渠道商品详情页列表、渠道商品详情 | 批量修改、店铺级类目动态适配 |
+| 库存管理 | 当前范围 | 库存列表 | 库存调整、库存同步；库存详情和记录为增强底稿 |
+| 配置管理 | 当前范围 | 配置列表、店铺配置详情 | 店铺级类目动态适配配置 |
+| 素材管理 | 增强预留 | 素材列表、素材详情 | - |
+
+## 3. 页面设计共性要求
+
+- 列表页必须明确筛选区、表格区、分页或统计区和主操作区。
+- 详情页必须明确保存动作、动态字段区、只读信息区和返回链路。
+- 工作页必须明确任务状态、结果反馈和错误处理方式。
+- 功能动作如果有独立工作台，也必须写清命中范围、预览和结果反馈。
+
+## 4. 当前覆盖结果
+
+| 页面组 | 当前范围页面是否齐全 | 增强底稿是否齐全 | 备注 |
+|---|---|---|---|
+| 产品管理 | 是 | 是 | 已覆盖列表、详情、导入、记录和新增产品底稿 |
+| 商品管理 | 是 | 是 | 已覆盖列表、渠道商品详情页列表、详情、批量修改和历史占位说明 |
+| 库存管理 | 是 | 是 | 已覆盖列表及增强页底稿 |
+| 配置管理 | 是 | 是 | 已覆盖当前页和候选归档页 |
+| 素材管理 | 不适用 | 是 | 当前仅保留增强底稿 |
+
+## 5. 当前页面设计边界
+
+- 页面文档只写页面节点本身，规则能力和动作承接在页面组或机制文档中补充。
+- 当前一期重点是导入后商品、库存、配置的主流程闭环，不额外扩展独立发布类页面。
+- 任何新增页面节点必须先回写页面树，再生成页面文档。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/00-页面设计说明.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/01-产品管理-页面组.md
+================================================================================
+
+# 图书多渠道商品中台-产品管理页面组
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-产品管理-页面组.md |
+| doc_id | DOC-PGROUP-PROD |
+| doc_slug | pgroup-prod |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面组 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 商品运营 |
+| 所属功能 | 产品管理 |
+| 所属页面组 | PGROUP-PROD |
+| 关联机制 | MECH-IMPORT-STD、MECH-AUTH-AUDIT |
+| 上游文档 | ../../baselines/00-feature-list.md；../../baselines/01-page-tree.md；../../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | 组内页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面组目标
+
+产品管理页面组负责承接 产品管理 相关能力，并把列表页、详情页、工作页、记录页以及功能动作、规则能力组织成稳定的前端实现边界。
+
+## 2. 页面清单
+
+| page_id | 页面名称 | 页面类型 | 版本范围 | 当前状态 | 入口说明 | 默认出口 |
+|---|---|---|---|---|---|---|
+| PG-PROD-LIST | 产品列表 | 列表页 | V1-必做 | 当前范围 | 左侧菜单直达 | 产品详情、新增产品 |
+| PG-PROD-DETAIL | 产品详情 | 详情页 | V1-必做 | 当前范围 | 产品列表内容进入 | 产品列表、渠道商品详情、库存列表 |
+| PG-PROD-IMPORT | 产品导入 | 工作页 | V1-必做 | 当前范围 | 二级菜单直达 | 导入记录、产品列表 |
+| PG-PROD-IMPORT-LOG | 导入记录 | 记录页 | V1-必做 | 当前范围 | 导入页进入 | 产品导入、产品列表、产品详情 |
+
+## 3. 跨页动作与规则能力
+
+| 类型 | 内容 | 当前状态 | 承接位置 |
+|---|---|---|---|
+| 功能动作 | 新增产品 | 增强预留 | PGROUP-PROD |
+| 规则能力 | 商家编码关联 | 当前范围 | 专题机制 / 详情页联动 |
+
+## 4. 页面间入口出口关系
+
+- 产品列表：入口为左侧菜单直达；默认出口为产品详情、新增产品。
+- 产品详情：入口为产品列表内容进入；默认出口为产品列表、渠道商品详情、库存列表。
+- 产品导入：入口为二级菜单直达；默认出口为导入记录、产品列表。
+- 导入记录：入口为导入页进入；默认出口为产品导入、产品列表、产品详情。
+
+## 5. 与机制的关系
+
+- MECH-IMPORT-STD 在本页面组中提供关键规则支撑。
+- MECH-AUTH-AUDIT 在本页面组中提供关键规则支撑。
+
+## 6. 前端实现说明
+
+- 页面组文档优先指导路由层、列表与详情的边界划分。
+- 功能动作如果不是页面树节点，仍需在页面组中落到独立交互承接点。
+- 增强预留页面可以先保留路由占位或按钮入口，不作为一期阻断范围。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/01-产品管理-页面组.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/02-素材管理-页面组.md
+================================================================================
+
+# 图书多渠道商品中台-素材管理页面组
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-素材管理-页面组.md |
+| doc_id | DOC-PGROUP-ASSET |
+| doc_slug | pgroup-asset |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面组 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 商品运营、渠道运营 |
+| 所属功能 | 素材管理 |
+| 所属页面组 | PGROUP-ASSET |
+| 关联机制 | MECH-IMPORT-STD、MECH-AUTH-AUDIT |
+| 上游文档 | ../../baselines/00-feature-list.md；../../baselines/01-page-tree.md；../../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | 组内页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面组目标
+
+素材管理页面组负责承接 素材管理 相关能力，并把列表页、详情页、工作页、记录页以及功能动作、规则能力组织成稳定的前端实现边界。
+
+## 2. 页面清单
+
+| page_id | 页面名称 | 页面类型 | 版本范围 | 当前状态 | 入口说明 | 默认出口 |
+|---|---|---|---|---|---|---|
+| PG-ASSET-LIST | 素材列表 | 列表页 | V1-增强 | 增强预留 | 菜单直达 | 素材详情 |
+| PG-ASSET-DETAIL | 素材详情 | 详情页 | V1-增强 | 增强预留 | 列表内容进入 | 素材列表、产品详情、渠道商品详情 |
+
+## 3. 跨页动作与规则能力
+
+| 类型 | 内容 | 当前状态 | 承接位置 |
+|---|---|---|---|
+
+## 4. 页面间入口出口关系
+
+- 素材列表：入口为菜单直达；默认出口为素材详情。
+- 素材详情：入口为列表内容进入；默认出口为素材列表、产品详情、渠道商品详情。
+
+## 5. 与机制的关系
+
+- MECH-IMPORT-STD 在本页面组中提供关键规则支撑。
+- MECH-AUTH-AUDIT 在本页面组中提供关键规则支撑。
+
+## 6. 前端实现说明
+
+- 页面组文档优先指导路由层、列表与详情的边界划分。
+- 功能动作如果不是页面树节点，仍需在页面组中落到独立交互承接点。
+- 增强预留页面可以先保留路由占位或按钮入口，不作为一期阻断范围。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/02-素材管理-页面组.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/03-商品管理-页面组.md
+================================================================================
+
+# 图书多渠道商品中台-商品管理页面组
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-商品管理-页面组.md |
+| doc_id | DOC-PGROUP-ITEM |
+| doc_slug | pgroup-item |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面组 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 渠道运营 |
+| 所属功能 | 商品管理 |
+| 所属页面组 | PGROUP-ITEM |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../baselines/00-feature-list.md；../../baselines/01-page-tree.md；../../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | 组内页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 页面组目标
+
+商品管理页面组负责承接商品管理相关能力，并把渠道商品列表、渠道商品详情页列表、单商品详情页以及批量修改等动作承接点、规则能力组织成稳定的前端实现边界，明确把“售卖字段维护”和“详情页内容管理”拆开。
+
+## 2. 页面清单
+
+| page_id | 页面名称 | 页面类型 | 版本范围 | 当前状态 | 入口说明 | 默认出口 |
+|---|---|---|---|---|---|---|
+| PG-ITEM-LIST | 渠道商品列表 | 列表页 | V1-必做 | 当前范围 | 菜单直达 | 渠道商品详情 |
+| PG-ITEM-DETAIL-PAGE-LIST | 渠道商品详情页列表 | 列表页 | V1-必做 | 当前范围 | 二级菜单直达 | 渠道商品详情、素材列表 |
+| PG-ITEM-DETAIL | 渠道商品详情 | 详情页 | V1-必做 | 当前范围 | 列表内容进入 | 渠道商品列表、库存列表、店铺配置详情 |
+
+## 3. 跨页动作与规则能力
+
+| 类型 | 内容 | 当前状态 | 承接位置 |
+|---|---|---|---|
+| 功能动作 | 批量修改 | 增强预留 | PGROUP-ITEM |
+| 规则能力 | 店铺级类目动态适配 | 当前范围 | 专题机制 / 详情页联动 |
+
+## 4. 页面间入口出口关系
+
+- 渠道商品列表：入口为菜单直达；默认出口为渠道商品详情。
+- 渠道商品详情页列表：入口为商品管理二级菜单直达；默认出口为渠道商品详情、素材列表；列表内统一承接详情页内容编辑、当前使用切换和素材复用。
+- 渠道商品详情：入口为列表内容进入；默认出口为渠道商品列表、库存列表、店铺配置详情。
+
+## 5. 与机制的关系
+
+- MECH-ITEM-MAINTAIN 在本页面组中提供关键规则支撑。
+- MECH-AUTH-AUDIT 在本页面组中提供关键规则支撑。
+
+## 6. 前端实现说明
+
+- 页面组文档优先指导路由层、列表与详情的边界划分。
+- 渠道商品详情页列表与渠道商品详情必须拆页，不能再把详情页内容编辑与单商品售卖字段编辑混在同一页面。
+- 同一产品在不同渠道、店铺下会形成多个渠道商品；单个渠道商品最多允许 3 个详情页，前端在该页面组内要直接体现数量约束和超限反馈。
+- 功能动作如果不是页面树节点，仍需在页面组中落到独立交互承接点。
+- 增强预留动作可以先保留路由占位或按钮入口，不作为一期阻断范围。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/03-商品管理-页面组.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/04-库存管理-页面组.md
+================================================================================
+
+# 图书多渠道商品中台-库存管理页面组
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-库存管理-页面组.md |
+| doc_id | DOC-PGROUP-INV |
+| doc_slug | pgroup-inv |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面组 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 库存运营 |
+| 所属功能 | 库存管理 |
+| 所属页面组 | PGROUP-INV |
+| 关联机制 | MECH-INV-SYNC、MECH-AUTH-AUDIT |
+| 上游文档 | ../../baselines/00-feature-list.md；../../baselines/01-page-tree.md；../../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | 组内页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面组目标
+
+库存管理页面组负责承接 库存管理 相关能力，并把列表页、详情页、工作页、记录页以及功能动作、规则能力组织成稳定的前端实现边界。
+
+## 2. 页面清单
+
+| page_id | 页面名称 | 页面类型 | 版本范围 | 当前状态 | 入口说明 | 默认出口 |
+|---|---|---|---|---|---|---|
+| PG-INV-LIST | 库存列表 | 列表页 | V1-必做 | 当前范围 | 菜单直达 | 库存详情 |
+| PG-INV-DETAIL | 库存详情 | 详情页 | V1-增强 | 增强预留 | 列表内容进入 | 库存列表 |
+| PG-INV-LOG | 库存调整记录 | 记录页 | V1-增强 | 增强预留 | 二级菜单直达 | 库存列表、库存详情 |
+
+## 3. 跨页动作与规则能力
+
+| 类型 | 内容 | 当前状态 | 承接位置 |
+|---|---|---|---|
+| 功能动作 | 库存调整 | 当前范围 | PGROUP-INV |
+| 功能动作 | 库存同步 | 当前范围 | PGROUP-INV |
+
+## 4. 页面间入口出口关系
+
+- 库存列表：入口为菜单直达；默认出口为库存详情。
+- 库存详情：入口为列表内容进入；默认出口为库存列表。
+- 库存调整记录：入口为二级菜单直达；默认出口为库存列表、库存详情。
+
+## 5. 与机制的关系
+
+- MECH-INV-SYNC 在本页面组中提供关键规则支撑。
+- MECH-AUTH-AUDIT 在本页面组中提供关键规则支撑。
+
+## 6. 前端实现说明
+
+- 页面组文档优先指导路由层、列表与详情的边界划分。
+- 功能动作如果不是页面树节点，仍需在页面组中落到独立交互承接点。
+- 增强预留页面可以先保留路由占位或按钮入口，不作为一期阻断范围。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/04-库存管理-页面组.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/05-配置管理-页面组.md
+================================================================================
+
+# 图书多渠道商品中台-配置管理页面组
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-配置管理-页面组.md |
+| doc_id | DOC-PGROUP-CONF |
+| doc_slug | pgroup-conf |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面组 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 系统管理员 |
+| 所属功能 | 配置管理 |
+| 所属页面组 | PGROUP-CONF |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../baselines/00-feature-list.md；../../baselines/01-page-tree.md；../../baselines/02-functional-carrying-diagram.md |
+| 下游文档 | 组内页面文档 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面组目标
+
+配置管理页面组负责承接 配置管理 相关能力，并把列表页、详情页、工作页、记录页以及功能动作、规则能力组织成稳定的前端实现边界。
+
+## 2. 页面清单
+
+| page_id | 页面名称 | 页面类型 | 版本范围 | 当前状态 | 入口说明 | 默认出口 |
+|---|---|---|---|---|---|---|
+| PG-CONF-LIST | 配置列表 | 列表页 | V1-必做 | 当前范围 | 菜单直达 | 店铺配置详情 |
+| PG-CONF-DETAIL | 店铺配置详情 | 详情页 | V1-必做 | 当前范围 | 列表内容进入 | 配置列表、渠道商品详情 |
+
+## 3. 跨页动作与规则能力
+
+| 类型 | 内容 | 当前状态 | 承接位置 |
+|---|---|---|---|
+| 规则能力 | 店铺级类目动态适配配置 | 当前范围 | 专题机制 / 详情页联动 |
+
+## 4. 页面间入口出口关系
+
+- 配置列表：入口为菜单直达；默认出口为店铺配置详情。
+- 店铺配置详情：入口为列表内容进入；默认出口为配置列表、渠道商品详情。
+
+## 5. 与机制的关系
+
+- MECH-ITEM-MAINTAIN 在本页面组中提供关键规则支撑。
+- MECH-AUTH-AUDIT 在本页面组中提供关键规则支撑。
+
+## 6. 前端实现说明
+
+- 页面组文档优先指导路由层、列表与详情的边界划分。
+- 功能动作如果不是页面树节点，仍需在页面组中落到独立交互承接点。
+- 增强预留页面可以先保留路由占位或按钮入口，不作为一期阻断范围。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/05-配置管理-页面组.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md
+================================================================================
+
+# 图书多渠道商品中台-页面开发脚手架定义
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 99-页面开发脚手架定义.md |
+| doc_id | DOC-PAGE-SCAFFOLD |
+| doc_slug | page-scaffold |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 前端脚手架定义 |
+| 适用端 | 平台电脑端 |
+| 上游文档 | ../../product_agent_standards/09_page_scaffold_spec.md；../01-端产品层/05-平台电脑端产品文档.md |
+| 下游文档 | 前端实现任务 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 当前前端承接位置
+
+| 类型 | 路径 | 说明 |
+|---|---|---|
+| 路由模块 | /Users/youyang/项目/2026/商品中台/frontend/apps/web-antd/src/router/routes/modules/product-platform.ts | 产品中台路由总入口 |
+| 页面目录 | /Users/youyang/项目/2026/商品中台/frontend/apps/web-antd/src/views/product-platform/ | 页面实现主目录 |
+| 权限定义 | /Users/youyang/项目/2026/商品中台/frontend/apps/web-antd/src/views/product-platform/permissions.ts | 路由和页面统一引用的角色常量 |
+| 前端模拟数据 | /Users/youyang/项目/2026/商品中台/frontend/apps/web-antd/src/views/product-platform/data.ts | 当前已有示例数据和行为封装 |
+| 历史 / 候选目录 | `/overview/`、`/system-config/`、`/publish/`、`/operations/`、`/reports/` | 当前不属于页面树和默认菜单树，后续只有在基线回写后才能重新纳入 |
+
+- 本文的目录、路由和权限字段用于指导实现，不得反向覆盖上游基线中的来源入口语义。
+
+## 2. 当前页面脚手架建议
+
+- 列表页统一采用：筛选区 + 指标区 + 表格区 + 操作区。
+- 详情页统一采用：头部摘要 + 主表单区 + 关联信息区 + 页脚动作区。
+- 工作页统一采用：说明区 + 任务输入区 + 校验区 + 结果区 + 确认区。
+- 动作工作台统一采用：命中范围区 + 动作配置区 + 预览区 + 执行结果区。
+
+## 3. 页面组映射建议
+
+| 页面组 | 稳定键 | 当前代码目录 | 当前页面 | 预留 / 候选代码目录 | 服务建议 | 说明 |
+|---|---|---|---|---|---|---|
+| 产品管理 | `PGROUP-PROD` | `views/product-platform/products/` | 产品列表、产品详情、产品导入、导入记录 | `products/create/` | `services/product.ts`、`services/import.ts` | `products/create/` 已存在但尚未挂载到默认路由。 |
+| 商品管理 | `PGROUP-ITEM` | `views/product-platform/channel-items/` | 渠道商品列表、渠道商品详情页列表、渠道商品详情 | `待新增: channel-items/detail-pages/`；`待新增: channel-items/batch-edit/`；当前候选 `operations/workspace/` | `services/item.ts` | 渠道商品详情页列表是当前范围二级菜单；该页要承接详情页内容编辑与素材复用，不要再混入旧 `operations/` 目录或塞回单商品详情页。 |
+| 库存管理 | `PGROUP-INV` | `views/product-platform/inventory/` | 库存列表、库存详情、库存调整记录 | - | `services/inventory.ts` | 详情页和调整记录页当前都已存在实现目录。 |
+| 配置管理 | `PGROUP-CONF` | `views/product-platform/store-config/` | 配置列表、店铺配置详情 | - | `services/config.ts` | 旧 `system-config/` 目录归为候选归档，不再作为当前路由输入。 |
+| 素材管理 | `PGROUP-ASSET` | `views/product-platform/materials/` | 素材列表、素材详情 | - | `services/asset.ts` | 作为增强预留页面组保留。 |
+
+## 4. 页面到路由映射
+
+| page_id / action_id | 脚手架类型 | menu_key | route_key | route_name | route_path | active_path | authority | 菜单策略 | 当前代码文件 | 当前状态 | 调整说明 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| PG-PROD-LIST | `list_page` | `menu.product` | `product.list` | `ProductList` | `/products/list` | - | `PRODUCT_VIEW_ROLES` | 一级菜单当前页 | `products/list/index.vue` | 当前范围 | 顶层 `ProductCenter` 的默认 redirect 目标。 |
+| PG-PROD-DETAIL | `detail_page` | - | `product.detail` | `ProductDetail` | `/products/detail` | `/products/list` | `PRODUCT_VIEW_ROLES` | 隐藏路由 | `products/detail/index.vue` | 当前范围 | 保持 `hideInMenu`，由产品列表回挂。 |
+| PG-PROD-IMPORT | `form_page` | `menu.product.import` | `product.import` | `ProductImport` | `/products/import` | - | `PRODUCT_IMPORT_ROLES` | 二级可见菜单 | `products/import/index.vue` | 当前范围 | 产品管理下唯一当前二级菜单。 |
+| PG-PROD-IMPORT-LOG | `record_page` | - | `product.import_log` | `ProductImportRecords` | `/products/import-records` | `/products/import` | `PRODUCT_IMPORT_ROLES` | 隐藏路由 | `products/import-records/index.vue` | 当前范围 | 保持 `hideInMenu`。 |
+| ACTION-PROD-CREATE | `form_page` | `menu.product.create` | `product.create` | `ProductCreate` | `/products/create` | `/products/list` | `PRODUCT_EDIT_ROLES` | 列表按钮进入（增强预留） | `products/create/index.vue` | 增强预留 | 即使保留独立路由，也应维持“产品列表按钮进入”的上游语义。 |
+| PG-ITEM-LIST | `list_page` | `menu.channel_item` | `item.list` | `ChannelItemList` | `/channel-items/list` | - | `CHANNEL_VIEW_ROLES` | 一级菜单当前页 | `channel-items/list/index.vue` | 当前范围 | 商品管理默认落点。 |
+| PG-ITEM-DETAIL-PAGE-LIST | `list_page` | `menu.channel_item.detail_page_list` | `item.detail_page_list` | `ChannelItemDetailPageList` | `/channel-items/detail-pages` | - | `CHANNEL_VIEW_ROLES` | 二级可见菜单 | `待新增: channel-items/detail-pages/index.vue` | 当前范围 | 全量商品详情页内容管理入口；建议采用列表 + 编辑工作区双栏结构。 |
+| PG-ITEM-DETAIL | `detail_page` | - | `item.detail` | `ChannelItemDetail` | `/channel-items/detail` | `/channel-items/list` | `CHANNEL_VIEW_ROLES` | 隐藏路由 | `channel-items/detail/index.vue` | 当前范围 | 详情页不单独入菜单。 |
+| ACTION-ITEM-BATCH-EDIT | `form_page` | `menu.channel_item.batch_edit` | `item.batch_edit` | `ChannelItemBatchEdit` | `/channel-items/batch-edit` | `/channel-items/list` | `CHANNEL_EDIT_ROLES` | 二级菜单直达（增强预留） | `待新增: channel-items/batch-edit/index.vue` | 增强预留 | 如实现独立路由，应挂在商品管理二级菜单，不得改写成列表按钮入口。 |
+| PG-INV-LIST | `list_page` | `menu.inventory` | `inventory.list` | `InventoryList` | `/inventory/list` | - | `INVENTORY_VIEW_ROLES` | 一级菜单当前页 | `inventory/list/index.vue` | 当前范围 | 库存管理默认落点。 |
+| PG-INV-DETAIL | `detail_page` | - | `inventory.detail` | `InventoryDetail` | `/inventory/detail` | `/inventory/list` | `INVENTORY_VIEW_ROLES` | 增强预留隐藏路由 | `inventory/detail/index.vue` | 增强预留 | 详情页已有目录，保留隐藏。 |
+| PG-INV-LOG | `record_page` | `menu.inventory.adjust_log` | `inventory.adjust_log` | `InventoryAdjustments` | `/inventory/adjustments` | - | `INVENTORY_VIEW_ROLES` | 二级菜单直达（增强预留） | `inventory/adjustments/index.vue` | 增强预留 | 记录页来源入口是库存管理二级菜单。 |
+| PG-CONF-LIST | `list_page` | `menu.config` | `config.list` | `StoreConfigList` | `/store-config/list` | - | `CONFIG_VIEW_ROLES` | 一级菜单当前页 | `store-config/list/index.vue` | 当前范围 | 配置管理默认落点。 |
+| PG-CONF-DETAIL | `detail_page` | - | `config.shop_detail` | `StoreConfigDetail` | `/store-config/detail` | `/store-config/list` | `CONFIG_VIEW_ROLES` | 隐藏路由 | `store-config/detail/index.vue` | 当前范围 | 详情页通过列表回挂。 |
+| PG-ASSET-LIST | `list_page` | `menu.asset` | `asset.list` | `MaterialList` | `/materials/list` | - | `MATERIAL_VIEW_ROLES` | 一级菜单（预留 badge） | `materials/list/index.vue` | 增强预留 | 当前保留为增强入口。 |
+| PG-ASSET-DETAIL | `detail_page` | - | `asset.detail` | `MaterialDetail` | `/materials/detail` | `/materials/list` | `MATERIAL_VIEW_ROLES` | 隐藏路由 | `materials/detail/index.vue` | 增强预留 | 详情页默认隐藏。 |
+
+## 5. 公共组件建议
+
+| 组件 | 建议目录 | 用途 |
+|---|---|---|
+| 筛选栏容器 | `components/filters/` | 统一承接渠道、店铺、状态等筛选项 |
+| 表格动作栏 | `components/tables/` | 承接列表页批量操作、统计入口 |
+| 动态类目表单 | `components/forms/CategoryProfileForm.vue` | 渠道商品详情动态字段渲染 |
+| 导入结果面板 | `components/import/` | 校验结果、错误下载、关联处理提示 |
+| 库存摘要卡片 | `components/inventory/` | 展示库存快照和同步状态 |
+
+## 6. 服务层拆分建议
+
+| 服务文件 | 对应接口 |
+|---|---|
+| `services/product.ts` | `API-PROD-LIST-GET`、`API-PROD-DETAIL-GET`、`API-PROD-DETAIL-PUT`、`API-PROD-CREATE-POST` |
+| `services/import.ts` | `API-IMPORT-TEMPLATE-PROFILE-GET`、`API-IMPORT-TEMPLATE-DOWNLOAD-GET`、`API-IMPORT-UPLOAD-POST`、`API-IMPORT-VALIDATE-POST`、`API-IMPORT-EXECUTE-POST`、`API-IMPORT-LIST-GET`、`API-IMPORT-DETAIL-GET`、`API-IMPORT-LINES-GET`、`API-IMPORT-REVALIDATE-POST`、`API-IMPORT-REEXECUTE-POST`、`API-MERCHANT-LINK-POST`、`API-MERCHANT-LINK-RESULT-GET` |
+| `services/item.ts` | `API-ITEM-LIST-GET`、`API-ITEM-DETAIL-GET`、`API-ITEM-DETAIL-PUT`、`API-ITEM-DETAIL-PAGE-LIST-GET`、`API-ITEM-DETAIL-PAGE-DETAIL-GET`、`API-ITEM-DETAIL-PAGE-UPLOAD-POST`、`API-ITEM-DETAIL-PAGE-PUT`、`API-ITEM-DETAIL-PAGE-ASSET-LINK-POST`、`API-ITEM-CATEGORY-PROFILE-GET`、`API-ITEM-BATCH-PREVIEW-POST`、`API-ITEM-BATCH-EXECUTE-POST` |
+| `services/inventory.ts` | `API-INV-LIST-GET`、`API-INV-DETAIL-GET`、`API-INV-ADJUST-POST`、`API-INV-SYNC-POST`、`API-INV-ADJUST-LOG-GET` |
+| `services/config.ts` | `API-CONF-LIST-GET`、`API-CONF-DETAIL-GET`、`API-CONF-DETAIL-PUT` |
+| `services/asset.ts` | `API-ASSET-LIST-GET`、`API-ASSET-DETAIL-GET` |
+| `services/auth.ts` | `API-AUTH-ME-GET`、`API-AUDIT-LIST-GET` |
+
+## 7. 路由调整要求
+
+- 当前应保留：产品列表、产品详情、产品导入、导入记录、渠道商品列表、渠道商品详情页列表、渠道商品详情、库存列表、配置列表、店铺配置详情。
+- 增强预留：素材列表、素材详情、库存详情、库存调整记录、批量修改工作台、新增产品。
+- 候选归档：历史发布记录占位页、系统配置详情、渠道配置详情、导入模板配置页、操作日志页。
+- `overview/` 只保留重定向兼容，不再参与页面树、追踪矩阵和导航编排。
+- `system-config/`、`publish/`、`operations/`、`reports/` 归为历史或候选目录；只有基线回写后才允许重新进入当前交付链路。
+- 上游入口语义必须保持：产品导入和渠道商品详情页列表为当前范围二级菜单直达，批量修改为增强预留二级菜单直达，库存调整记录为增强预留二级菜单直达，新增产品为列表按钮进入。
+- 渠道商品详情页列表承接全量详情页数据、内容编辑、当前版本切换和素材复用；渠道商品详情继续保持隐藏路由，只承接单商品售卖字段编辑。
+- 前端实现必须直接体现“单个渠道商品最多 3 个详情页”的限制，并在列表和新建/上传动作中给出超限提示。
+- 后续任何菜单显隐、排序、路径调整，都必须同步回写页面树、追踪矩阵、脚手架定义和 `product-platform.ts`，禁止只改前端路由而不改 docs。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/99-页面开发脚手架定义.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/产品管理/01-产品列表页.md
+================================================================================
+
+# 图书多渠道商品中台-产品列表页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-产品列表页.md |
+| doc_id | PAGE-PROD-LIST |
+| doc_slug | page-product-list |
+| page_id | PG-PROD-LIST |
+| page_group_id | PGROUP-PROD |
+| route_key | product.list |
+| menu_key | menu.product |
+| 当前菜单名称 | 产品管理 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-PROD-LIST |
+| 关联机制 | MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../01-产品管理-页面组.md |
+| 下游文档 | 02-新建产品页.md；03-产品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+查看和筛选产品主档信息，作为产品维护总入口。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 左侧菜单 `menu.product` |
+| 出口 | 产品详情、新增产品（增强） |
+| 前置条件 | 产品查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按书名/ISBN/商家编码/状态/来源渠道筛选产品 | 当前重点 |
+| 统计区 | 展示产品总数、待补充详情数、已关联商品数 | 建议保留 |
+| 列表区 | 展示产品基础信息、SKU 摘要、关联商品数、最近更新时间 | 当前重点 |
+| 快捷操作区 | 查看详情、进入新增产品 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 搜索/重置 | 输入筛选条件后 | 刷新列表结果 |
+| 查看详情 | 点击产品名称或详情按钮 | 进入产品详情页 |
+| 新增产品 | 点击新增按钮 | 进入增强页或保留提示 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 关键词 | keyword / 输入框 | 支持书名、ISBN、商家编码模糊搜索 |
+| 产品状态 | product_status / 下拉 | 默认全部 |
+| 来源渠道 | source_channel / 多选 | 支持淘宝、拼多多、抖音、快手 |
+| 关联商品数 | item_count / 只读 | 列表展示字段 |
+
+## 6. 状态与反馈
+
+- 初始加载失败时展示重试提示。
+- 无数据时展示空态说明，并保留新增产品入口占位。
+- 进入详情页后，返回应保留筛选条件和滚动位置。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-PRODUCT | 产品主档对象 |
+| 接口 | API-PROD-LIST-GET | 获取产品列表 |
+
+## 8. 范围边界
+
+- 当前页不直接编辑产品字段，编辑发生在产品详情页。
+- 当前页不承接模板下载，模板下载发生在产品导入页。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/产品管理/01-产品列表页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/产品管理/02-新建产品页.md
+================================================================================
+
+# 图书多渠道商品中台-新增产品页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-新建产品页.md |
+| doc_id | PAGE-PROD-CREATE |
+| doc_slug | page-product-create |
+| page_id | ACTION-PROD-CREATE |
+| page_group_id | PGROUP-PROD |
+| route_key | product.create |
+| menu_key | menu.product.create |
+| 当前菜单名称 | 新增产品 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-PROD-CREATE |
+| 关联机制 | MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../01-产品管理-页面组.md |
+| 下游文档 | 03-产品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+支持少量手工补录图书产品主档，补充模板导入之外的个别场景。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 产品列表主按钮 |
+| 出口 | 保存后进入产品详情或返回产品列表 |
+| 前置条件 | 产品编辑权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 基础信息区 | 图书名称、ISBN、作者、出版社等基础信息 | 增强预留 |
+| 默认内容区 | 默认主图、详情内容、默认卖点 | 增强预留 |
+| SKU 区 | 初始 SKU 摘要和商家编码 | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 保存草稿 | 填写最少字段后 | 创建产品草稿 |
+| 保存并查看详情 | 保存成功后 | 进入产品详情 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 图书名称 | product_name / 输入框 | 必填 |
+| ISBN | isbn / 输入框 | 建议唯一 |
+| 商家编码 | merchant_code / 输入框 | 必填，用于归集 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留，不作为一期阻断项。
+- 若未纳入当前迭代，前端可仅保留入口占位或隐藏。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-PRODUCT | 产品对象 |
+| 接口 | API-PROD-CREATE-POST | 增强接口，手工创建产品 |
+
+## 8. 范围边界
+
+- 当前一期仍以模板导入为主，新增产品不是主路径。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/产品管理/02-新建产品页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/产品管理/03-产品详情页.md
+================================================================================
+
+# 图书多渠道商品中台-产品详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-产品详情页.md |
+| doc_id | PAGE-PROD-DETAIL |
+| doc_slug | page-product-detail |
+| page_id | PG-PROD-DETAIL |
+| page_group_id | PGROUP-PROD |
+| route_key | product.detail |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-PROD-DETAIL |
+| 关联机制 | MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../01-产品管理-页面组.md |
+| 下游文档 | ../商品管理/02-渠道商品详情页.md；../库存管理/01-库存列表页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+维护图书产品主档、默认内容和 SKU 摘要，为多渠道商品共用信息提供统一来源。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 产品列表点击产品名称或详情按钮 |
+| 出口 | 返回产品列表；跳转渠道商品详情；跳转库存列表 |
+| 前置条件 | 产品已存在且具备查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 头部摘要 | 展示产品名称、ISBN、商家编码、关联商品数 | 当前重点 |
+| 基础信息区 | 图书名称、作者、出版社、版次、开本、装帧等 | 当前重点 |
+| 默认内容区 | 默认主图、详情图、内容摘要和卖点 | 当前重点 |
+| SKU 摘要区 | 展示 SKU 数量、商家 SKU 编码、默认图片 | 当前重点 |
+| 关联信息区 | 展示关联渠道商品和库存概况 | 建议保留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 保存产品 | 编辑基础信息或默认内容后 | 保存并刷新产品详情 |
+| 查看关联商品 | 点击关联商品数量 | 跳转商品详情或商品列表 |
+| 查看库存 | 点击库存摘要 | 跳转库存列表并带筛选条件 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 图书名称 | product_name / 输入框 | 必填 |
+| ISBN | isbn / 输入框 | 建议唯一且可检索 |
+| 商家编码 | merchant_code / 输入框 | 只允许管理员修改 |
+| 默认主图 | default_main_images / 图片列表 | 至少 1 张，支持排序 |
+| 默认详情 | default_detail_content / 富文本或图片列表 | 允许空草稿，正式售卖前建议补齐 |
+
+## 6. 状态与反馈
+
+- 无编辑权限时所有字段只读。
+- 保存成功后保留当前位置并更新最后修改信息。
+- 关联商品为空时展示“尚未关联渠道商品”的提示。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-PRODUCT | 产品主档 |
+| 对象 | OBJ-PRODUCT-SKU | 产品 SKU 摘要 |
+| 接口 | API-PROD-DETAIL-GET | 读取产品详情 |
+| 接口 | API-PROD-DETAIL-PUT | 保存产品详情 |
+
+## 8. 范围边界
+
+- 当前页不直接维护渠道特有字段，例如运费模板和上架状态。
+- 库存不在当前页直接编辑，只展示摘要和跳转入口。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/产品管理/03-产品详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/产品管理/04-产品导入页.md
+================================================================================
+
+# 图书多渠道商品中台-产品导入页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-产品导入页.md |
+| doc_id | PAGE-PROD-IMPORT |
+| doc_slug | page-product-import |
+| page_id | PG-PROD-IMPORT |
+| page_group_id | PGROUP-PROD |
+| route_key | product.import |
+| menu_key | menu.product.import |
+| 当前菜单名称 | 产品导入 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-PROD-IMPORT、FEAT-PROD-MERCHANT-LINK |
+| 关联机制 | MECH-IMPORT-STD、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../01-产品管理-页面组.md |
+| 下游文档 | 05-导入记录页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 页面目标
+
+通过选择渠道下载模板、上传导入包、执行校验并确认导入，把产品、渠道商品、库存和素材信息统一导入中台。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 二级菜单 `menu.product.import` |
+| 出口 | 导入记录、产品列表 |
+| 前置条件 | 导入执行权限；存在生效中的店铺配置 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 导入说明区 | 说明模板适用范围、当前支持渠道与导入字段 | 当前重点 |
+| 模板下载区 | 先选择渠道；可选选择店铺后下载更精确模板 | 当前重点 |
+| 文件上传区 | 上传导入文件或素材包，创建导入任务 | 当前重点 |
+| 校验结果区 | 显示通过数、失败数、失败原因和待处理关联数 | 当前重点 |
+| 确认导入区 | 校验通过后确认执行导入 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 下载模板 | 选择渠道（可选店铺）后 | 下载包含渠道、店铺、类目、商品 ID、类目属性、销售属性、运费模板、上下架状态、发货时效、SKU 信息、库存、主图、详情、SKU 图等字段的模板 |
+| 上传文件 | 选择本地文件后 | 创建导入任务并进入草稿状态 |
+| 执行校验 | 上传成功后 | 进入校验中并输出校验结果 |
+| 确认导入 | 校验通过后 | 执行落库并跳转导入记录 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 渠道 | channel_code / 下拉 | 必填；决定模板结构 |
+| 店铺 | shop_code / 下拉 | 选填；填写后可返回更精确的类目与属性字段 |
+| 模板版本 | template_version / 只读或下拉 | 随配置版本变化 |
+| 导入文件 | file_ref / 上传 | 必填；需符合模板结构 |
+
+## 6. 状态与反馈
+
+- 未选择渠道时，下载模板按钮不可点击。
+- 校验失败时显示错误数量、错误类型和失败行下载入口。
+- 存在未处理商家编码关联时，确认导入按钮禁用并提示先解决关联问题。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-IMPORT-JOB | 导入任务 |
+| 对象 | OBJ-IMPORT-JOB-LINE | 导入行结果 |
+| 接口 | API-IMPORT-TEMPLATE-PROFILE-GET | 查询模板字段版本 |
+| 接口 | API-IMPORT-TEMPLATE-DOWNLOAD-GET | 下载模板 |
+| 接口 | API-IMPORT-UPLOAD-POST | 上传导入文件 |
+| 接口 | API-IMPORT-VALIDATE-POST | 执行校验 |
+| 接口 | API-IMPORT-EXECUTE-POST | 确认导入 |
+
+## 8. 范围边界
+
+- 当前页不负责单条产品编辑，编辑在产品详情页完成。
+- 当前页只负责模板下载、上传校验和导入落库，不承接导入后的商品编辑。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/产品管理/04-产品导入页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/产品管理/05-导入记录页.md
+================================================================================
+
+# 图书多渠道商品中台-导入记录页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-导入记录页.md |
+| doc_id | PAGE-PROD-IMPORT-LOG |
+| doc_slug | page-import-records |
+| page_id | PG-PROD-IMPORT-LOG |
+| page_group_id | PGROUP-PROD |
+| route_key | product.import_log |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-PROD-IMPORT-LOG、FEAT-PROD-MERCHANT-LINK |
+| 关联机制 | MECH-IMPORT-STD |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../01-产品管理-页面组.md |
+| 下游文档 | 03-产品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+查看导入批次、失败明细和商家编码关联处理结果，支持回溯导入闭环。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 产品导入页进入 |
+| 出口 | 产品导入、产品列表、产品详情 |
+| 前置条件 | 存在导入任务 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 任务筛选区 | 按状态、渠道、时间筛选导入任务 | 当前重点 |
+| 任务列表区 | 展示任务批次、渠道、上传人、状态、成功/失败数量 | 当前重点 |
+| 失败明细区 | 展示失败行、失败原因和原始数据摘要 | 当前重点 |
+| 关联处理区 | 展示商家编码关联结果和待处理项 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 查看批次详情 | 点击任务行 | 展开失败明细和关联结果 |
+| 下载失败报告 | 任务存在失败行时 | 下载失败行文件 |
+| 重新进入导入 | 需要重传时 | 返回产品导入页 |
+| 跳转产品详情 | 导入成功且已关联产品时 | 打开产品详情页 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 导入任务号 | import_job_id / 只读 | 唯一标识导入批次 |
+| 状态 | import_job_status / 标签 | 展示当前批次状态 |
+| 失败原因 | error_message / 列表 | 按行或按字段展示 |
+| 关联结果 | merchant_link_result / 区块 | 展示已关联、未关联和冲突数量 |
+
+## 6. 状态与反馈
+
+- 任务执行中时，列表要支持轮询刷新或手动刷新。
+- 当失败行为 0 时，失败明细区默认收起。
+- 当未关联数大于 0 时，高亮提示需要后续处理。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-IMPORT-JOB | 导入任务 |
+| 对象 | OBJ-IMPORT-JOB-LINE | 导入行结果 |
+| 接口 | API-IMPORT-LIST-GET | 获取导入记录 |
+| 接口 | API-MERCHANT-LINK-POST | 处理商家编码关联 |
+
+## 8. 范围边界
+
+- 当前页不直接修改产品字段，只负责查看导入结果和跳转。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/产品管理/05-导入记录页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/商品管理/01-渠道商品列表页.md
+================================================================================
+
+# 图书多渠道商品中台-渠道商品列表页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-渠道商品列表页.md |
+| doc_id | PAGE-ITEM-LIST |
+| doc_slug | page-channel-item-list |
+| page_id | PG-ITEM-LIST |
+| page_group_id | PGROUP-ITEM |
+| route_key | item.list |
+| menu_key | menu.channel_item |
+| 当前菜单名称 | 商品管理 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-ITEM-LIST、FEAT-ITEM-BATCH-EDIT |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../03-商品管理-页面组.md |
+| 下游文档 | 02-渠道商品详情页.md；05-渠道商品详情页列表.md；03-批量修改工作台.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 页面目标
+
+统一查看已导入商品在不同渠道、店铺下的售卖信息，并为详情页内容管理提供统一跳转入口。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 菜单 `menu.channel_item` |
+| 出口 | 渠道商品详情、渠道商品详情页列表 |
+| 前置条件 | 商品查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按渠道、店铺、产品、商品状态、上下架状态筛选 | 当前重点 |
+| 统计区 | 展示商品总数、待完善商品数、已上架商品数 | 建议保留 |
+| 列表区 | 展示渠道商品标题、价格、类目、上下架状态、库存摘要、详情页数量 / 当前版本摘要 | 当前重点 |
+| 列表操作区 | 承接详情跳转、详情页跳转、库存跳转和当前页状态反馈 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 查看详情 | 点击标题或详情按钮 | 进入渠道商品详情页 |
+| 查看详情页 | 点击详情页数量或详情页按钮 | 进入渠道商品详情页列表并带商品筛选条件 |
+| 跳转库存 | 点击库存摘要 | 进入库存列表并带筛选条件 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 渠道 | channel_code / 下拉 | 支持淘宝、拼多多、抖音、快手 |
+| 店铺 | shop_code / 下拉 | 支持按店铺过滤 |
+| 上下架状态 | shelf_status / 下拉 | 全部、已上架、已下架 |
+| 商品标题 | item_title / 列表字段 | 支持详情页跳转 |
+| 详情页数量 | detail_page_count / 列表字段 | 支持跳转渠道商品详情页列表；单个渠道商品最多 3 条 |
+
+## 6. 状态与反馈
+
+- 未命中数据时展示空态和可返回筛选的引导。
+- 勾选条目时显示已选数量，供后续增强动作扩展使用。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-CHANNEL-ITEM | 渠道商品 |
+| 接口 | API-ITEM-LIST-GET | 获取渠道商品列表 |
+
+## 8. 范围边界
+
+- 当前列表页不直接编辑商品字段，单条编辑在详情页承接；商品详情页内容、版本和素材复用统一在渠道商品详情页列表承接；批量修改作为增强预留二级入口独立承接。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/商品管理/01-渠道商品列表页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md
+================================================================================
+
+# 图书多渠道商品中台-渠道商品详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-渠道商品详情页.md |
+| doc_id | PAGE-ITEM-DETAIL |
+| doc_slug | page-channel-item-detail |
+| page_id | PG-ITEM-DETAIL |
+| page_group_id | PGROUP-ITEM |
+| route_key | item.detail |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-ITEM-DETAIL、FEAT-ITEM-CATEGORY-RULE |
+| 关联机制 | MECH-ITEM-MAINTAIN |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../03-商品管理-页面组.md；../../../02-专题机制层/02-商品维护与类目联动机制.md |
+| 下游文档 | ../库存管理/01-库存列表页.md；../配置管理/04-店铺配置详情页.md；05-渠道商品详情页列表.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 页面目标
+
+轻量维护导入后的渠道商品标题、价格、类目属性、销售属性、运费模板、上下架状态、发货时效，并展示详情页关联摘要。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 渠道商品列表点击详情 |
+| 出口 | 渠道商品列表、渠道商品详情页列表、库存列表、店铺配置详情 |
+| 前置条件 | 渠道商品已存在且具备查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 摘要区 | 展示产品、渠道、店铺、商家编码、商品状态 | 当前重点 |
+| 基础售卖区 | 标题、价格、上下架状态、发货时效 | 当前重点 |
+| 类目与属性区 | 根据渠道、店铺、类目动态返回类目属性和销售属性 | 当前重点 |
+| 履约区 | 运费模板、发货承诺、售卖状态 | 当前重点 |
+| 详情页关联区 | 展示已关联详情页数量、当前使用详情页和跳转入口 | 当前重点 |
+| 关联库存区 | 查看关联 SKU 库存摘要并跳转库存页面 | 建议保留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 保存商品 | 修改字段后 | 保存渠道商品详情 |
+| 刷新类目规则 | 切换店铺或类目后 | 重新加载可维护字段范围 |
+| 查看详情页 | 点击详情页关联摘要 | 跳转渠道商品详情页列表并带当前商品筛选条件 |
+| 查看库存 | 点击库存摘要 | 跳转库存列表 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 商品标题 | item_title / 输入框 | 必填 |
+| 价格 | sale_price / 数字输入 | 必填，大于 0 |
+| 类目 | category_code / 级联选择 | 必填，受渠道和店铺限制 |
+| 类目属性 | category_attributes / 动态表单 | 按返回 profile 渲染 |
+| 销售属性 | sales_attributes / 动态表单 | 按 SKU 维度维护 |
+| 运费模板 | freight_template_id / 下拉 | 按店铺配置返回 |
+| 上下架状态 | shelf_status / 单选 | 支持上架、下架 |
+| 发货时效 | delivery_sla / 下拉或输入 | 必填 |
+
+## 6. 状态与反馈
+
+- 切换店铺或类目时，失效字段要提示并清空。
+- 无编辑权限或商品锁定时，页面只读。
+- 保存成功后展示最近同步时间和操作人。
+- 当前商品尚未关联详情页时，页面要提示并提供跳转到渠道商品详情页列表的入口。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-CHANNEL-ITEM | 渠道商品 |
+| 对象 | OBJ-ITEM-DETAIL-PAGE | 商品详情页记录 |
+| 对象 | OBJ-CATEGORY-PROFILE | 店铺级类目字段配置 |
+| 接口 | API-ITEM-DETAIL-GET | 读取详情 |
+| 接口 | API-ITEM-DETAIL-PAGE-LIST-GET | 读取当前商品关联的详情页摘要 |
+| 接口 | API-ITEM-CATEGORY-PROFILE-GET | 加载动态字段配置 |
+| 接口 | API-ITEM-DETAIL-PUT | 保存详情 |
+
+## 8. 范围边界
+
+- 当前页聚焦导入后商品的单条编辑与规则联动，批量动作由批量修改工作台承接。
+- 详情内容上传、版本化、当前版本切换和素材复用统一由渠道商品详情页列表与素材列表承接，当前页不直接编辑详情页内容。
+- 库存仍由库存管理统一维护，详情页只展示摘要和跳转入口。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/商品管理/02-渠道商品详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/商品管理/03-批量修改工作台.md
+================================================================================
+
+# 图书多渠道商品中台-批量修改工作台
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-批量修改工作台.md |
+| doc_id | PAGE-ITEM-BATCH-EDIT |
+| doc_slug | page-item-batch-edit |
+| page_id | ACTION-ITEM-BATCH-EDIT |
+| page_group_id | PGROUP-ITEM |
+| route_key | item.batch_edit |
+| menu_key | menu.channel_item.batch_edit |
+| 当前菜单名称 | 批量修改 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-ITEM-BATCH-EDIT |
+| 关联机制 | MECH-ITEM-MAINTAIN |
+| 上游文档 | ../../../baselines/00-feature-list.md；../03-商品管理-页面组.md；../../../02-专题机制层/02-商品维护与类目联动机制.md |
+| 下游文档 | 01-渠道商品列表页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-21 |
+
+## 1. 页面目标
+
+按筛选范围批量修改渠道商品标题、价格、批量上下架和库存。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 商品管理二级菜单 `menu.channel_item.batch_edit` |
+| 出口 | 渠道商品列表 |
+| 前置条件 | 商品编辑权限；当前有命中的商品范围 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 命中范围区 | 继承列表筛选条件或重新设置筛选 | 增强预留 |
+| 修改类型区 | 标题、价格、批量上下架、库存四类操作切换 | 增强预留 |
+| 预览区 | 展示命中条数、受影响渠道/店铺和样例数据 | 增强预留 |
+| 执行结果区 | 展示执行成功数、失败数和失败原因 | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 预览命中结果 | 设置筛选条件和修改内容后 | 返回命中商品数和样例 |
+| 执行批量修改 | 预览通过后 | 批量写入商品或库存 |
+| 下载失败明细 | 存在失败行时 | 下载执行结果 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 修改类型 | batch_type / 单选 | 必填：title、price、shelf_status、inventory |
+| 标题规则 | title_pattern / 输入框 | 仅标题修改时必填 |
+| 目标价格 | target_price / 数字输入 | 价格修改时必填，大于 0 |
+| 目标上下架状态 | target_shelf_status / 单选 | 批量上下架时必填 |
+| 目标库存 | target_stock / 数字输入 | 库存修改时必填，大于等于 0 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留，前端可先保留路由和空态提示。
+- 批量执行失败时必须展示失败明细，不允许静默吞掉部分失败。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-CHANNEL-ITEM | 渠道商品 |
+| 对象 | OBJ-INVENTORY | 库存对象 |
+| 接口 | API-ITEM-BATCH-PREVIEW-POST | 批量修改预览 |
+| 接口 | API-ITEM-BATCH-EXECUTE-POST | 批量修改执行 |
+
+## 8. 范围边界
+
+- 当前页只承接导入后商品的批量修改，不维护独立业务单据或结果页。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/商品管理/03-批量修改工作台.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/商品管理/04-历史发布记录占位页.md
+================================================================================
+
+# 图书多渠道商品中台-历史发布记录占位页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-历史发布记录占位页.md |
+| doc_id | PAGE-ITEM-PUBLISH-LOG |
+| doc_slug | page-item-publish-log |
+| page_id | PAGE-ITEM-PUBLISH-LOG |
+| page_group_id | PGROUP-ITEM |
+| route_key | item.publish_log |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | 不在当前范围 |
+| 所属功能 | 历史发布相关占位 |
+| 上游文档 | ../../../baselines/00-feature-list.md；../03-商品管理-页面组.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r1 |
+| doc_status | archive-candidate |
+| 更新时间 | 2026-04-21 |
+
+## 1. 当前状态
+
+- 当前一期不包含该历史记录页，本文件仅保留历史占位，不纳入当前前端实现。
+- 当前文件保留是为了保持路径、追踪关系和未来恢复时的上下文。
+
+## 2. 若未来恢复，需要先完成
+
+1. 把对应功能和页面节点重新纳入当前 baselines。
+2. 补齐对象、接口和测试用例。
+3. 在前端路由中恢复入口并重新纳入交付索引。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/商品管理/04-历史发布记录占位页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/商品管理/05-渠道商品详情页列表.md
+================================================================================
+
+# 图书多渠道商品中台-渠道商品详情页列表
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-渠道商品详情页列表.md |
+| doc_id | PAGE-ITEM-DETAIL-PAGE-LIST |
+| doc_slug | page-channel-item-detail-page-list |
+| page_id | PG-ITEM-DETAIL-PAGE-LIST |
+| page_group_id | PGROUP-ITEM |
+| route_key | item.detail_page_list |
+| menu_key | menu.channel_item.detail_page_list |
+| 当前菜单名称 | 渠道商品详情页列表 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-ITEM-DETAIL-PAGE-LIST |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../03-商品管理-页面组.md；../../../02-专题机制层/02-商品维护与类目联动机制.md |
+| 下游文档 | 02-渠道商品详情页.md；../素材管理/01-素材列表页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 页面目标
+
+统一查看和管理全部渠道商品的详情页数据，按产品聚合、按渠道商品展开；支持上传新详情页、编辑详情页内容、切换当前使用版本，并把素材列表中的图片复用到多个商品详情页。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 商品管理二级菜单 `menu.channel_item.detail_page_list` |
+| 出口 | 渠道商品详情、素材列表 |
+| 前置条件 | 商品查看权限；新建、上传、编辑、设为当前和素材复用动作需要商品编辑或详情页管理权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按产品、渠道、店铺、渠道商品、详情页名称、当前使用状态筛选 | 当前重点 |
+| 统计区 | 展示产品数、渠道商品数、详情页总数、已达 3 条上限的商品数 | 建议保留 |
+| 列表区 | 展示产品名称、渠道商品标题、渠道、店铺、详情页名称、最后编辑时间、当前使用标记、关联素材数量 | 当前重点 |
+| 编辑工作区 | 编辑详情页内容结构、图文模块顺序、文案和素材引用 | 当前重点 |
+| 预览区 | 预览当前详情页渲染结果、素材包与引用信息 | 当前重点 |
+| 新建 / 上传区 | 上传新详情页文件或基于已有详情页复制新版本，并选择是否设为当前使用详情 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 查看关联商品 | 点击渠道商品标题或查看商品按钮 | 进入渠道商品详情页 |
+| 上传详情页 | 选择渠道商品并上传文件 | 创建详情页记录并关联渠道商品 |
+| 编辑详情页内容 | 选择列表行并进入编辑工作区 | 保存详情页结构、文案和排序 |
+| 复用素材 | 在编辑工作区选择已有素材 | 将同一素材引用到当前详情页，可继续用于其他商品详情页 |
+| 设为当前使用 | 点击“设为当前” | 当前渠道商品只有该详情页处于 current |
+| 跳转素材 | 点击关联素材数量 | 进入素材列表并带详情页筛选条件 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 产品名称 | product_name / 列表字段 | 支持按产品聚合查看多个渠道商品下的详情页 |
+| 渠道商品 | channel_item_id / 关联字段 | 必填；同一渠道商品最多 3 个详情页 |
+| 渠道 | channel_code / 下拉 | 支持淘宝、拼多多、抖音、快手 |
+| 店铺 | shop_code / 下拉 | 支持按店铺过滤 |
+| 渠道商品标题 | item_title / 列表字段 | 支持跳转渠道商品详情 |
+| 详情页名称 | detail_page_name / 输入框 | 必填，用于区分多个详情页记录 |
+| 上传文件 | detail_page_file / 上传 | 必填，需能解析为详情页内容与素材清单 |
+| 详情页内容 | content_schema_json / 富文本或模块化结构 | 必填；支持图文模块编辑 |
+| 当前使用 | is_current / 开关 | 同一渠道商品同时最多一条当前使用记录 |
+| 复用素材 | reused_asset_ids / 多选 | 可选择素材列表已有图片；同一素材可关联多个详情页 |
+| 关联素材数量 | asset_count / 列表字段 | 只读，支持跳转素材列表 |
+
+## 6. 状态与反馈
+
+- 同一产品在多个渠道、店铺售卖时会形成多个渠道商品，列表需统一展示这些渠道商品下的全部详情页记录。
+- 同一渠道商品最多允许存在 3 条详情页记录，历史记录保留可追溯。
+- 上传成功后要创建新的详情页记录，并把详情素材同步归档到素材列表。
+- 编辑保存后要保留详情页版本、最后编辑人和素材引用关系。
+- 上传文件无法解析、未选择渠道商品或详情页数量超限时，系统阻止保存并提示原因。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-CHANNEL-ITEM | 渠道商品 |
+| 对象 | OBJ-ITEM-DETAIL-PAGE | 商品详情页记录 |
+| 对象 | OBJ-ASSET | 素材对象 |
+| 接口 | API-ITEM-DETAIL-PAGE-LIST-GET | 获取商品详情页列表 |
+| 接口 | API-ITEM-DETAIL-PAGE-DETAIL-GET | 获取详情页预览与素材摘要 |
+| 接口 | API-ITEM-DETAIL-PAGE-UPLOAD-POST | 上传新详情页并归档素材 |
+| 接口 | API-ITEM-DETAIL-PAGE-PUT | 保存详情页内容与当前使用状态 |
+| 接口 | API-ITEM-DETAIL-PAGE-ASSET-LINK-POST | 复用素材列表中的已有图片到详情页 |
+
+## 8. 范围边界
+
+- 当前页管理的是全部渠道商品的详情页记录，不是单商品售卖字段编辑页。
+- 素材原子管理在素材列表，但当前页必须支持搜索和引用已有素材到详情页，不要求每次都重新上传图片。
+- 上传新详情页默认可直接设为当前使用详情；历史详情页继续保留，不自动删除。
+- 允许把同一张图片复用到多个商品详情页，但素材文件本身的原子维护仍归素材列表。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/商品管理/05-渠道商品详情页列表.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/库存管理/01-库存列表页.md
+================================================================================
+
+# 图书多渠道商品中台-库存列表页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-库存列表页.md |
+| doc_id | PAGE-INV-LIST |
+| doc_slug | page-inventory-list |
+| page_id | PG-INV-LIST |
+| page_group_id | PGROUP-INV |
+| route_key | inventory.list |
+| menu_key | menu.inventory |
+| 当前菜单名称 | 库存管理 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-INV-LIST |
+| 关联机制 | MECH-INV-SYNC、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../04-库存管理-页面组.md |
+| 下游文档 | 02-库存详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+统一查看产品在各渠道商品、店铺和 SKU 下的库存总览，并执行库存调整和同步。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 菜单 `menu.inventory` |
+| 出口 | 库存详情 |
+| 前置条件 | 库存查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按产品、渠道、店铺、SKU、同步状态筛选 | 当前重点 |
+| 指标区 | 总库存、可售库存、低库存数、同步失败数 | 当前重点 |
+| 列表区 | 展示总库存、可用库存、锁定库存、可售库存和同步状态 | 当前重点 |
+| 操作区 | 库存调整、触发同步、查看详情 | 当前重点 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 调整库存 | 点击调整按钮 | 弹出调整框并提交库存调整 |
+| 触发同步 | 点击同步按钮 | 发起库存同步任务 |
+| 查看详情 | 点击详情按钮 | 进入库存详情页（增强） |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 产品 / SKU | product_id、sku_code / 组合字段 | 支持模糊搜索 |
+| 渠道 | channel_code / 下拉 | 支持四渠道 |
+| 同步状态 | sync_status / 下拉 | 全部、待同步、同步中、成功、失败 |
+| 可售库存 | sellable_stock / 列表字段 | 列表高亮低库存 |
+
+## 6. 状态与反馈
+
+- 同步中时禁用再次同步按钮。
+- 调整库存成功后刷新当前行并提示最新同步状态。
+- 低库存行高亮，便于运营快速定位。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-INVENTORY | 库存对象 |
+| 接口 | API-INV-LIST-GET | 库存列表查询 |
+| 接口 | API-INV-ADJUST-POST | 库存调整 |
+| 接口 | API-INV-SYNC-POST | 库存同步 |
+
+## 8. 范围边界
+
+- 当前页是库存维护主入口，当前一期不展开多仓拆分。
+- 库存调整记录作为增强预留二级菜单独立承接，不作为库存列表的默认出口。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/库存管理/01-库存列表页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/库存管理/02-库存详情页.md
+================================================================================
+
+# 图书多渠道商品中台-库存详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-库存详情页.md |
+| doc_id | PAGE-INV-DETAIL |
+| doc_slug | page-inventory-detail |
+| page_id | PG-INV-DETAIL |
+| page_group_id | PGROUP-INV |
+| route_key | inventory.detail |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-INV-DETAIL |
+| 关联机制 | MECH-INV-SYNC |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../04-库存管理-页面组.md |
+| 下游文档 | - |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+查看单条库存记录的完整快照、最近同步结果和关联调整记录。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 库存列表详情按钮 |
+| 出口 | 库存列表 |
+| 前置条件 | 库存记录已存在 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 摘要区 | 产品、渠道、店铺、SKU、同步状态摘要 | 增强预留 |
+| 库存快照区 | 总库存、可用库存、锁定库存、可售库存 | 增强预留 |
+| 最近记录区 | 展示最近几次调整与同步结果 | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 返回总览 | 点击返回 | 返回库存列表 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 库存记录 ID | inventory_id / 只读 | 唯一标识 |
+| 同步失败原因 | failure_reason / 文本 | 同步失败时展示 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留，可先保留路由占位。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-INVENTORY | 库存对象 |
+| 接口 | API-INV-DETAIL-GET | 库存详情查询 |
+
+## 8. 范围边界
+
+- 当前一期库存主流程已由库存列表覆盖，本页不是阻断依赖。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/库存管理/02-库存详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/库存管理/03-库存调整记录页.md
+================================================================================
+
+# 图书多渠道商品中台-库存调整记录页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-库存调整记录页.md |
+| doc_id | PAGE-INV-LOG |
+| doc_slug | page-inventory-adjust-log |
+| page_id | PG-INV-LOG |
+| page_group_id | PGROUP-INV |
+| route_key | inventory.adjust_log |
+| menu_key | menu.inventory.adjust_log |
+| 当前菜单名称 | 库存调整记录 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-INV-LOG |
+| 关联机制 | MECH-INV-SYNC |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../04-库存管理-页面组.md |
+| 下游文档 | 02-库存详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+查看库存调整台账、调整前后变化、原因、操作人和同步结果。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 二级菜单 `menu.inventory.adjust_log` |
+| 出口 | 库存列表 |
+| 前置条件 | 库存查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按产品、渠道、店铺、时间、操作人筛选 | 增强预留 |
+| 台账区 | 展示调整前后库存、原因、同步状态、操作时间 | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 返回库存总览 | 点击返回 | 返回库存列表 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 调整原因 | adjust_reason / 文本 | 必填 |
+| 调整前后值 | before_after / 只读 | 台账展示字段 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-INVENTORY-LOG | 库存调整日志 |
+| 接口 | API-INV-ADJUST-LOG-GET | 库存调整记录查询 |
+
+## 8. 范围边界
+
+- 当前一期不阻断交付，可后续补齐。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/库存管理/03-库存调整记录页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/素材管理/01-素材列表页.md
+================================================================================
+
+# 图书多渠道商品中台-素材列表页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-素材列表页.md |
+| doc_id | PAGE-ASSET-LIST |
+| doc_slug | page-asset-list |
+| page_id | PG-ASSET-LIST |
+| page_group_id | PGROUP-ASSET |
+| route_key | asset.list |
+| menu_key | menu.asset |
+| 当前菜单名称 | 素材管理 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-ASSET-LIST |
+| 关联机制 | MECH-IMPORT-STD |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../02-素材管理-页面组.md |
+| 下游文档 | 02-素材详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+统一查看导入后的主图、详情图和 SKU 图素材，并按引用关系筛选。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 素材管理菜单 |
+| 出口 | 素材详情、产品详情、渠道商品详情 |
+| 前置条件 | 素材查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按素材类型、引用对象、渠道筛选 | 增强预留 |
+| 列表区 | 展示预览图、引用对象、来源导入任务 | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 查看详情 | 点击素材卡片或详情按钮 | 进入素材详情页 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 素材类型 | asset_type / 下拉 | 主图、详情、SKU 图 |
+| 引用对象 | bind_object / 文本 | 支持产品或渠道商品检索 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-ASSET | 素材对象 |
+| 接口 | API-ASSET-LIST-GET | 素材列表查询 |
+
+## 8. 范围边界
+
+- 当前一期不以素材管理为主入口。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/素材管理/01-素材列表页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/素材管理/02-素材详情页.md
+================================================================================
+
+# 图书多渠道商品中台-素材详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-素材详情页.md |
+| doc_id | PAGE-ASSET-DETAIL |
+| doc_slug | page-asset-detail |
+| page_id | PG-ASSET-DETAIL |
+| page_group_id | PGROUP-ASSET |
+| route_key | asset.detail |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-增强 |
+| 所属功能 | FEAT-ASSET-DETAIL |
+| 关联机制 | MECH-IMPORT-STD |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../02-素材管理-页面组.md |
+| 下游文档 | ../产品管理/03-产品详情页.md；../商品管理/02-渠道商品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | enhancement-reserved |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+查看素材预览、存储路径、引用关系和替换建议。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 素材列表内容进入 |
+| 出口 | 素材列表、产品详情、渠道商品详情 |
+| 前置条件 | 素材已存在 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 预览区 | 展示原图、缩略图和尺寸信息 | 增强预留 |
+| 引用关系区 | 展示引用产品/商品/SKU | 增强预留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 返回列表 | 点击返回 | 返回素材列表 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 素材路径 | asset_path / 只读 | 展示存储路径 |
+| 引用次数 | bind_count / 只读 | 展示素材使用范围 |
+
+## 6. 状态与反馈
+
+- 当前为增强预留。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-ASSET | 素材对象 |
+| 接口 | API-ASSET-DETAIL-GET | 素材详情查询 |
+
+## 8. 范围边界
+
+- 当前不做在线图片编辑或裁剪。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/素材管理/02-素材详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/01-配置列表页.md
+================================================================================
+
+# 图书多渠道商品中台-配置列表页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-配置列表页.md |
+| doc_id | PAGE-CONF-LIST |
+| doc_slug | page-config-list |
+| page_id | PG-CONF-LIST |
+| page_group_id | PGROUP-CONF |
+| route_key | config.list |
+| menu_key | menu.config |
+| 当前菜单名称 | 配置管理 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-CONF-LIST |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../05-配置管理-页面组.md |
+| 下游文档 | 04-店铺配置详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+汇总店铺级规则配置，作为导入模板和渠道商品动态字段的配置入口。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 菜单 `menu.config` |
+| 出口 | 店铺配置详情 |
+| 前置条件 | 配置查看权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 筛选区 | 按渠道、店铺、状态筛选配置 | 当前重点 |
+| 列表区 | 展示店铺、渠道、配置状态、类目规则版本、更新时间 | 当前重点 |
+| 操作区 | 查看详情、复制配置、启停用配置 | 建议保留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 查看详情 | 点击配置名称 | 进入店铺配置详情页 |
+| 复制配置 | 点击复制 | 以复制模式进入详情页 |
+| 停用配置 | 点击停用 | 更新配置状态 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 渠道 | channel_code / 下拉 | 必填 |
+| 店铺 | shop_code / 下拉 | 必填 |
+| 配置状态 | config_status / 标签 | 草稿、生效中、停用 |
+
+## 6. 状态与反馈
+
+- 无配置时保留新增或复制入口。
+- 停用操作需二次确认。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-SHOP-CONFIG | 店铺配置对象 |
+| 接口 | API-CONF-LIST-GET | 配置列表查询 |
+
+## 8. 范围边界
+
+- 当前不拆系统级配置和渠道级配置独立页。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/01-配置列表页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/02-系统配置详情页.md
+================================================================================
+
+# 图书多渠道商品中台-系统配置详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-系统配置详情页.md |
+| doc_id | PAGE-CONF-SYSTEM |
+| doc_slug | page-config-system-detail |
+| page_id | PAGE-CONF-SYSTEM |
+| page_group_id | PGROUP-CONF |
+| route_key | config.system_detail |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | 不在当前范围 |
+| 所属功能 | 历史扩展页 |
+| 上游文档 | ../../../baselines/00-feature-list.md；../05-配置管理-页面组.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | archive-candidate |
+| 更新时间 | 2026-04-20 |
+
+## 1. 当前状态
+
+- 当前配置只做到店铺级规则，不做独立系统配置详情页。
+- 当前文件保留是为了保持路径、追踪关系和未来恢复时的上下文。
+
+## 2. 若未来恢复，需要先完成
+
+1. 把对应功能和页面节点重新纳入当前 baselines。
+2. 补齐对象、接口和测试用例。
+3. 在前端路由中恢复入口并重新纳入交付索引。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/02-系统配置详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/03-渠道配置详情页.md
+================================================================================
+
+# 图书多渠道商品中台-渠道配置详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-渠道配置详情页.md |
+| doc_id | PAGE-CONF-CHANNEL |
+| doc_slug | page-config-channel-detail |
+| page_id | PAGE-CONF-CHANNEL |
+| page_group_id | PGROUP-CONF |
+| route_key | config.channel_detail |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | 不在当前范围 |
+| 所属功能 | 历史扩展页 |
+| 上游文档 | ../../../baselines/00-feature-list.md；../05-配置管理-页面组.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | archive-candidate |
+| 更新时间 | 2026-04-20 |
+
+## 1. 当前状态
+
+- 当前一期不拆独立渠道配置详情页，渠道差异规则收口在店铺配置详情页内。
+- 当前文件保留是为了保持路径、追踪关系和未来恢复时的上下文。
+
+## 2. 若未来恢复，需要先完成
+
+1. 把对应功能和页面节点重新纳入当前 baselines。
+2. 补齐对象、接口和测试用例。
+3. 在前端路由中恢复入口并重新纳入交付索引。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/03-渠道配置详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md
+================================================================================
+
+# 图书多渠道商品中台-店铺配置详情页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-店铺配置详情页.md |
+| doc_id | PAGE-CONF-DETAIL |
+| doc_slug | page-config-shop-detail |
+| page_id | PG-CONF-DETAIL |
+| page_group_id | PGROUP-CONF |
+| route_key | config.shop_detail |
+| menu_key | - |
+| 当前菜单名称 | 无固定菜单 |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | V1-必做 |
+| 所属功能 | FEAT-CONF-SHOP-DETAIL、FEAT-ITEM-CATEGORY-RULE |
+| 关联机制 | MECH-ITEM-MAINTAIN、MECH-AUTH-AUDIT |
+| 上游文档 | ../../../baselines/00-feature-list.md；../../../baselines/01-page-tree.md；../05-配置管理-页面组.md |
+| 下游文档 | ../产品管理/04-产品导入页.md；../商品管理/02-渠道商品详情页.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 页面目标
+
+维护店铺级类目动态适配规则、运费模板、默认上下架状态和发货时效，为导入模板和商品详情页提供字段口径。
+
+## 2. 入口、出口与前置条件
+
+| 项目 | 内容 |
+|---|---|
+| 入口 | 配置列表内容进入 |
+| 出口 | 配置列表、渠道商品详情、产品导入 |
+| 前置条件 | 配置编辑权限 |
+
+## 3. 页面结构
+
+| 区块 | 说明 | 当前重点 |
+|---|---|---|
+| 基本信息区 | 渠道、店铺、状态、适用范围 | 当前重点 |
+| 类目规则区 | 配置可用类目、属性 profile 版本和字段范围 | 当前重点 |
+| 履约规则区 | 运费模板、默认上下架状态、发货时效 | 当前重点 |
+| 生效信息区 | 展示最近发布时间、发布人和生效说明 | 建议保留 |
+
+## 4. 主次操作
+
+| 动作 | 触发条件 | 结果 |
+|---|---|---|
+| 保存草稿 | 修改规则后 | 保存但不生效 |
+| 启用配置 | 草稿保存后 | 切换为生效中 |
+| 停用配置 | 已生效配置点击停用 | 切换为停用 |
+
+## 5. 字段与校验
+
+| 字段 | 编码 / 类型 | 规则 |
+|---|---|---|
+| 店铺 | shop_code / 下拉 | 必填 |
+| 可用类目 | available_categories / 多选或树 | 决定导入模板与详情页类目范围 |
+| 类目字段版本 | profile_version / 只读或选择 | 用于模板下载和详情动态字段 |
+| 运费模板 | freight_templates / 多选 | 支持配置可用模板集合 |
+| 默认上下架状态 | default_shelf_status / 单选 | 上架或下架 |
+| 发货时效 | default_delivery_sla / 下拉或输入 | 必填 |
+
+## 6. 状态与反馈
+
+- 停用后不能被新导入任务和详情页规则加载。
+- 复制模式进入时默认生成新配置主键。
+- 生效中配置编辑时，需要提示是否覆盖后续新任务的模板字段口径。
+
+## 7. 依赖对象与接口
+
+| 类型 | 标识 | 作用 |
+|---|---|---|
+| 对象 | OBJ-SHOP-CONFIG | 店铺配置对象 |
+| 对象 | OBJ-CATEGORY-PROFILE | 类目 profile |
+| 接口 | API-CONF-DETAIL-GET | 读取配置详情 |
+| 接口 | API-CONF-DETAIL-PUT | 保存配置详情 |
+
+## 8. 范围边界
+
+- 当前不拆系统级配置、渠道级配置和模板配置独立页面。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/04-店铺配置详情页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/05-导入模板配置页.md
+================================================================================
+
+# 图书多渠道商品中台-导入模板配置页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-导入模板配置页.md |
+| doc_id | PAGE-CONF-TEMPLATE |
+| doc_slug | page-config-template |
+| page_id | PAGE-CONF-TEMPLATE |
+| page_group_id | PGROUP-CONF |
+| route_key | config.template |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | 不在当前范围 |
+| 所属功能 | 历史扩展页 |
+| 上游文档 | ../../../baselines/00-feature-list.md；../05-配置管理-页面组.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | archive-candidate |
+| 更新时间 | 2026-04-20 |
+
+## 1. 当前状态
+
+- 模板下载已收口在产品导入页，当前不做独立导入模板配置页。
+- 当前文件保留是为了保持路径、追踪关系和未来恢复时的上下文。
+
+## 2. 若未来恢复，需要先完成
+
+1. 把对应功能和页面节点重新纳入当前 baselines。
+2. 补齐对象、接口和测试用例。
+3. 在前端路由中恢复入口并重新纳入交付索引。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/05-导入模板配置页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/03-页面设计层/平台电脑端/配置管理/06-操作日志页.md
+================================================================================
+
+# 图书多渠道商品中台-操作日志页
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 06-操作日志页.md |
+| doc_id | PAGE-CONF-LOG |
+| doc_slug | page-config-log |
+| page_id | PAGE-CONF-LOG |
+| page_group_id | PGROUP-CONF |
+| route_key | config.log |
+| 文档层级 | 03-页面设计层 |
+| 文档对象 | 页面 |
+| 交付级别 | 不在当前范围 |
+| 所属功能 | 历史扩展页 |
+| 上游文档 | ../../../baselines/00-feature-list.md；../05-配置管理-页面组.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | archive-candidate |
+| 更新时间 | 2026-04-20 |
+
+## 1. 当前状态
+
+- 审计能力通过对象级字段和事件日志承接，当前不做独立操作日志页。
+- 当前文件保留是为了保持路径、追踪关系和未来恢复时的上下文。
+
+## 2. 若未来恢复，需要先完成
+
+1. 把对应功能和页面节点重新纳入当前 baselines。
+2. 补齐对象、接口和测试用例。
+3. 在前端路由中恢复入口并重新纳入交付索引。
+
+
+================================================================================
+FILE END: docs/03-页面设计层/平台电脑端/配置管理/06-操作日志页.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/01-核心对象定义.md
+================================================================================
+
+# 图书多渠道商品中台-核心对象定义
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-核心对象定义.md |
+| doc_id | DOC-DATA-OBJECTS |
+| doc_slug | core-objects |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 核心对象定义 |
+| 上游文档 | ../baselines/00-feature-list.md；../02-专题机制层/ |
+| 下游文档 | 02-逻辑数据模型.md；03-字段字典.md；05-接口清单.md；07-表设计建议.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 核心对象清单
+
+| object_id | 对象名称 | 主责角色 | 来源系统 | 写入入口 | 唯一键/主标识 | 当前状态 | 说明 |
+|---|---|---|---|---|---|---|---|
+| OBJ-PRODUCT | 产品 | 商品运营 | 中台 | 产品导入、产品详情、新增产品 | `product_id`；业务唯一键建议 `merchant_code` | 当前范围 | 中台统一产品主档，是归集中心。 |
+| OBJ-PRODUCT-SKU | 产品 SKU | 商品运营 | 中台 | 产品导入、产品详情 | `product_sku_id`；业务键建议 `merchant_sku_code` | 当前范围 | 产品维度规格记录，供商品和库存引用。 |
+| OBJ-CHANNEL-ITEM | 渠道商品 | 渠道运营 | 中台+外部渠道映射 | 产品导入、渠道商品详情、批量修改 | `channel_item_id`；组合业务键 `product_id + channel_code + shop_code + outer_item_id` | 当前范围 | 承接多渠道多店铺售卖差异信息。 |
+| OBJ-ITEM-DETAIL-PAGE | 商品详情页 | 渠道运营 | 中台 | 渠道商品详情页列表 | `detail_page_id`；业务键建议 `channel_item_id + detail_page_name + uploaded_at` | 当前范围 | 渠道商品详情页记录；同一产品在多个渠道会形成多个渠道商品和多套详情页；单个渠道商品最多允许存在 3 个详情页版本。 |
+| OBJ-CHANNEL-ITEM-SKU | 渠道商品 SKU | 渠道运营 | 中台 | 产品导入、渠道商品详情 | `channel_item_sku_id` | 当前范围 | 渠道商品下销售规格记录，和库存一对一关联。 |
+| OBJ-IMPORT-JOB | 导入任务 | 商品运营 | 中台 | 产品导入、导入记录 | `import_job_id` | 当前范围 | 记录导入批次级状态、模板版本和执行结果。 |
+| OBJ-IMPORT-JOB-LINE | 导入行结果 | 商品运营 | 中台 | 导入校验、导入记录、商家编码关联处理 | `line_id`；组合业务键 `import_job_id + row_no` | 当前范围 | 行级校验结果、异常原因和关联结论。 |
+| OBJ-INVENTORY | 库存记录 | 库存运营 | 中台 | 产品导入、库存列表、库存同步 | `inventory_id`；业务键 `channel_item_sku_id` | 当前范围 | 聚合总库存、可用库存、锁定库存、可售库存。 |
+| OBJ-INVENTORY-LOG | 库存调整日志 | 库存运营 | 中台 | 库存调整、同步回写 | `inventory_log_id` | 增强预留 | 记录库存变更前后值、原因和操作人。 |
+| OBJ-INVENTORY-SYNC-TASK | 库存同步任务 | 库存运营 | 中台 | 库存同步 | `sync_task_id` | 当前范围 | 记录同步请求、外部回执和失败原因。 |
+| OBJ-SHOP-CONFIG | 店铺配置 | 系统管理员 | 中台 | 配置列表、店铺配置详情 | `shop_config_id`；业务键 `channel_code + shop_code + version_no` | 当前范围 | 维护店铺级规则和版本切换。 |
+| OBJ-CATEGORY-PROFILE | 类目 profile | 系统管理员 | 中台 | 店铺配置详情 | `profile_id`；业务键 `shop_config_id + category_code` | 当前范围 | 定义动态字段、类目属性和销售属性范围。 |
+| OBJ-ASSET | 素材对象 | 商品运营、渠道运营 | 中台 | 产品导入、素材管理、渠道商品详情页列表 | `asset_id` | 增强预留 | 主图、详情图、SKU 图等素材资产，包含商品详情页上传落盘后的素材文件；同一素材可被多个商品详情页复用。 |
+| OBJ-AUDIT-LOG | 审计日志 | 系统管理员 | 中台 | 导入、编辑、库存、配置保存动作 | `audit_log_id` | 当前范围 | 关键操作审计与追溯。 |
+
+## 2. 对象职责边界
+
+| 对象 | 谁写入 | 谁消费 | 当前边界 |
+|---|---|---|---|
+| 产品 / 产品 SKU | 商品运营 | 渠道运营、库存运营 | 承接产品主档和默认资料，不直接承接渠道差异信息。 |
+| 渠道商品 / 渠道商品 SKU | 渠道运营 | 库存运营、系统管理员 | 承接导入后的全渠道商品统一管理与编辑，不直接保存多版本详情页内容。 |
+| 商品详情页 | 渠道运营 | 渠道运营、商品运营 | 承接同一渠道商品下最多 3 个详情页记录、当前使用版本和详情内容，不替代素材对象。 |
+| 导入任务 / 导入行结果 | 商品运营 | 渠道运营、系统管理员 | 承接导入闭环、异常行和关联处理结果。 |
+| 库存 / 库存调整日志 / 同步任务 | 库存运营 | 渠道运营 | 一期按单库存池模型处理，不引入多仓。 |
+| 店铺配置 / 类目 profile | 系统管理员 | 商品运营、渠道运营 | 统一影响模板字段范围和商品详情动态字段范围。 |
+| 素材 / 审计日志 | 多角色 | 多角色 | 素材当前为增强预留，审计为一期必备支撑对象。 |
+
+## 3. 当前建模约束
+
+- `merchant_code` 是产品和渠道商品归集主键，一期必须存在。
+- `merchant_sku_code` 当前建议补充，不作为一期阻断，但字段模型应预留。
+- 同一 `channel_item_id` 下最多可存在 3 条商品详情页记录，且 `is_current=true` 同时最多一条。
+- 商品详情页上传后必须把原始详情文件或拆解后的素材写入 `OBJ-ASSET`，并保留 `detail_page_id -> asset_id` 的引用关系。
+- 同一 `asset_id` 允许被多个 `detail_page_id` 引用，禁止因为复用场景而复制多份物理素材。
+- 店铺配置必须版本化，任一店铺在同一时点只允许一个 `active` 版本。
+- 库存同步结果必须落到同步任务或库存日志中，不能只保留外部临时回执。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/01-核心对象定义.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/02-逻辑数据模型.md
+================================================================================
+
+# 图书多渠道商品中台-逻辑数据模型
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-逻辑数据模型.md |
+| doc_id | DOC-DATA-MODEL |
+| doc_slug | logical-data-model |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 逻辑数据模型 |
+| 上游文档 | 01-核心对象定义.md |
+| 下游文档 | 03-字段字典.md；07-表设计建议.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 关系图
+
+```mermaid
+graph LR
+  PRODUCT["产品"] --> PRODUCT_SKU["产品 SKU"]
+  PRODUCT --> CHANNEL_ITEM["渠道商品"]
+  CHANNEL_ITEM --> ITEM_DETAIL_PAGE["商品详情页"]
+  CHANNEL_ITEM --> CHANNEL_ITEM_SKU["渠道商品 SKU"]
+  CHANNEL_ITEM_SKU --> INVENTORY["库存记录"]
+  INVENTORY --> INVENTORY_LOG["库存调整日志"]
+  INVENTORY --> INVENTORY_SYNC_TASK["库存同步任务"]
+  SHOP_CONFIG["店铺配置"] --> CATEGORY_PROFILE["类目 profile"]
+  SHOP_CONFIG --> IMPORT_JOB["导入任务快照"]
+  CATEGORY_PROFILE --> CHANNEL_ITEM
+  IMPORT_JOB --> IMPORT_LINE["导入行结果"]
+  IMPORT_LINE --> PRODUCT
+  IMPORT_LINE --> CHANNEL_ITEM
+  PRODUCT --> ASSET["素材对象"]
+  CHANNEL_ITEM --> ASSET
+  ITEM_DETAIL_PAGE --> ASSET
+  IMPORT_JOB --> AUDIT["审计日志"]
+  CHANNEL_ITEM --> AUDIT
+  INVENTORY --> AUDIT
+  SHOP_CONFIG --> AUDIT
+```
+
+## 2. 核心关系表
+
+| 主对象 | 关系 | 从对象 | 说明 |
+|---|---|---|---|
+| 产品 | 1:N | 产品 SKU | 一个产品下可有多个产品 SKU。 |
+| 产品 | 1:N | 渠道商品 | 同一产品可映射到多个渠道和多个店铺。 |
+| 渠道商品 | 1:N | 商品详情页 | 同一渠道商品最多可关联 3 个详情页记录，仅允许一个当前使用版本。 |
+| 渠道商品 | 1:N | 渠道商品 SKU | 商品详情中的销售属性最终落到 SKU。 |
+| 渠道商品 SKU | 1:1 | 库存记录 | 一期每个渠道商品 SKU 对应一条库存主记录。 |
+| 库存记录 | 1:N | 库存调整日志 | 每次人工调整和同步回写都要留痕。 |
+| 库存记录 | 1:N | 库存同步任务 | 同一库存记录可多次发起同步请求。 |
+| 店铺配置 | 1:N | 类目 profile | 每个配置版本可挂多个类目 profile。 |
+| 导入任务 | 1:N | 导入行结果 | 每个导入任务记录行级状态和异常。 |
+| 产品/渠道商品/商品详情页 | 1:N | 素材对象 | 素材按产品、商品、详情页或 SKU 绑定。 |
+| 多业务对象 | 1:N | 审计日志 | 导入、编辑、库存、配置动作统一审计。 |
+
+## 3. 一致性规则
+
+1. `channel_item.product_id` 必须引用已存在产品主档。
+2. `inventory.channel_item_sku_id` 必须引用已存在的渠道商品 SKU。
+3. `shop_config.status=active` 的同店铺同渠道版本只允许一条。
+4. `category_profile.shop_config_id` 必须关联到具体配置版本，不能脱离版本独立存在。
+5. `import_job_line` 在完成关联处理前，不允许进入最终执行成功状态。
+6. 同一 `channel_item_id` 下的商品详情页记录最多 3 条，且只允许一条处于 `current` 使用状态。
+7. 审计日志必须记录 `biz_type + biz_id + action_type + operator_id + created_at`。
+
+## 4. 当前建模取舍
+
+- 一期不引入仓库、仓位、多仓调拨模型，库存统一在单库存池处理。
+- 导入任务保留配置快照引用，避免配置版本变更导致历史任务不可回溯。
+- 商品详情页记录与渠道商品详情页拆开建模，避免把多版本详情内容混在单商品售卖字段模型里，并支撑同一素材跨商品详情页复用。
+- 素材管理虽然是增强预留，但对象模型和绑定关系必须先预留稳定结构。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/02-逻辑数据模型.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/03-字段字典.md
+================================================================================
+
+# 图书多渠道商品中台-字段字典
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-字段字典.md |
+| doc_id | DOC-DATA-FIELDS |
+| doc_slug | field-dictionary |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 字段字典 |
+| 上游文档 | 01-核心对象定义.md；02-逻辑数据模型.md；../02-专题机制层/ |
+| 下游文档 | 05-接口清单.md；07-表设计建议.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 关键字段
+
+| 对象 | 字段 | 编码 | 类型 | 必填 | 说明 |
+|---|---|---|---|---|---|
+| 产品 | 产品 ID | product_id | string | 是 | 产品主键 |
+| 产品 | 图书名称 | product_name | string | 是 | 图书主标题 |
+| 产品 | ISBN | isbn | string | 建议 | 图书唯一识别码 |
+| 产品 | 商家编码 | merchant_code | string | 是 | 产品与渠道商品归集主键 |
+| 产品 | 默认卖点 | default_selling_points | text | 否 | 默认内容摘要 |
+| 产品 SKU | 产品 SKU ID | product_sku_id | string | 是 | SKU 主键 |
+| 产品 SKU | 商家 SKU 编码 | merchant_sku_code | string | 建议 | SKU 级映射键 |
+| 产品 SKU | 规格 JSON | spec_json | json | 否 | 规格结构 |
+| 渠道商品 | 渠道商品 ID | channel_item_id | string | 是 | 渠道商品主键 |
+| 渠道商品 | 渠道 | channel_code | enum | 是 | TAOBAO / PINDUODUO / DOUYIN / KUAISHOU |
+| 渠道商品 | 店铺 | shop_code | string | 是 | 店铺识别码 |
+| 渠道商品 | 渠道侧商品 ID | outer_item_id | string | 否 | 外部平台商品识别 |
+| 渠道商品 | 商品标题 | item_title | string | 是 | 售卖标题 |
+| 渠道商品 | 类目 | category_code | string | 是 | 渠道类目编码 |
+| 渠道商品 | 类目属性 | category_attributes | json | 否 | 动态字段集合 |
+| 渠道商品 | 销售属性 | sales_attributes | json | 否 | SKU 级销售规格 |
+| 渠道商品 | 运费模板 | freight_template_id | string | 否 | 按店铺配置可选值 |
+| 渠道商品 | 上下架状态 | shelf_status | enum | 是 | on_shelf / off_shelf |
+| 渠道商品 | 发货时效 | delivery_sla | string | 否 | 发货承诺 |
+| 商品详情页 | 详情页 ID | detail_page_id | string | 是 | 详情页主键 |
+| 商品详情页 | 所属渠道商品 ID | channel_item_id | string | 是 | 关联渠道商品 |
+| 商品详情页 | 详情页名称 | detail_page_name | string | 是 | 用于区分多个详情页记录 |
+| 商品详情页 | 内容结构 | content_schema_json | json | 是 | 详情页图文模块、排序和文案结构 |
+| 商品详情页 | 当前使用标记 | is_current | boolean | 是 | 标记当前作为商品详情使用的版本 |
+| 商品详情页 | 上传批次号 | upload_batch_no | string | 否 | 同一次上传批次标识 |
+| 商品详情页 | 最近编辑时间 | last_edited_at | datetime | 否 | 最近一次内容编辑时间 |
+| 商品详情页 | 复用素材 ID 列表 | reused_asset_ids | json | 否 | 当前详情页引用的素材列表资产 |
+| 商品详情页 | 关联素材数量 | asset_count | number | 否 | 上传后沉淀的素材数量 |
+| 渠道商品 SKU | 渠道商品 SKU ID | channel_item_sku_id | string | 是 | 渠道商品 SKU 主键 |
+| 渠道商品 SKU | SKU 编码 | sku_code | string | 是 | 销售规格编码 |
+| 渠道商品 SKU | 销售属性值 | sales_attr_json | json | 否 | 规格值集合 |
+| 导入任务 | 导入任务 ID | import_job_id | string | 是 | 导入任务主键 |
+| 导入任务 | 导入渠道 | channel_code | enum | 是 | 当前导入渠道 |
+| 导入任务 | 店铺 | shop_code | string | 否 | 可为空，表示渠道级模板 |
+| 导入任务 | 模板版本 | template_version | string | 是 | 模板版本号 |
+| 导入任务 | 配置版本 | config_version_no | string | 否 | 配置快照版本 |
+| 导入任务 | 导入状态 | import_job_status | enum | 是 | 导入任务状态 |
+| 导入任务 | 警告数 | warning_count | number | 否 | 告警数量 |
+| 导入行结果 | 行结果 ID | line_id | string | 是 | 行主键 |
+| 导入行结果 | 行号 | row_no | number | 是 | Excel 行号 |
+| 导入行结果 | 商家编码 | merchant_code | string | 否 | 行级归集键 |
+| 导入行结果 | 校验结果 | validate_result | enum | 是 | pass / failed / warning |
+| 导入行结果 | 执行结果 | execute_result | enum | 否 | success / failed / skipped |
+| 导入行结果 | 错误信息 | error_message | text | 否 | 失败原因 |
+| 导入行结果 | 关联结果 | link_result | enum | 否 | matched / unresolved / fixed |
+| 库存 | 库存 ID | inventory_id | string | 是 | 库存主键 |
+| 库存 | 总库存 | total_stock | number | 是 | 总库存 |
+| 库存 | 可用库存 | available_stock | number | 是 | 可用库存 |
+| 库存 | 锁定库存 | locked_stock | number | 是 | 锁定库存 |
+| 库存 | 可售库存 | sellable_stock | number | 是 | 可售库存 |
+| 库存 | 同步状态 | sync_status | enum | 是 | idle / pending / syncing / success / failed |
+| 库存调整日志 | 调整日志 ID | inventory_log_id | string | 是 | 台账主键 |
+| 库存调整日志 | 调整量 | delta | number | 是 | 调整增减值 |
+| 库存调整日志 | 调整前库存 | before_stock | number | 是 | 调整前可售库存或总库存 |
+| 库存调整日志 | 调整后库存 | after_stock | number | 是 | 调整后库存 |
+| 库存调整日志 | 调整原因 | reason | string | 是 | 调整备注 |
+| 库存同步任务 | 同步任务 ID | sync_task_id | string | 是 | 同步任务主键 |
+| 库存同步任务 | 请求状态 | task_status | enum | 是 | pending / syncing / success / failed |
+| 库存同步任务 | 外部回执 | external_result | json | 否 | 外部同步返回 |
+| 店铺配置 | 配置 ID | shop_config_id | string | 是 | 配置主键 |
+| 店铺配置 | 渠道 | channel_code | enum | 是 | 配置所属渠道 |
+| 店铺配置 | 店铺 | shop_code | string | 是 | 配置所属店铺 |
+| 店铺配置 | 配置状态 | status | enum | 是 | draft / active / inactive |
+| 店铺配置 | 版本号 | version_no | string | 是 | 版本标识 |
+| 店铺配置 | 默认上下架状态 | default_shelf_status | enum | 否 | 默认售卖状态 |
+| 店铺配置 | 默认发货时效 | default_delivery_sla | string | 否 | 默认时效 |
+| 类目 profile | profile_id | profile_id | string | 是 | profile 主键 |
+| 类目 profile | 类目编码 | category_code | string | 是 | 渠道类目编码 |
+| 类目 profile | 字段 schema | field_schema_json | json | 是 | 动态字段定义 |
+| 类目 profile | 销售属性 schema | sales_schema_json | json | 否 | 销售属性定义 |
+| 素材 | 素材 ID | asset_id | string | 是 | 素材主键 |
+| 素材 | 素材类型 | asset_type | enum | 是 | 主图 / 详情 / SKU 图 |
+| 素材 | 素材路径 | asset_path | string | 是 | 存储路径 |
+| 素材 | 绑定对象类型 | bind_object_type | enum | 否 | product / channel_item / item_detail_page / channel_item_sku |
+| 审计日志 | 审计日志 ID | audit_log_id | string | 是 | 审计主键 |
+| 审计日志 | 业务类型 | biz_type | string | 是 | import_job / channel_item / inventory / shop_config |
+| 审计日志 | 业务 ID | biz_id | string | 是 | 业务对象主键 |
+| 审计日志 | 动作类型 | action_type | string | 是 | create / update / execute / sync / publish |
+| 审计日志 | 操作人 | operator_id | string | 是 | 操作账号 |
+
+## 2. 当前字段约束
+
+- `merchant_code` 是一期统一归集关键字段，产品和导入行结果必须保留。
+- `category_attributes`、`sales_attributes`、`field_schema_json` 统一使用 JSON，避免类目差异导致固定列爆炸。
+- 同一 `channel_item_id` 下如果 `is_current=true` 的详情页记录已存在，新上传详情页或切换当前版本时必须先取消旧记录的当前使用标记。
+- 同一 `channel_item_id` 下最多允许 3 条详情页记录；达到上限后必须先删除、归档或覆盖后再新增。
+- `reused_asset_ids` 中同一 `asset_id` 可在多个 `detail_page_id` 中重复出现，表示素材复用而非复制。
+- `sync_status` 和 `task_status` 必须分开，前者表达库存结果状态，后者表达某次任务状态。
+- `version_no` 和 `template_version` 必须同时保留，便于回溯导入时使用的是哪套规则。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/03-字段字典.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/04-状态与枚举字典.md
+================================================================================
+
+# 图书多渠道商品中台-状态与枚举字典
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-状态与枚举字典.md |
+| doc_id | DOC-DATA-ENUMS |
+| doc_slug | status-enum-dictionary |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 状态与枚举 |
+| 上游文档 | ../00-总览层/03-状态流转机制说明.md |
+| 下游文档 | 05-接口清单.md；../05-验收与测试层/04-权限与状态流转测试场景.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 渠道枚举
+
+| 编码 | 名称 | 说明 |
+|---|---|---|
+| TAOBAO | 淘宝 | 当前支持导入与商品维护 |
+| PINDUODUO | 拼多多 | 当前支持导入与商品维护 |
+| DOUYIN | 抖音 | 当前支持导入与商品维护 |
+| KUAISHOU | 快手 | 当前支持导入与商品维护 |
+
+## 2. 关键状态
+
+| 分类 | 枚举值 | 说明 |
+|---|---|---|
+| 导入任务 | draft / validating / validate_failed / ready_to_execute / executing / completed / execute_failed | 导入状态流转 |
+| 渠道商品 | draft / ready / on_shelf / off_shelf / locked | 渠道商品售卖状态 |
+| 商品详情页使用状态 | current / history | 当前使用版本与历史版本 |
+| 库存同步 | idle / pending / syncing / success / failed | 库存同步状态 |
+| 配置状态 | draft / active / inactive | 店铺配置状态 |
+| 素材类型 | main / detail / sku | 素材分类 |
+| 素材绑定对象 | product / channel_item / item_detail_page / channel_item_sku | 素材归属对象类型 |
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/04-状态与枚举字典.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/05-接口清单.md
+================================================================================
+
+# 图书多渠道商品中台-接口清单
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-接口清单.md |
+| doc_id | DOC-DATA-APIS |
+| doc_slug | api-catalog |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 接口定义 |
+| 上游文档 | 01-核心对象定义.md；03-字段字典.md；04-状态与枚举字典.md |
+| 下游文档 | ../02-专题机制层/；../03-页面设计层/；../05-验收与测试层/ |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 接口清单
+
+| api_id | 接口 | 方法 | 主要归属 | 版本范围 | 当前状态 | 鉴权 | 幂等性 | 用途 |
+|---|---|---|---|---|---|---|---|---|
+| API-PROD-LIST-GET | /api/products | GET | 产品列表 | V1 | current-effective | 登录且有产品查看权限 | 是 | 查询产品列表 |
+| API-PROD-DETAIL-GET | /api/products/{{product_id}} | GET | 产品详情 | V1 | current-effective | 登录且有产品查看权限 | 是 | 查询产品详情 |
+| API-PROD-DETAIL-PUT | /api/products/{{product_id}} | PUT | 产品详情 | V1 | current-effective | 登录且有产品编辑权限 | 是 | 保存产品详情 |
+| API-PROD-CREATE-POST | /api/products | POST | 新增产品 | 增强 | enhancement-reserved | 登录且有产品编辑权限 | 否 | 手工创建产品 |
+| API-IMPORT-TEMPLATE-PROFILE-GET | /api/import-templates/profiles | GET | 产品导入 | V1 | current-effective | 登录且有导入查看权限 | 是 | 查询模板字段版本和可选项 |
+| API-IMPORT-TEMPLATE-DOWNLOAD-GET | /api/import-templates/download | GET | 产品导入 | V1 | current-effective | 登录且有导入查看权限 | 是 | 按渠道下载模板，店铺可选 |
+| API-IMPORT-UPLOAD-POST | /api/import-jobs/upload | POST | 产品导入 | V1 | current-effective | 登录且有导入执行权限 | 否 | 上传导入文件并创建任务 |
+| API-IMPORT-VALIDATE-POST | /api/import-jobs/{{import_job_id}}/validate | POST | 产品导入 | V1 | current-effective | 登录且有导入执行权限 | 是 | 执行校验 |
+| API-IMPORT-EXECUTE-POST | /api/import-jobs/{{import_job_id}}/execute | POST | 产品导入 | V1 | current-effective | 登录且有导入执行权限 | 是 | 确认导入 |
+| API-IMPORT-LIST-GET | /api/import-jobs | GET | 导入记录 | V1 | current-effective | 登录且有导入查看权限 | 是 | 查询导入任务列表 |
+| API-IMPORT-DETAIL-GET | /api/import-jobs/{{import_job_id}} | GET | 导入记录 | V1 | current-effective | 登录且有导入查看权限 | 是 | 查询导入任务详情和统计结果 |
+| API-IMPORT-LINES-GET | /api/import-jobs/{{import_job_id}}/lines | GET | 导入记录 | V1 | current-effective | 登录且有导入查看权限 | 是 | 查询导入失败明细和行级结果 |
+| API-IMPORT-REVALIDATE-POST | /api/import-jobs/{{import_job_id}}/revalidate | POST | 导入记录 | V1 | current-effective | 登录且有导入执行权限 | 是 | 在修正后重新发起校验 |
+| API-IMPORT-REEXECUTE-POST | /api/import-jobs/{{import_job_id}}/reexecute | POST | 导入记录 | V1 | current-effective | 登录且有导入执行权限 | 是 | 对已修正任务重新执行导入 |
+| API-MERCHANT-LINK-POST | /api/import-jobs/{{import_job_id}}/merchant-links/resolve | POST | 商家编码关联 | V1 | current-effective | 登录且有导入执行权限 | 是 | 处理关联冲突或未命中结果 |
+| API-MERCHANT-LINK-RESULT-GET | /api/import-jobs/{{import_job_id}}/merchant-links | GET | 商家编码关联 | V1 | current-effective | 登录且有导入查看权限 | 是 | 回读关联处理结果 |
+| API-ITEM-LIST-GET | /api/channel-items | GET | 渠道商品列表 | V1 | current-effective | 登录且有商品查看权限 | 是 | 查询渠道商品列表 |
+| API-ITEM-DETAIL-PAGE-LIST-GET | /api/channel-item-detail-pages | GET | 渠道商品详情页列表 | V1 | current-effective | 登录且有商品查看权限 | 是 | 查询全量商品详情页记录 |
+| API-ITEM-DETAIL-PAGE-DETAIL-GET | /api/channel-item-detail-pages/{{detail_page_id}} | GET | 渠道商品详情页列表 | V1 | current-effective | 登录且有商品查看权限 | 是 | 查询详情页预览与关联素材 |
+| API-ITEM-DETAIL-PAGE-UPLOAD-POST | /api/channel-item-detail-pages | POST | 渠道商品详情页列表 | V1 | current-effective | 登录且有商品编辑权限 | 否 | 上传新详情页并关联渠道商品，素材同步归档 |
+| API-ITEM-DETAIL-PAGE-PUT | /api/channel-item-detail-pages/{{detail_page_id}} | PUT | 渠道商品详情页列表 | V1 | current-effective | 登录且有商品编辑权限 | 是 | 保存详情页内容、当前使用状态和版本信息 |
+| API-ITEM-DETAIL-PAGE-ASSET-LINK-POST | /api/channel-item-detail-pages/{{detail_page_id}}/asset-links | POST | 渠道商品详情页列表 | V1 | current-effective | 登录且有商品编辑权限 | 是 | 复用素材列表中的已有图片到详情页 |
+| API-ITEM-DETAIL-GET | /api/channel-items/{{channel_item_id}} | GET | 渠道商品详情 | V1 | current-effective | 登录且有商品查看权限 | 是 | 查询渠道商品详情 |
+| API-ITEM-DETAIL-PUT | /api/channel-items/{{channel_item_id}} | PUT | 渠道商品详情 | V1 | current-effective | 登录且有商品编辑权限 | 是 | 保存渠道商品详情 |
+| API-ITEM-CATEGORY-PROFILE-GET | /api/channel-items/{{channel_item_id}}/category-profile | GET | 类目动态适配 | V1 | current-effective | 登录且有商品查看权限 | 是 | 按店铺和类目返回动态字段范围 |
+| API-ITEM-BATCH-PREVIEW-POST | /api/channel-items/batch-edit/preview | POST | 批量修改 | 增强 | enhancement-reserved | 登录且有商品编辑权限 | 是 | 预览批量命中结果 |
+| API-ITEM-BATCH-EXECUTE-POST | /api/channel-items/batch-edit/execute | POST | 批量修改 | 增强 | enhancement-reserved | 登录且有商品编辑权限 | 是 | 执行批量修改 |
+| API-INV-LIST-GET | /api/inventories | GET | 库存列表 | V1 | current-effective | 登录且有库存查看权限 | 是 | 查询库存列表 |
+| API-INV-ADJUST-POST | /api/inventories/{{inventory_id}}/adjust | POST | 库存列表 | V1 | current-effective | 登录且有库存调整权限 | 否 | 库存调整 |
+| API-INV-SYNC-POST | /api/inventories/{{inventory_id}}/sync | POST | 库存列表 | V1 | current-effective | 登录且有库存调整权限 | 是 | 触发库存同步 |
+| API-INV-DETAIL-GET | /api/inventories/{{inventory_id}} | GET | 库存详情 | 增强 | enhancement-reserved | 登录且有库存查看权限 | 是 | 查询库存详情 |
+| API-INV-ADJUST-LOG-GET | /api/inventories/{{inventory_id}}/adjust-logs | GET | 库存调整记录 | 增强 | enhancement-reserved | 登录且有库存查看权限 | 是 | 查询库存台账 |
+| API-CONF-LIST-GET | /api/shop-configs | GET | 配置列表 | V1 | current-effective | 登录且有配置查看权限 | 是 | 查询店铺配置列表 |
+| API-CONF-DETAIL-GET | /api/shop-configs/{{config_id}} | GET | 店铺配置详情 | V1 | current-effective | 登录且有配置查看权限 | 是 | 查询店铺配置详情 |
+| API-CONF-DETAIL-PUT | /api/shop-configs/{{config_id}} | PUT | 店铺配置详情 | V1 | current-effective | 登录且有配置编辑权限 | 是 | 保存店铺配置详情并执行版本切换 |
+| API-ASSET-LIST-GET | /api/assets | GET | 素材列表 | 增强 | enhancement-reserved | 登录且有素材查看权限 | 是 | 查询素材列表 |
+| API-ASSET-DETAIL-GET | /api/assets/{{asset_id}} | GET | 素材详情 | 增强 | enhancement-reserved | 登录且有素材查看权限 | 是 | 查询素材详情 |
+| API-AUTH-ME-GET | /api/auth/me | GET | 权限与审计 | V1 | current-effective | 登录 | 是 | 查询当前用户权限 |
+| API-AUDIT-LIST-GET | /api/audit-logs | GET | 权限与审计 | V1 | current-effective | 登录且有审计查看权限 | 是 | 查询审计日志，当前无独立页面 |
+
+## 2. 当前接口约定
+
+- 列表接口统一支持分页、关键字搜索和多条件筛选。
+- `PUT` 和执行类 `POST` 接口都必须写入审计信息。
+- 商品详情页上传接口必须返回 `detail_page_id`、当前使用标记结果和新增素材引用清单。
+- 商品详情页保存接口必须返回最新内容版本、当前使用标记结果和最近编辑信息。
+- 商品详情页素材复用接口必须返回新增引用关系和素材当前被多少个详情页使用。
+- 商品详情页相关写接口必须校验同一 `channel_item_id` 下最多 3 条详情页记录。
+- 导入任务相关接口必须返回当前状态、错误数量、警告数量和最近操作时间。
+- 配置与类目 profile 相关接口必须返回配置版本标识，便于定位规则来源。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/05-接口清单.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/06-事件与日志清单.md
+================================================================================
+
+# 图书多渠道商品中台-事件与日志清单
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 06-事件与日志清单.md |
+| doc_id | DOC-DATA-EVENTS |
+| doc_slug | event-log-catalog |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 事件与日志 |
+| 上游文档 | ../02-专题机制层/；05-接口清单.md |
+| 下游文档 | ../05-验收与测试层/03-异常流程测试场景.md；07-表设计建议.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 事件清单
+
+| event_id | 触发动作 | 生产对象 | 消费方 | 持久化位置 | 失败处理 | 当前状态 |
+|---|---|---|---|---|---|---|
+| EVENT-IMPORT-UPLOADED | 上传导入文件 | OBJ-IMPORT-JOB | 导入校验服务 | import_job | 上传失败则不创建任务 | 当前范围 |
+| EVENT-IMPORT-VALIDATED | 导入校验完成 | OBJ-IMPORT-JOB | 导入记录页、导入执行服务 | import_job | 校验失败写入 `validate_failed` | 当前范围 |
+| EVENT-MERCHANT-LINK-RESOLVED | 商家编码关联完成 | OBJ-IMPORT-JOB-LINE | 导入记录页、产品详情 | import_job_line | 未解决记录保持 unresolved | 当前范围 |
+| EVENT-IMPORT-EXECUTED | 导入执行完成 | OBJ-IMPORT-JOB | 产品列表、渠道商品列表、库存列表 | import_job | 执行失败写入 `execute_failed` | 当前范围 |
+| EVENT-IMPORT-REEXECUTED | 重新执行导入 | OBJ-IMPORT-JOB | 导入记录页 | import_job | 沿用原任务或生成重执行批次 | 当前范围 |
+| EVENT-ITEM-SAVED | 保存渠道商品详情 | OBJ-CHANNEL-ITEM | 审计服务、详情页 | audit_log | 保存失败整体回滚 | 当前范围 |
+| EVENT-ITEM-BATCH-EXECUTED | 执行批量修改 | OBJ-CHANNEL-ITEM | 审计服务 | audit_log | 部分失败必须输出明细 | 增强预留 |
+| EVENT-INVENTORY-ADJUSTED | 库存调整 | OBJ-INVENTORY | 库存台账、审计服务 | inventory_log、audit_log | 校验失败不允许落库 | 当前范围 |
+| EVENT-INVENTORY-SYNC-REQUESTED | 触发库存同步 | OBJ-INVENTORY-SYNC-TASK | 外部同步服务 | inventory_sync_task | 任务创建失败则同步不发起 | 当前范围 |
+| EVENT-INVENTORY-SYNC-RESULT-RECEIVED | 同步结果回写 | OBJ-INVENTORY-SYNC-TASK | 库存列表、库存日志 | inventory_sync_task、inventory_log | 回写失败重试并记审计 | 当前范围 |
+| EVENT-SHOP-CONFIG-SAVED | 保存店铺配置草稿 | OBJ-SHOP-CONFIG | 配置版本服务 | shop_config | 保存失败整体回滚 | 当前范围 |
+| EVENT-SHOP-CONFIG-PUBLISHED | 发布店铺配置版本 | OBJ-SHOP-CONFIG | 模板 profile 服务、详情页规则服务 | shop_config | 切版本失败整体回滚 | 当前范围 |
+| EVENT-AUDIT-LOG-WRITTEN | 写入审计日志 | OBJ-AUDIT-LOG | 审计查询服务 | audit_log | 若写失败，关键事务按机制要求回滚 | 当前范围 |
+
+## 2. 日志清单
+
+| log_id | 日志名称 | 记录对象 | 关键内容 | 读取方 |
+|---|---|---|---|---|
+| LOG-IMPORT | 导入任务日志 | OBJ-IMPORT-JOB | 模板版本、状态流转、执行结果、错误摘要 | 商品运营、测试 |
+| LOG-IMPORT-LINE | 导入行日志 | OBJ-IMPORT-JOB-LINE | 行号、错误码、关联结果、落库结果 | 商品运营、测试 |
+| LOG-INVENTORY | 库存台账 | OBJ-INVENTORY-LOG | 调整前后值、原因、操作人、时间 | 库存运营、测试 |
+| LOG-SYNC | 同步任务日志 | OBJ-INVENTORY-SYNC-TASK | 请求时间、外部回执、失败原因、重试次数 | 库存运营、研发 |
+| LOG-AUDIT | 审计日志 | OBJ-AUDIT-LOG | 业务类型、动作、操作人、来源页面、时间 | 系统管理员、测试 |
+
+## 3. 当前事件约束
+
+- 所有执行类事件都必须可回放到具体业务对象和操作者。
+- 导入和配置相关事件必须带版本信息，便于回溯模板字段和规则来源。
+- 同步任务日志和库存台账不能混写，避免任务状态和库存结果混淆。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/06-事件与日志清单.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/07-表设计建议.md
+================================================================================
+
+# 图书多渠道商品中台-表设计建议
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 07-表设计建议.md |
+| doc_id | DOC-DATA-TABLES |
+| doc_slug | table-design |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 表设计建议 |
+| 上游文档 | 01-核心对象定义.md；02-逻辑数据模型.md；03-字段字典.md |
+| 下游文档 | 研发实现 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-21-r2 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-21 |
+
+## 1. 建议表
+
+| 表名 | 主键 | 核心字段 | 索引建议 | 当前说明 |
+|---|---|---|---|---|
+| product | product_id | product_name, isbn, merchant_code, status | `merchant_code` 唯一索引；`isbn` 普通索引 | 产品主档表 |
+| product_sku | product_sku_id | product_id, merchant_sku_code, spec_json | `product_id` 普通索引 | 产品规格表 |
+| channel_item | channel_item_id | product_id, channel_code, shop_code, outer_item_id, item_title, category_code, shelf_status | `product_id + channel_code + shop_code` 组合索引；`outer_item_id` 普通索引 | 渠道商品主表 |
+| channel_item_sku | channel_item_sku_id | channel_item_id, sku_code, sales_attr_json | `channel_item_id` 普通索引 | 渠道商品 SKU 表 |
+| inventory | inventory_id | channel_item_sku_id, total_stock, available_stock, locked_stock, sellable_stock, sync_status | `channel_item_sku_id` 唯一索引 | 单库存池模型 |
+| inventory_log | inventory_log_id | inventory_id, delta, before_stock, after_stock, reason, operator_id | `inventory_id + created_at` 组合索引 | 库存调整和结果日志 |
+| inventory_sync_task | sync_task_id | inventory_id, task_status, request_payload, external_result, retry_count | `inventory_id + created_at` 组合索引；`task_status` 普通索引 | 同步任务表 |
+| shop_config | shop_config_id | channel_code, shop_code, version_no, status, profile_version, default_shelf_status, default_delivery_sla | `channel_code + shop_code + version_no` 唯一索引；`channel_code + shop_code + status` 普通索引 | 店铺配置版本表 |
+| category_profile | profile_id | shop_config_id, category_code, field_schema_json, sales_schema_json | `shop_config_id + category_code` 组合索引 | 类目动态字段表 |
+| import_job | import_job_id | channel_code, shop_code, template_version, config_version_no, status, creator_id | `status + created_at` 组合索引；`channel_code + shop_code` 普通索引 | 导入任务表 |
+| import_job_line | line_id | import_job_id, merchant_code, row_no, validate_result, execute_result, link_result | `import_job_id + row_no` 唯一索引；`merchant_code` 普通索引 | 导入行结果表 |
+| asset | asset_id | asset_type, asset_path, bind_object_type, bind_object_id | `bind_object_type + bind_object_id` 组合索引 | 素材表 |
+| audit_log | audit_log_id | biz_type, biz_id, action_type, operator_id, source_page, created_at | `biz_type + biz_id` 组合索引；`operator_id + created_at` 普通索引 | 审计日志表 |
+
+## 2. 当前约束建议
+
+- `shop_config` 必须通过唯一索引约束同版本唯一，同时通过业务逻辑保证单店铺单渠道单激活版本。
+- `import_job_line` 需要支持大批量写入，建议按 `import_job_id` 分页查询，不建议全表扫描。
+- `inventory_sync_task` 建议保留请求体和外部回执快照，便于排查同步失败。
+- JSON 字段统一采用结构化 schema 管理，不要把动态字段直接拆成宽表列。
+
+## 3. 清理与归档建议
+
+- `import_job`、`import_job_line`、`audit_log` 建议按时间维度做归档策略。
+- `inventory_log` 和 `inventory_sync_task` 不建议物理删除，至少保留用于审计和故障排查的窗口期。
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/07-表设计建议.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/08-图书素材装包规范.md
+================================================================================
+
+# 图书多渠道商品中台-图书素材装包规范
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 08-图书素材装包规范.md |
+| doc_id | DOC-ASSET-PACKAGE |
+| doc_slug | asset-package-spec |
+| 文档层级 | 04-数据与接口层 |
+| 文档对象 | 素材装包规范 |
+| 上游文档 | ../02-专题机制层/01-标准化导入机制.md；../03-页面设计层/平台电脑端/产品管理/04-产品导入页.md |
+| 下游文档 | ../03-页面设计层/平台电脑端/素材管理/；研发实现 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-20-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-20 |
+
+## 1. 目录建议
+
+```text
+import-package/
+  products.xlsx
+  assets/
+    main/
+      {merchant_code}_main_01.jpg
+    detail/
+      {merchant_code}_detail_01.jpg
+    sku/
+      {merchant_sku_code}_sku_01.jpg
+```
+
+## 2. 规则说明
+
+- 产品模板与素材包建议放在同一个导入压缩包中。
+- 主图、详情图、SKU 图命名应能通过商家编码或商家 SKU 编码直接建立关联。
+- 图片格式建议统一为 jpg/png，单图大小和总包大小由后端上传限制控制。
+- 当模板中图片字段填写外链地址时，仍建议保留本地素材包作为回溯依据。
+
+## 3. 当前字段口径
+
+| 字段 | 说明 |
+|---|---|
+| 主图 | 产品或渠道商品主展示图 |
+| 详情 | 详情图或详情内容素材 |
+| SKU 图 | SKU 维度图片 |
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/08-图书素材装包规范.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/附件/图书类素材目录模板/SKU编码.txt
+================================================================================
+
+版本类型      包装方式      sku编码
+单本      平装      BOOK-产品编码-01
+单本      精装      BOOK-产品编码-02
+套装      套装      BOOK-产品编码-03
+附赠品版      平装+赠品      BOOK-产品编码-04
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/附件/图书类素材目录模板/SKU编码.txt
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/04-数据与接口层/附件/图书类素材目录模板/图书信息.txt
+================================================================================
+
+书名：
+副书名：
+ISBN：
+作者：
+译者：
+出版社：
+出版时间：
+装帧类型：
+开本：
+册数：
+定价：
+产品编码：
+
+
+================================================================================
+FILE END: docs/04-数据与接口层/附件/图书类素材目录模板/图书信息.txt
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/05-验收与测试层/01-MVP验收标准.md
+================================================================================
+
+# 图书多渠道商品中台-MVP验收标准
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 01-MVP验收标准.md |
+| doc_id | DOC-TEST-MVP |
+| doc_slug | mvp-acceptance |
+| 文档层级 | 05-验收与测试层 |
+| 文档对象 | MVP 验收标准 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 产品经理、研发、测试 |
+| 上游文档 | ../baselines/00-feature-list.md；../00-总览层/08-需求追踪矩阵.md；../00-总览层/09-评审签收与交付门槛.md |
+| 下游文档 | 02-主流程测试场景.md；03-异常流程测试场景.md；04-权限与状态流转测试场景.md；05-回归范围.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 必过标准
+
+| 编号 | 验收项 | 阻断级别 | 证据文档 | 标准 |
+|---|---|---|---|---|
+| ACC-001 | 模板下载 | 阻断 | 产品导入页、标准化导入机制 | 产品导入页可按渠道下载模板；店铺选填时能带出更精确模板字段。 |
+| ACC-002 | 导入闭环 | 阻断 | 产品导入页、导入记录页、主流程测试场景 | 上传、校验、确认导入、导入记录回溯完整可用。 |
+| ACC-003 | 商家编码关联 | 阻断 | 标准化导入机制、异常流程测试场景 | 导入后能通过商家编码把产品与渠道商品归集。 |
+| ACC-004 | 产品主档维护 | 阻断 | 产品详情页、主流程测试场景 | 产品详情可读取和保存主档信息，并维持和商品、库存的跳转关系。 |
+| ACC-005 | 渠道商品字段维护 | 阻断 | 渠道商品详情页、主流程测试场景 | 渠道商品详情可维护标题、价格、属性、运费模板、上下架状态和发货时效。 |
+| ACC-005A | 商品详情页管理 | 阻断 | 渠道商品详情页列表页、主流程测试场景 | 渠道商品详情页列表可查看全部渠道商品详情页数据，支持上传新详情页、编辑详情页内容、复用已有素材；单个渠道商品最多 3 个详情页，且当前使用版本切换正确。 |
+| ACC-006 | 店铺级类目动态适配 | 阻断 | 商品维护与类目联动机制、异常流程测试场景 | 不同店铺和类目返回不同字段范围，失效字段会清空并提示重填。 |
+| ACC-007 | 库存维护 | 阻断 | 库存列表页、库存同步与分配机制 | 库存列表可查询、调整、触发同步并展示状态。 |
+| ACC-008 | 店铺配置 | 阻断 | 配置列表、店铺配置详情、配置版本机制 | 店铺配置可维护并影响导入模板与详情页规则。 |
+| ACC-009 | 权限与审计 | 阻断 | 权限与审计机制、权限与状态流转测试场景 | 无权限用户无法执行导入、编辑、库存调整、配置保存等关键动作。 |
+
+## 2. 非阻断增强项
+
+| 编号 | 验收项 | 当前要求 |
+|---|---|---|
+| ACC-E01 | 新增产品 | 保留完整底稿，不作为一期签收阻断条件。 |
+| ACC-E02 | 批量修改 | 保留完整底稿，不作为一期签收阻断条件。 |
+| ACC-E03 | 素材管理 | 保留完整底稿，不作为一期签收阻断条件。 |
+| ACC-E04 | 库存详情与库存调整记录 | 保留完整底稿，不作为一期签收阻断条件。 |
+
+## 3. 当前验收前置
+
+- 测试环境需至少准备淘宝、拼多多、抖音、快手四渠道的可用店铺配置。
+- 需准备一套可成功导入的数据和至少一套故意构造的异常数据。
+- 需准备具备不同权限的测试账号，覆盖商品运营、渠道运营、库存运营、系统管理员。
+- `ISSUE-003` 未关闭前，涉及配置生效时点的验收按默认口径执行，并在报告中备注。
+
+
+================================================================================
+FILE END: docs/05-验收与测试层/01-MVP验收标准.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/05-验收与测试层/02-主流程测试场景.md
+================================================================================
+
+# 图书多渠道商品中台-主流程测试场景
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 02-主流程测试场景.md |
+| doc_id | DOC-TEST-MAIN |
+| doc_slug | main-test-cases |
+| 文档层级 | 05-验收与测试层 |
+| 文档对象 | 主流程测试 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 测试、研发、产品经理 |
+| 上游文档 | 01-MVP验收标准.md；../00-总览层/04-整体业务流程图.md；../00-总览层/08-需求追踪矩阵.md |
+| 下游文档 | 03-异常流程测试场景.md；05-回归范围.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 主流程用例
+
+| test_case_id | 业务线 | 场景 | 参与角色 | 前置条件 | 关键步骤 | 接口/对象校验点 | 预期结果 |
+|---|---|---|---|---|---|---|---|
+| TC-MAIN-001 | 产品管理 | 查看产品列表并进入详情 | 商品运营 | 已存在产品数据和产品查看权限 | 进入产品列表；筛选产品；打开产品详情；保存少量主档字段 | `API-PROD-LIST-GET`、`API-PROD-DETAIL-GET/PUT`、`OBJ-PRODUCT` | 列表正确展示，详情可回显并保存成功 |
+| TC-MAIN-002 | 导入 | 下载模板并上传校验 | 商品运营 | 已配置店铺规则；有导入权限 | 选择渠道；下载模板；上传文件；执行校验 | `API-IMPORT-TEMPLATE-PROFILE-GET`、`API-IMPORT-TEMPLATE-DOWNLOAD-GET`、`API-IMPORT-UPLOAD-POST`、`API-IMPORT-VALIDATE-POST`、`OBJ-IMPORT-JOB` | 模板下载成功，导入任务进入校验流程，返回正确校验结果 |
+| TC-MAIN-003 | 导入 | 确认导入并查看记录 | 商品运营 | 导入任务校验通过 | 在导入页确认导入；跳转导入记录；查看批次详情 | `API-IMPORT-EXECUTE-POST`、`API-IMPORT-LIST-GET`、`OBJ-IMPORT-JOB`、`OBJ-IMPORT-JOB-LINE` | 导入成功，记录页可查看结果和批次状态 |
+| TC-MAIN-004 | 商品管理 | 查看渠道商品列表 | 渠道运营 | 存在导入后的渠道商品数据 | 进入商品列表；按渠道和店铺筛选；查看库存摘要 | `API-ITEM-LIST-GET`、`OBJ-CHANNEL-ITEM` | 列表正确展示且筛选结果准确 |
+| TC-MAIN-005 | 商品管理 | 维护渠道商品详情 | 渠道运营 | 存在渠道商品且具备编辑权限 | 打开详情；刷新类目规则；修改标题、价格、属性；保存 | `API-ITEM-DETAIL-GET/PUT`、`API-ITEM-CATEGORY-PROFILE-GET`、`OBJ-CHANNEL-ITEM`、`OBJ-CATEGORY-PROFILE` | 保存成功并回显最新数据 |
+| TC-MAIN-009 | 商品管理 | 管理渠道商品详情页列表并编辑详情页内容 | 渠道运营 | 存在已导入渠道商品且具备详情页管理权限 | 进入渠道商品详情页列表；按产品筛选并查看多个渠道商品下的详情页；为某个渠道商品上传新详情页；编辑详情页图文内容；从素材列表复用同一张图片到另一个商品详情页；设为当前使用并核对素材归档 | `API-ITEM-DETAIL-PAGE-LIST-GET`、`API-ITEM-DETAIL-PAGE-DETAIL-GET`、`API-ITEM-DETAIL-PAGE-UPLOAD-POST`、`API-ITEM-DETAIL-PAGE-PUT`、`API-ITEM-DETAIL-PAGE-ASSET-LINK-POST`、`OBJ-ITEM-DETAIL-PAGE`、`OBJ-ASSET` | 列表正确展示全部详情页数据；新详情页创建成功并归档素材；详情页内容编辑成功；同一素材可在多个商品详情页复用；单个渠道商品详情页数量不超过 3 条 |
+| TC-MAIN-006 | 库存管理 | 调整库存并触发同步 | 库存运营 | 存在库存记录和同步能力 | 在库存列表调整库存；再次触发同步；查看同步状态 | `API-INV-LIST-GET`、`API-INV-ADJUST-POST`、`API-INV-SYNC-POST`、`OBJ-INVENTORY`、`OBJ-INVENTORY-LOG` | 库存数更新正确，同步状态变化正确 |
+| TC-MAIN-007 | 配置管理 | 查看配置列表 | 系统管理员 | 存在配置数据和配置查看权限 | 进入配置列表；按渠道和店铺筛选；打开配置详情 | `API-CONF-LIST-GET`、`OBJ-SHOP-CONFIG` | 列表正确展示，能进入详情 |
+| TC-MAIN-008 | 配置管理 | 保存店铺配置并影响模板和详情规则 | 系统管理员 | 具备配置编辑权限；存在待修改配置 | 修改配置并保存；回到导入页查看模板字段；打开商品详情查看动态字段 | `API-CONF-DETAIL-PUT`、`API-IMPORT-TEMPLATE-PROFILE-GET`、`API-ITEM-CATEGORY-PROFILE-GET`、`OBJ-SHOP-CONFIG` | 保存成功，后续模板字段口径和详情页字段范围按配置变化 |
+
+
+================================================================================
+FILE END: docs/05-验收与测试层/02-主流程测试场景.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/05-验收与测试层/03-异常流程测试场景.md
+================================================================================
+
+# 图书多渠道商品中台-异常流程测试场景
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 03-异常流程测试场景.md |
+| doc_id | DOC-TEST-EXCEPTIONS |
+| doc_slug | exception-test-cases |
+| 文档层级 | 05-验收与测试层 |
+| 文档对象 | 异常流程测试 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 测试、研发、产品经理 |
+| 上游文档 | 01-MVP验收标准.md；../02-专题机制层/；../04-数据与接口层/05-接口清单.md |
+| 下游文档 | 04-权限与状态流转测试场景.md；05-回归范围.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 异常流程用例
+
+| test_case_id | 异常场景 | 前置条件 | 关键步骤 | 接口/对象校验点 | 预期结果 |
+|---|---|---|---|---|---|
+| TC-EXC-001 | 模板字段缺失 | 准备缺失字段的导入模板 | 上传缺字段模板并校验 | `API-IMPORT-VALIDATE-POST`、`OBJ-IMPORT-JOB-LINE` | 校验失败并返回缺失字段与失败行下载入口 |
+| TC-EXC-002 | 商家编码未命中 | 导入数据包含未知商家编码 | 执行校验并进入导入记录 | `API-MERCHANT-LINK-POST`、`OBJ-IMPORT-JOB-LINE` | 导入记录页高亮未关联结果，未处理前不允许确认导入 |
+| TC-EXC-003 | 类目规则冲突 | 切换到不兼容的店铺或类目 | 在渠道商品详情页切换类目并保存 | `API-ITEM-CATEGORY-PROFILE-GET`、`OBJ-CATEGORY-PROFILE` | 失效字段被清空并提示重新填写，不允许带脏数据保存 |
+| TC-EXC-004 | 批量修改超限 | 命中范围大于系统阈值 | 在批量修改工作台发起预览和执行 | `API-ITEM-BATCH-PREVIEW-POST`、`API-ITEM-BATCH-EXECUTE-POST` | 系统阻止执行并提示缩小范围 |
+| TC-EXC-005 | 库存同步失败 | 模拟外部渠道返回失败 | 触发库存同步并等待回写 | `API-INV-SYNC-POST`、`OBJ-INVENTORY` | 列表显示失败原因并支持重试 |
+| TC-EXC-006 | 配置版本切换失败 | 模拟配置保存成功但切版本失败 | 保存店铺配置 | `API-CONF-DETAIL-PUT`、`OBJ-SHOP-CONFIG` | 整体回滚，不允许出现保存成功但未生效的状态 |
+| TC-EXC-007 | 商品详情页上传解析失败 | 上传文件格式不合法或素材缺失 | 在渠道商品详情页列表上传详情页 | `API-ITEM-DETAIL-PAGE-UPLOAD-POST`、`OBJ-ITEM-DETAIL-PAGE`、`OBJ-ASSET` | 系统阻止创建详情页记录并返回失败原因，不写入脏素材 |
+| TC-EXC-008 | 单商品详情页数量超限 | 某个渠道商品已存在 3 个详情页 | 在渠道商品详情页列表继续新建、上传或复制详情页 | `API-ITEM-DETAIL-PAGE-UPLOAD-POST`、`API-ITEM-DETAIL-PAGE-PUT`、`OBJ-ITEM-DETAIL-PAGE` | 系统阻止新增并提示“单个渠道商品最多 3 个详情页”，已有详情页不受影响 |
+
+
+================================================================================
+FILE END: docs/05-验收与测试层/03-异常流程测试场景.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/05-验收与测试层/04-权限与状态流转测试场景.md
+================================================================================
+
+# 图书多渠道商品中台-权限与状态流转测试场景
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 04-权限与状态流转测试场景.md |
+| doc_id | DOC-TEST-PERMISSIONS |
+| doc_slug | permission-state-test-cases |
+| 文档层级 | 05-验收与测试层 |
+| 文档对象 | 权限与状态流转测试 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 测试、研发、产品经理 |
+| 上游文档 | ../02-专题机制层/04-权限与审计机制.md；../00-总览层/03-状态流转机制说明.md |
+| 下游文档 | 05-回归范围.md |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 权限测试
+
+| test_case_id | 场景 | 前置条件 | 验证点 | 预期结果 |
+|---|---|---|---|---|
+| TC-PERM-001 | 无导入权限访问产品导入页 | 使用无导入权限账号登录 | 菜单可见性、路由访问、操作按钮 | 菜单不可见或进入后无权限提示，不能执行上传和校验 |
+| TC-PERM-002 | 无编辑权限访问渠道商品详情页 | 使用只读渠道运营账号登录 | 字段只读、保存按钮 | 字段只读且保存按钮隐藏 |
+| TC-PERM-005 | 无详情页编辑权限访问渠道商品详情页列表页 | 使用仅查看权限账号登录 | 上传按钮、编辑工作区、设为当前、素材复用接口 | 列表可查看，但上传、编辑、设为当前和素材复用入口隐藏或接口返回无权限 |
+| TC-PERM-003 | 无库存调整权限执行库存调整 | 使用只读库存账号登录 | 调整入口和同步入口 | 列表可查看，但库存调整和同步动作不可执行 |
+| TC-PERM-004 | 无配置编辑权限保存店铺配置 | 使用只读管理员账号登录 | 保存按钮、接口拦截 | 页面可查看但不能保存，接口返回无权限 |
+
+## 2. 状态流转测试
+
+| test_case_id | 对象 | 场景 | 验证点 |
+|---|---|---|---|
+| TC-STATE-001 | 导入任务 | 上传、校验、确认导入 | `draft -> validating -> ready_to_execute -> executing -> completed`；异常时进入 `validate_failed` 或 `execute_failed` |
+| TC-STATE-002 | 库存同步 | 触发同步并等待结果 | `idle -> pending -> syncing -> success/failed` |
+| TC-STATE-003 | 店铺配置 | 保存草稿、发布生效、停用旧版 | `draft -> active -> inactive` |
+| TC-STATE-004 | 渠道商品 | 导入后补齐资料并上下架 | `draft -> ready -> on_shelf/off_shelf`；锁定时进入 `locked` |
+| TC-STATE-005 | 商品详情页 | 上传新版本并设为当前使用 | `history/current` 切换正确；同一 `channel_item_id` 同时最多一条 `current`，且详情页总数不超过 3 条 |
+
+
+================================================================================
+FILE END: docs/05-验收与测试层/04-权限与状态流转测试场景.md
+================================================================================
+
+
+================================================================================
+FILE BEGIN: docs/05-验收与测试层/05-回归范围.md
+================================================================================
+
+# 图书多渠道商品中台-回归范围
+
+| 字段 | 内容 |
+|---|---|
+| 文档名称 | 05-回归范围.md |
+| doc_id | DOC-TEST-REGRESSION |
+| doc_slug | regression-scope |
+| 文档层级 | 05-验收与测试层 |
+| 文档对象 | 回归范围 |
+| 适用端 | 平台电脑端 |
+| 所属角色 | 测试、研发、产品经理 |
+| 上游文档 | 02-主流程测试场景.md；03-异常流程测试场景.md；04-权限与状态流转测试场景.md |
+| 下游文档 | 当前项目测试执行单 |
+| baseline_version | BSL-2026-04-20-A |
+| doc_version | 2026-04-22-r1 |
+| doc_status | current-effective |
+| 更新时间 | 2026-04-22 |
+
+## 1. 必回归页面
+
+- 产品列表、产品详情、产品导入、导入记录
+- 渠道商品列表、渠道商品详情页列表、渠道商品详情
+- 库存列表
+- 配置列表、店铺配置详情
+
+## 2. 必回归接口
+
+- 导入模板下载、导入上传、导入校验、导入执行、导入任务列表
+- 产品详情读取与保存
+- 渠道商品详情读取与保存、类目 profile 查询、商品详情页列表/详情/上传/保存/素材复用
+- 库存列表、库存调整、库存同步
+- 配置列表、配置详情读取与保存
+
+## 3. 条件性回归
+
+- 新增产品、批量修改、库存详情、库存调整记录、素材管理页面在进入当前迭代时纳入回归。
+- 候选归档页面不纳入当前回归。
+
+## 4. 触发回归条件
+
+| 变更类型 | 必回归范围 |
+|---|---|
+| 导入模板字段、导入校验、商家编码关联调整 | 产品导入、导入记录、主流程导入用例、异常导入用例 |
+| 店铺配置规则调整 | 配置列表、店铺配置详情、产品导入、渠道商品详情、配置版本机制相关用例 |
+| 商品编辑字段或详情页规则调整 | 渠道商品列表、渠道商品详情页列表、渠道商品详情、类目动态适配及详情页数量上限/素材复用相关用例 |
+| 库存同步逻辑调整 | 库存列表、库存相关主流程和异常用例 |
+
+
+================================================================================
+FILE END: docs/05-验收与测试层/05-回归范围.md
+================================================================================

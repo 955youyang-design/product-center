@@ -1,0 +1,19 @@
+{
+  "name": "book-channel-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "corepack pnpm -F @book-channel/product-prototype build",
+    "dev": "corepack pnpm -F @book-channel/product-prototype dev",
+    "dev:prototype": "corepack pnpm -F @book-channel/product-prototype dev",
+    "preview": "corepack pnpm -F @book-channel/product-prototype preview",
+    "test": "corepack pnpm -F @book-channel/product-prototype test",
+    "typecheck": "corepack pnpm -F @book-channel/product-prototype typecheck"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

@@ -1,0 +1,94 @@
+{
+  "code": 10000,
+  "msg": "success",
+  "sub_code": "",
+  "sub_msg": "",
+  "data": {
+    "async_task_id": null,
+    "async_task_status": 0,
+    "timeout": 0,
+    "interval": 0,
+    "categoryDetails": [
+      {
+        "qualification_status": 2,
+        "category_detail": {
+          "second_cid": 1000006378,
+          "third_cid": 1000006731,
+          "fourth_cid": 0,
+          "first_cname": "书籍/杂志/报纸",
+          "second_cname": "小说",
+          "third_cname": "科幻小说",
+          "fourth_cname": "",
+          "first_cid": 1000006345
+        }
+      },
+      {
+        "qualification_status": 2,
+        "category_detail": {
+          "first_cname": "书籍/杂志/报纸",
+          "second_cname": "社会科学",
+          "third_cname": "系统论/系统科学/系统工程",
+          "fourth_cname": "",
+          "first_cid": 1000006345,
+          "second_cid": 1000006372,
+          "third_cid": 1000006678,
+          "fourth_cid": 0
+        }
+      },
+      {
+        "category_detail": {
+          "third_cname": "未来学",
+          "fourth_cname": "",
+          "first_cid": 1000006345,
+          "second_cid": 1000006366,
+          "third_cid": 1000006613,
+          "fourth_cid": 0,
+          "first_cname": "书籍/杂志/报纸",
+          "second_cname": "科学/科学研究"
+        },
+        "qualification_status": 2
+      },
+      {
+        "qualification_status": 2,
+        "category_detail": {
+          "third_cname": "主机/买断制游戏",
+          "fourth_cname": "",
+          "first_cid": 1000001469,
+          "second_cid": 1000001498,
+          "third_cid": 1000009550,
+          "fourth_cid": 0,
+          "first_cname": "文娱",
+          "second_cname": "游戏服务"
+        }
+      },
+      {
+        "qualification_status": 2,
+        "category_detail": {
+          "third_cname": "图书点读套装",
+          "fourth_cname": "",
+          "first_cid": 1000006345,
+          "second_cid": 1000007910,
+          "third_cid": 1000008390,
+          "fourth_cid": 0,
+          "first_cname": "书籍/杂志/报纸",
+          "second_cname": "组合套装"
+        }
+      },
+      {
+        "qualification_status": 0,
+        "category_detail": {
+          "fourth_cname": "",
+          "first_cid": 1000003282,
+          "second_cid": 1000003285,
+          "third_cid": 1000003347,
+          "fourth_cid": 0,
+          "first_cname": "服装",
+          "second_cname": "女装",
+          "third_cname": "半身裙"
+        }
+      }
+    ],
+    "recommend_id": "20260424165858DDA534AF16C5151240B0_44c128d10444449"
+  },
+  "log_id": "20260424165858DDA534AF16C5151240B0"
+}

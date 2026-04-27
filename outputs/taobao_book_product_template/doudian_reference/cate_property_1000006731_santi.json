@@ -1,0 +1,6997 @@
+{
+  "code": 10000,
+  "msg": "success",
+  "sub_code": "",
+  "sub_msg": "",
+  "data": {
+    "tpl_type": 1,
+    "data": [
+      {
+        "status": 0,
+        "multi_select_max": 5,
+        "property_type": 1,
+        "sequence": 240,
+        "property_name": "ISBN编号",
+        "type": "text",
+        "measure_templates": [],
+        "property_id": 1618,
+        "relation_id": 0,
+        "diy_type": 0,
+        "important_type": 1,
+        "feature_type_list": [
+          2,
+          5,
+          46,
+          102
+        ],
+        "cid": 1000006731,
+        "required": 1,
+        "has_sub_property": false,
+        "category_id": 1000006731,
+        "options": [],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        }
+      },
+      {
+        "multi_select_max": 5,
+        "sequence": 235,
+        "relation_id": 0,
+        "measure_templates": [],
+        "status": 0,
+        "category_id": 1000006731,
+        "property_id": 1831,
+        "diy_type": 0,
+        "important_type": 1,
+        "property_name": "书名",
+        "type": "text",
+        "has_sub_property": false,
+        "options": [],
+        "feature_type_list": [
+          14,
+          46
+        ],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "cid": 1000006731,
+        "required": 1,
+        "property_type": 1
+      },
+      {
+        "required": 0,
+        "category_id": 1000006731,
+        "sequence": 0,
+        "has_sub_property": false,
+        "cid": 1000006731,
+        "multi_select_max": 5,
+        "property_type": 0,
+        "relation_id": 0,
+        "status": 0,
+        "property_id": 326,
+        "property_name": "版本",
+        "options": [
+          {
+            "value": "37507",
+            "value_id": 37507,
+            "sequence": 300,
+            "name": "套装"
+          },
+          {
+            "value_id": 20624,
+            "sequence": 200,
+            "name": "平装",
+            "value": "20624"
+          },
+          {
+            "value_id": 13708,
+            "sequence": 100,
+            "name": "精装",
+            "value": "13708"
+          }
+        ],
+        "type": "select",
+        "feature_type_list": [
+          14,
+          15,
+          33,
+          46,
+          101,
+          103
+        ],
+        "diy_type": 1,
+        "important_type": 1,
+        "measure_templates": [],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        }
+      },
+      {
+        "measure_templates": [],
+        "required": 1,
+        "multi_select_max": 5,
+        "diy_type": 0,
+        "has_sub_property": false,
+        "property_name": "品牌",
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "status": 0,
+        "category_id": 1000006731,
+        "property_type": 0,
+        "property_id": 1687,
+        "feature_type_list": [
+          46
+        ],
+        "sequence": 0,
+        "options": [],
+        "type": "select",
+        "cid": 1000006731,
+        "relation_id": 0,
+        "important_type": 1
+      },
+      {
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "multi_select_max": 5,
+        "property_type": 0,
+        "sequence": 1,
+        "diy_type": 1,
+        "has_sub_property": false,
+        "type": "select",
+        "measure_templates": [],
+        "status": 0,
+        "required": 1,
+        "category_id": 1000006731,
+        "property_id": 855,
+        "property_name": "出版社名称",
+        "cid": 1000006731,
+        "relation_id": 0,
+        "important_type": 1,
+        "options": [
+          {
+            "value_id": 211891,
+            "sequence": 65323,
+            "name": "AADCU PUBLICATION",
+            "value": "211891"
+          },
+          {
+            "value_id": 212016,
+            "sequence": 65450,
+            "name": "ADDISON WESLEY LONGMAN",
+            "value": "212016"
+          },
+          {
+            "value_id": 212143,
+            "sequence": 65579,
+            "name": "ALPHA BOOKS",
+            "value": "212143"
+          },
+          {
+            "value_id": 212001,
+            "sequence": 65435,
+            "name": "ARMAND COLIN",
+            "value": "212001"
+          },
+          {
+            "name": "ART GALLERY NSW",
+            "value": "211906",
+            "value_id": 211906,
+            "sequence": 65338
+          },
+          {
+            "name": "BANGSON",
+            "value": "211924",
+            "value_id": 211924,
+            "sequence": 65356
+          },
+          {
+            "value_id": 211907,
+            "sequence": 65339,
+            "name": "BLOOMSBURY",
+            "value": "211907"
+          },
+          {
+            "value": "212007",
+            "value_id": 212007,
+            "sequence": 65441,
+            "name": "BLOOMSBURY PUBLISHING"
+          },
+          {
+            "value_id": 211984,
+            "sequence": 65417,
+            "name": "BOKU",
+            "value": "211984"
+          },
+          {
+            "name": "CAMBRIDGE UNIVERSITY PRESS",
+            "value": "212027",
+            "value_id": 212027,
+            "sequence": 65462
+          },
+          {
+            "value_id": 212165,
+            "sequence": 65601,
+            "name": "CHILDS PLAY",
+            "value": "212165"
+          },
+          {
+            "value": "212110",
+            "value_id": 212110,
+            "sequence": 65546,
+            "name": "CHRONICLE BOOKS"
+          },
+          {
+            "value_id": 212227,
+            "sequence": 65665,
+            "name": "COUNTER PRINT",
+            "value": "212227"
+          },
+          {
+            "name": "DESIGNER BOOKS",
+            "value": "211897",
+            "value_id": 211897,
+            "sequence": 65329
+          },
+          {
+            "value_id": 212005,
+            "sequence": 65439,
+            "name": "DESIGNERBOOKS",
+            "value": "212005"
+          },
+          {
+            "sequence": 65603,
+            "name": "DIE GESTALTEN VERLAG",
+            "value": "212167",
+            "value_id": 212167
+          },
+          {
+            "value": "212073",
+            "value_id": 212073,
+            "sequence": 65509,
+            "name": "DK"
+          },
+          {
+            "value_id": 212169,
+            "sequence": 65605,
+            "name": "DOUBLEDAY",
+            "value": "212169"
+          },
+          {
+            "value_id": 212032,
+            "sequence": 65467,
+            "name": "DUNOD",
+            "value": "212032"
+          },
+          {
+            "value_id": 9130,
+            "sequence": 65635,
+            "name": "Dipper/北斗",
+            "value": "9130"
+          },
+          {
+            "name": "EGMONT UK LIMITED",
+            "value": "212120",
+            "value_id": 212120,
+            "sequence": 65556
+          },
+          {
+            "value_id": 212089,
+            "sequence": 65525,
+            "name": "EVAN MOOR",
+            "value": "212089"
+          },
+          {
+            "value_id": 212056,
+            "sequence": 65492,
+            "name": "FAHIONARY INTERNATIONAL",
+            "value": "212056"
+          },
+          {
+            "value": "212193",
+            "value_id": 212193,
+            "sequence": 65630,
+            "name": "FASHIONARY"
+          },
+          {
+            "value_id": 212015,
+            "sequence": 65449,
+            "name": "FONTANA/Collins",
+            "value": "212015"
+          },
+          {
+            "value_id": 212119,
+            "sequence": 65555,
+            "name": "Giotto",
+            "value": "212119"
+          },
+          {
+            "value": "212173",
+            "value_id": 212173,
+            "sequence": 65609,
+            "name": "HACHETTE"
+          },
+          {
+            "name": "HACHETTE EDUCATION",
+            "value": "211919",
+            "value_id": 211919,
+            "sequence": 65351
+          },
+          {
+            "name": "HEINLE",
+            "value": "211959",
+            "value_id": 211959,
+            "sequence": 65391
+          },
+          {
+            "sequence": 65541,
+            "name": "HERO/英雄",
+            "value": "212105",
+            "value_id": 212105
+          },
+          {
+            "value_id": 212184,
+            "sequence": 65620,
+            "name": "HIRMER VERLAG MUNCHEN",
+            "value": "212184"
+          },
+          {
+            "value_id": 212040,
+            "sequence": 65476,
+            "name": "Harper Paperbacks",
+            "value": "212040"
+          },
+          {
+            "name": "IMAGINE THAT",
+            "value": "211991",
+            "value_id": 211991,
+            "sequence": 65424
+          },
+          {
+            "value_id": 211912,
+            "sequence": 65344,
+            "name": "JOHN WILEY & SONS LTD",
+            "value": "211912"
+          },
+          {
+            "name": "JoanMiro/美乐",
+            "value": "212182",
+            "value_id": 212182,
+            "sequence": 65618
+          },
+          {
+            "value_id": 211890,
+            "sequence": 65322,
+            "name": "KACO",
+            "value": "211890"
+          },
+          {
+            "value_id": 212022,
+            "sequence": 65457,
+            "name": "Kinbor",
+            "value": "212022"
+          },
+          {
+            "name": "Knopf",
+            "value": "212187",
+            "value_id": 212187,
+            "sequence": 65624
+          },
+          {
+            "sequence": 65302,
+            "name": "LAURENCE KING",
+            "value": "211870",
+            "value_id": 211870
+          },
+          {
+            "value_id": 211915,
+            "sequence": 65347,
+            "name": "LKIYA/鲁奇亚",
+            "value": "211915"
+          },
+          {
+            "value": "212201",
+            "value_id": 212201,
+            "sequence": 65639,
+            "name": "LYRA"
+          },
+          {
+            "value_id": 212112,
+            "sequence": 65548,
+            "name": "Lonely planet",
+            "value": "212112"
+          },
+          {
+            "value_id": 212050,
+            "sequence": 65486,
+            "name": "Longken and Cynosure",
+            "value": "212050"
+          },
+          {
+            "sequence": 65613,
+            "name": "MACMILLAN",
+            "value": "212177",
+            "value_id": 212177
+          },
+          {
+            "sequence": 65395,
+            "name": "Mathew Price",
+            "value": "211963",
+            "value_id": 211963
+          },
+          {
+            "value_id": 211869,
+            "sequence": 65301,
+            "name": "New American Library",
+            "value": "211869"
+          },
+          {
+            "value_id": 212038,
+            "sequence": 65474,
+            "name": "OXFORD UNIVERSITY PRESS",
+            "value": "212038"
+          },
+          {
+            "value_id": 211957,
+            "sequence": 65389,
+            "name": "P G",
+            "value": "211957"
+          },
+          {
+            "name": "PENGUIN RANDOM HOUSE",
+            "value": "211989",
+            "value_id": 211989,
+            "sequence": 65422
+          },
+          {
+            "name": "PHAIDON",
+            "value": "212117",
+            "value_id": 212117,
+            "sequence": 65553
+          },
+          {
+            "sequence": 65599,
+            "name": "PIE",
+            "value": "212163",
+            "value_id": 212163
+          },
+          {
+            "value_id": 212064,
+            "sequence": 65500,
+            "name": "PIE INTERNATIONAL INC",
+            "value": "212064"
+          },
+          {
+            "value_id": 212136,
+            "sequence": 65572,
+            "name": "PIE International Inc",
+            "value": "212136"
+          },
+          {
+            "value": "211996",
+            "value_id": 211996,
+            "sequence": 65430,
+            "name": "PROMOPRESS"
+          },
+          {
+            "sequence": 65349,
+            "name": "Penguin Random House UK",
+            "value": "211917",
+            "value_id": 211917
+          },
+          {
+            "value_id": 211920,
+            "sequence": 65352,
+            "name": "Penguin Random House US",
+            "value": "211920"
+          },
+          {
+            "value_id": 212058,
+            "sequence": 65494,
+            "name": "Penguin UK",
+            "value": "212058"
+          },
+          {
+            "value_id": 212075,
+            "sequence": 65511,
+            "name": "RANDOM HOUSE CHILDRENS BOOKS",
+            "value": "212075"
+          },
+          {
+            "value_id": 212006,
+            "sequence": 65440,
+            "name": "RIKUYOSHA",
+            "value": "212006"
+          },
+          {
+            "value_id": 212017,
+            "sequence": 65451,
+            "name": "RIZZOLI INTERNATIONAL PUB,INC.",
+            "value": "212017"
+          },
+          {
+            "value": "212084",
+            "value_id": 212084,
+            "sequence": 65520,
+            "name": "Random House"
+          },
+          {
+            "value_id": 211944,
+            "sequence": 65376,
+            "name": "SANDU",
+            "value": "211944"
+          },
+          {
+            "sequence": 65308,
+            "name": "SCHOLASTIC",
+            "value": "211876",
+            "value_id": 211876
+          },
+          {
+            "name": "SCHOLASTIC INC.",
+            "value": "211971",
+            "value_id": 211971,
+            "sequence": 65403
+          },
+          {
+            "value_id": 212156,
+            "sequence": 65592,
+            "name": "SCPH",
+            "value": "212156"
+          },
+          {
+            "value_id": 211948,
+            "sequence": 65380,
+            "name": "SEUIL",
+            "value": "211948"
+          },
+          {
+            "value_id": 212106,
+            "sequence": 65542,
+            "name": "TASCHEN BOOKS",
+            "value": "212106"
+          },
+          {
+            "value_id": 211992,
+            "sequence": 65425,
+            "name": "TOM/汤姆",
+            "value": "211992"
+          },
+          {
+            "value_id": 211945,
+            "sequence": 65377,
+            "name": "Terence/特伦斯",
+            "value": "211945"
+          },
+          {
+            "value_id": 212207,
+            "sequence": 65645,
+            "name": "Thames and Hudson Ltd",
+            "value": "212207"
+          },
+          {
+            "value_id": 212071,
+            "sequence": 65507,
+            "name": "The Images Publishing Group PL",
+            "value": "212071"
+          },
+          {
+            "value": "211888",
+            "value_id": 211888,
+            "sequence": 65320,
+            "name": "The KANE PRESS"
+          },
+          {
+            "sequence": 65325,
+            "name": "The Random House Group Limited",
+            "value": "211893",
+            "value_id": 211893
+          },
+          {
+            "sequence": 65595,
+            "name": "USBORNE PUBLISHING LTD",
+            "value": "212159",
+            "value_id": 212159
+          },
+          {
+            "sequence": 65536,
+            "name": "VICTION WORKSHOP LTD",
+            "value": "212100",
+            "value_id": 212100
+          },
+          {
+            "value_id": 211970,
+            "sequence": 65402,
+            "name": "VICTIONARY",
+            "value": "211970"
+          },
+          {
+            "value_id": 212047,
+            "sequence": 65483,
+            "name": "WARNE",
+            "value": "212047"
+          },
+          {
+            "name": "WIN PUBLISHING",
+            "value": "211975",
+            "value_id": 211975,
+            "sequence": 65407
+          },
+          {
+            "value_id": 211952,
+            "sequence": 65384,
+            "name": "WISCHOEN/智蔻",
+            "value": "211952"
+          },
+          {
+            "value_id": 212000,
+            "sequence": 65434,
+            "name": "WWE BOOKS",
+            "value": "212000"
+          },
+          {
+            "value_id": 212018,
+            "sequence": 65452,
+            "name": "Yi-Hsin",
+            "value": "212018"
+          },
+          {
+            "value_id": 212074,
+            "sequence": 65510,
+            "name": "djeco",
+            "value": "212074"
+          },
+          {
+            "value": "212225",
+            "value_id": 212225,
+            "sequence": 65663,
+            "name": "Москва"
+          },
+          {
+            "sequence": 30700,
+            "name": "万卷出版公司",
+            "value": "148173",
+            "value_id": 148173
+          },
+          {
+            "value_id": 61873,
+            "sequence": 28600,
+            "name": "万卷出版有限责任公司",
+            "value": "61873"
+          },
+          {
+            "value": "62113",
+            "value_id": 62113,
+            "sequence": 20800,
+            "name": "万国学术出版社"
+          },
+          {
+            "value_id": 61903,
+            "sequence": 54500,
+            "name": "三晋出版社",
+            "value": "61903"
+          },
+          {
+            "sequence": 13000,
+            "name": "三环出版社",
+            "value": "61757",
+            "value_id": 61757
+          },
+          {
+            "name": "三秦出版社",
+            "value": "148196",
+            "value_id": 148196,
+            "sequence": 30000
+          },
+          {
+            "name": "三联书店",
+            "value": "212121",
+            "value_id": 212121,
+            "sequence": 65557
+          },
+          {
+            "name": "三辰影库音像",
+            "value": "212011",
+            "value_id": 212011,
+            "sequence": 65445
+          },
+          {
+            "value": "212125",
+            "value_id": 212125,
+            "sequence": 65561,
+            "name": "三辰影库音像出版社"
+          },
+          {
+            "value_id": 167538,
+            "sequence": 23000,
+            "name": "三辰影库音像电子出版社",
+            "value": "167538"
+          },
+          {
+            "value_id": 148167,
+            "sequence": 36800,
+            "name": "上海三联书店",
+            "value": "148167"
+          },
+          {
+            "value_id": 61945,
+            "sequence": 7000,
+            "name": "上海三联书店有限公司",
+            "value": "61945"
+          },
+          {
+            "value_id": 212076,
+            "sequence": 65512,
+            "name": "上海世纪出版股份公司古籍出版社",
+            "value": "212076"
+          },
+          {
+            "value_id": 61961,
+            "sequence": 34500,
+            "name": "上海中西书局有限公司",
+            "value": "61961"
+          },
+          {
+            "value_id": 61947,
+            "sequence": 23300,
+            "name": "上海书店出版社",
+            "value": "61947"
+          },
+          {
+            "value_id": 61954,
+            "sequence": 55000,
+            "name": "上海书画出版社",
+            "value": "61954"
+          },
+          {
+            "value_id": 61935,
+            "sequence": 22000,
+            "name": "上海交通大学出版社",
+            "value": "61935"
+          },
+          {
+            "value": "212135",
+            "value_id": 212135,
+            "sequence": 65571,
+            "name": "上海人民"
+          },
+          {
+            "value_id": 61943,
+            "sequence": 800,
+            "name": "上海人民出版社",
+            "value": "61943"
+          },
+          {
+            "value": "61944",
+            "value_id": 61944,
+            "sequence": 28700,
+            "name": "上海人民美术出版社"
+          },
+          {
+            "value": "211878",
+            "value_id": 211878,
+            "sequence": 65310,
+            "name": "上海人美"
+          },
+          {
+            "value_id": 211873,
+            "sequence": 65305,
+            "name": "上海光启书局有限公司",
+            "value": "211873"
+          },
+          {
+            "name": "上海古籍出版社",
+            "value": "61951",
+            "value_id": 61951,
+            "sequence": 44200
+          },
+          {
+            "value_id": 212108,
+            "sequence": 65544,
+            "name": "上海声像出版社",
+            "value": "212108"
+          },
+          {
+            "value_id": 61955,
+            "sequence": 13300,
+            "name": "上海外语教育出版社",
+            "value": "61955"
+          },
+          {
+            "value_id": 61934,
+            "sequence": 27500,
+            "name": "上海大学出版社",
+            "value": "61934"
+          },
+          {
+            "sequence": 11200,
+            "name": "上海少年儿童出版社",
+            "value": "61948",
+            "value_id": 61948
+          },
+          {
+            "sequence": 33900,
+            "name": "上海教育出版社",
+            "value": "61936",
+            "value_id": 61936
+          },
+          {
+            "sequence": 46300,
+            "name": "上海文化出版社",
+            "value": "61956",
+            "value_id": 61956
+          },
+          {
+            "name": "上海文汇出版社",
+            "value": "61957",
+            "value_id": 61957,
+            "sequence": 18900
+          },
+          {
+            "value_id": 211973,
+            "sequence": 65405,
+            "name": "上海文艺",
+            "value": "211973"
+          },
+          {
+            "value_id": 61958,
+            "sequence": 45400,
+            "name": "上海文艺出版社",
+            "value": "61958"
+          },
+          {
+            "sequence": 65495,
+            "name": "上海文艺音像电子出版社",
+            "value": "212059",
+            "value_id": 212059
+          },
+          {
+            "value": "61942",
+            "value_id": 61942,
+            "sequence": 54400,
+            "name": "上海浦江教育出版社"
+          },
+          {
+            "value": "212129",
+            "value_id": 212129,
+            "sequence": 65565,
+            "name": "上海浦江教育出版社有限公司"
+          },
+          {
+            "value_id": 212126,
+            "sequence": 65562,
+            "name": "上海海文音像出版社",
+            "value": "212126"
+          },
+          {
+            "value_id": 212221,
+            "sequence": 65659,
+            "name": "上海电影音像出版社",
+            "value": "212221"
+          },
+          {
+            "name": "上海画报出版社",
+            "value": "212190",
+            "value_id": 212190,
+            "sequence": 65627
+          },
+          {
+            "name": "上海社会科学杂志社",
+            "value": "211882",
+            "value_id": 211882,
+            "sequence": 65314
+          },
+          {
+            "value_id": 61946,
+            "sequence": 55600,
+            "name": "上海社会科学院出版社",
+            "value": "61946"
+          },
+          {
+            "value_id": 212094,
+            "sequence": 65530,
+            "name": "上海社会科学院哲学研究所",
+            "value": "212094"
+          },
+          {
+            "value_id": 211932,
+            "sequence": 65364,
+            "name": "上海社科院",
+            "value": "211932"
+          },
+          {
+            "value": "61939",
+            "value_id": 61939,
+            "sequence": 9500,
+            "name": "上海科学技术出版社"
+          },
+          {
+            "name": "上海科学技术文献出版社",
+            "value": "61940",
+            "value_id": 61940,
+            "sequence": 42800
+          },
+          {
+            "value_id": 61941,
+            "sequence": 5600,
+            "name": "上海科学普及出版社",
+            "value": "61941"
+          },
+          {
+            "value_id": 212122,
+            "sequence": 65558,
+            "name": "上海科技",
+            "value": "212122"
+          },
+          {
+            "value_id": 61938,
+            "sequence": 51900,
+            "name": "上海科技教育出版社",
+            "value": "61938"
+          },
+          {
+            "value": "212043",
+            "value_id": 212043,
+            "sequence": 65479,
+            "name": "上海科技文献"
+          },
+          {
+            "value_id": 211942,
+            "sequence": 65374,
+            "name": "上海科教",
+            "value": "211942"
+          },
+          {
+            "name": "上海科普",
+            "value": "211960",
+            "value_id": 211960,
+            "sequence": 65392
+          },
+          {
+            "value_id": 61950,
+            "sequence": 35000,
+            "name": "上海译文出版社",
+            "value": "61950"
+          },
+          {
+            "value_id": 61932,
+            "sequence": 32600,
+            "name": "上海财经大学出版社",
+            "value": "61932"
+          },
+          {
+            "value_id": 61933,
+            "sequence": 21700,
+            "name": "上海辞书出版社",
+            "value": "61933"
+          },
+          {
+            "value_id": 148168,
+            "sequence": 29400,
+            "name": "上海远东出版社",
+            "value": "148168"
+          },
+          {
+            "value_id": 211899,
+            "sequence": 65331,
+            "name": "上海锦绣文章",
+            "value": "211899"
+          },
+          {
+            "value_id": 61937,
+            "sequence": 5400,
+            "name": "上海锦绣文章出版社",
+            "value": "61937"
+          },
+          {
+            "value_id": 61959,
+            "sequence": 8000,
+            "name": "上海音乐出版社",
+            "value": "61959"
+          },
+          {
+            "value_id": 61960,
+            "sequence": 64600,
+            "name": "上海音乐学院出版社",
+            "value": "61960"
+          },
+          {
+            "value_id": 211874,
+            "sequence": 65306,
+            "name": "世图出版公司",
+            "value": "211874"
+          },
+          {
+            "sequence": 65353,
+            "name": "世图音像电子出版社",
+            "value": "211921",
+            "value_id": 211921
+          },
+          {
+            "value_id": 148214,
+            "sequence": 25200,
+            "name": "世界图书出版公司",
+            "value": "148214"
+          },
+          {
+            "value_id": 62105,
+            "sequence": 50900,
+            "name": "世界图书出版有限公司",
+            "value": "62105"
+          },
+          {
+            "value_id": 62106,
+            "sequence": 25100,
+            "name": "世界知识出版社",
+            "value": "62106"
+          },
+          {
+            "value_id": 211994,
+            "sequence": 65428,
+            "name": "世界经济年鉴编辑委员会",
+            "value": "211994"
+          },
+          {
+            "name": "东北大学出版社",
+            "value": "61862",
+            "value_id": 61862,
+            "sequence": 62800
+          },
+          {
+            "sequence": 65373,
+            "name": "东北师范大学",
+            "value": "211941",
+            "value_id": 211941
+          },
+          {
+            "value_id": 61831,
+            "sequence": 44400,
+            "name": "东北师范大学出版社",
+            "value": "61831"
+          },
+          {
+            "value_id": 211958,
+            "sequence": 65390,
+            "name": "东北师范大学期刊社",
+            "value": "211958"
+          },
+          {
+            "value_id": 212051,
+            "sequence": 65487,
+            "name": "东北林业大学出版社",
+            "value": "212051"
+          },
+          {
+            "sequence": 64700,
+            "name": "东北财经大学出版社",
+            "value": "61861",
+            "value_id": 61861
+          },
+          {
+            "value_id": 61927,
+            "sequence": 25700,
+            "name": "东华大学出版社",
+            "value": "61927"
+          },
+          {
+            "value": "148176",
+            "value_id": 148176,
+            "sequence": 52700,
+            "name": "东南大学出版社"
+          },
+          {
+            "value_id": 148212,
+            "sequence": 33200,
+            "name": "东方出版中心",
+            "value": "148212"
+          },
+          {
+            "name": "东方出版中心有限公司",
+            "value": "61926",
+            "value_id": 61926,
+            "sequence": 58400
+          },
+          {
+            "sequence": 6000,
+            "name": "东方出版社",
+            "value": "148199",
+            "value_id": 148199
+          },
+          {
+            "value_id": 212222,
+            "sequence": 65660,
+            "name": "东立出版社",
+            "value": "212222"
+          },
+          {
+            "value_id": 148208,
+            "sequence": 21200,
+            "name": "中信出版社",
+            "value": "148208"
+          },
+          {
+            "value_id": 62217,
+            "sequence": 18600,
+            "name": "中信出版集团",
+            "value": "62217"
+          },
+          {
+            "value_id": 167917,
+            "sequence": 11800,
+            "name": "中信出版集团股份有限公司",
+            "value": "167917"
+          },
+          {
+            "name": "中共中央党校出版社",
+            "value": "62133",
+            "value_id": 62133,
+            "sequence": 56200
+          },
+          {
+            "name": "中共党史出版社",
+            "value": "62132",
+            "value_id": 62132,
+            "sequence": 2200
+          },
+          {
+            "value_id": 62223,
+            "sequence": 56300,
+            "name": "中医古籍出版社",
+            "value": "62223"
+          },
+          {
+            "value_id": 62216,
+            "sequence": 42500,
+            "name": "中华书局",
+            "value": "62216"
+          },
+          {
+            "sequence": 65461,
+            "name": "中华医学音像出版社",
+            "value": "212026",
+            "value_id": 212026
+          },
+          {
+            "value_id": 61964,
+            "sequence": 39500,
+            "name": "中华地图学社",
+            "value": "61964"
+          },
+          {
+            "value_id": 62215,
+            "sequence": 48300,
+            "name": "中华工商联合出版社",
+            "value": "62215"
+          },
+          {
+            "value_id": 61816,
+            "sequence": 13900,
+            "name": "中南大学出版社",
+            "value": "61816"
+          },
+          {
+            "value_id": 212104,
+            "sequence": 65540,
+            "name": "中原农民",
+            "value": "212104"
+          },
+          {
+            "name": "中原农民出版社",
+            "value": "61776",
+            "value_id": 61776,
+            "sequence": 57100
+          },
+          {
+            "value_id": 62134,
+            "sequence": 53200,
+            "name": "中国ISBN中心",
+            "value": "62134"
+          },
+          {
+            "sequence": 62300,
+            "name": "中国三峡出版社",
+            "value": "62185",
+            "value_id": 62185
+          },
+          {
+            "sequence": 53500,
+            "name": "中国中医药出版社",
+            "value": "62213",
+            "value_id": 62213
+          },
+          {
+            "name": "中国中福会出版社",
+            "value": "61963",
+            "value_id": 61963,
+            "sequence": 31900
+          },
+          {
+            "value_id": 61700,
+            "sequence": 31800,
+            "name": "中国书店",
+            "value": "61700"
+          },
+          {
+            "value_id": 62195,
+            "sequence": 41600,
+            "name": "中国书籍出版社",
+            "value": "62195"
+          },
+          {
+            "value_id": 62184,
+            "sequence": 61700,
+            "name": "中国人事出版社",
+            "value": "62184"
+          },
+          {
+            "value_id": 62181,
+            "sequence": 16700,
+            "name": "中国人口出版社",
+            "value": "62181"
+          },
+          {
+            "value_id": 62183,
+            "sequence": 43500,
+            "name": "中国人民公安大学出版社",
+            "value": "62183"
+          },
+          {
+            "value_id": 212186,
+            "sequence": 65623,
+            "name": "中国人民大学",
+            "value": "212186"
+          },
+          {
+            "value_id": 62182,
+            "sequence": 50700,
+            "name": "中国人民大学出版社",
+            "value": "62182"
+          },
+          {
+            "value_id": 62140,
+            "sequence": 46400,
+            "name": "中国传媒大学出版社",
+            "value": "62140"
+          },
+          {
+            "name": "中国农业出版社",
+            "value": "62176",
+            "value_id": 62176,
+            "sequence": 11100
+          },
+          {
+            "value": "62177",
+            "value_id": 62177,
+            "sequence": 9900,
+            "name": "中国农业大学出版社"
+          },
+          {
+            "value": "62178",
+            "value_id": 62178,
+            "sequence": 23100,
+            "name": "中国农业科学技术出版社"
+          },
+          {
+            "sequence": 65484,
+            "name": "中国出版对外贸易总公司",
+            "value": "212048",
+            "value_id": 212048
+          },
+          {
+            "sequence": 65535,
+            "name": "中国出版集团中译出版社",
+            "value": "212099",
+            "value_id": 212099
+          },
+          {
+            "value_id": 62169,
+            "sequence": 56100,
+            "name": "中国劳动社会保障出版社",
+            "value": "62169"
+          },
+          {
+            "sequence": 65573,
+            "name": "中国医药科技",
+            "value": "212137",
+            "value_id": 212137
+          },
+          {
+            "value_id": 62205,
+            "sequence": 38100,
+            "name": "中国医药科技出版社",
+            "value": "62205"
+          },
+          {
+            "value_id": 62158,
+            "sequence": 35800,
+            "name": "中国华侨出版社",
+            "value": "62158"
+          },
+          {
+            "value": "212168",
+            "value_id": 212168,
+            "sequence": 65604,
+            "name": "中国协和医科大学"
+          },
+          {
+            "value": "62203",
+            "value_id": 62203,
+            "sequence": 26300,
+            "name": "中国协和医科大学出版社"
+          },
+          {
+            "name": "中国原子能出版传媒有限公司",
+            "value": "62208",
+            "value_id": 62208,
+            "sequence": 47200
+          },
+          {
+            "value_id": 212151,
+            "sequence": 65587,
+            "name": "中国原子能出版社",
+            "value": "212151"
+          },
+          {
+            "sequence": 58300,
+            "name": "中国友谊出版公司",
+            "value": "62206",
+            "value_id": 62206
+          },
+          {
+            "name": "中国发展出版社",
+            "value": "62147",
+            "value_id": 62147,
+            "sequence": 47800
+          },
+          {
+            "value": "62157",
+            "value_id": 62157,
+            "sequence": 22100,
+            "name": "中国和平出版社"
+          },
+          {
+            "value": "211889",
+            "value_id": 211889,
+            "sequence": 65321,
+            "name": "中国和平音像电子出版社"
+          },
+          {
+            "sequence": 65458,
+            "name": "中国唱片上海公司",
+            "value": "212023",
+            "value_id": 212023
+          },
+          {
+            "value_id": 62187,
+            "sequence": 2900,
+            "name": "中国商业出版社",
+            "value": "62187"
+          },
+          {
+            "value": "62186",
+            "value_id": 62186,
+            "sequence": 20100,
+            "name": "中国商务出版社"
+          },
+          {
+            "value_id": 212013,
+            "sequence": 65447,
+            "name": "中国国际广播",
+            "value": "212013"
+          },
+          {
+            "value_id": 62155,
+            "sequence": 29300,
+            "name": "中国国际广播出版社",
+            "value": "62155"
+          },
+          {
+            "sequence": 51800,
+            "name": "中国地图出版社",
+            "value": "62144",
+            "value_id": 62144
+          },
+          {
+            "value_id": 61804,
+            "sequence": 25800,
+            "name": "中国地质大学出版社",
+            "value": "61804"
+          },
+          {
+            "value_id": 62139,
+            "sequence": 14900,
+            "name": "中国城市出版社",
+            "value": "62139"
+          },
+          {
+            "value_id": 62142,
+            "sequence": 32700,
+            "name": "中国大地出版社",
+            "value": "62142"
+          },
+          {
+            "value_id": 211894,
+            "sequence": 65326,
+            "name": "中国大百科",
+            "value": "211894"
+          },
+          {
+            "value": "62141",
+            "value_id": 62141,
+            "sequence": 15800,
+            "name": "中国大百科全书出版社"
+          },
+          {
+            "value_id": 62151,
+            "sequence": 54900,
+            "name": "中国妇女出版社",
+            "value": "62151"
+          },
+          {
+            "name": "中国宇航出版社",
+            "value": "62207",
+            "value_id": 62207,
+            "sequence": 58900
+          },
+          {
+            "value_id": 212065,
+            "sequence": 65501,
+            "name": "中国对外翻译",
+            "value": "212065"
+          },
+          {
+            "sequence": 65498,
+            "name": "中国少儿新闻",
+            "value": "212062",
+            "value_id": 212062
+          },
+          {
+            "name": "中国少年儿童出版社",
+            "value": "62188",
+            "value_id": 62188,
+            "sequence": 37500
+          },
+          {
+            "sequence": 65368,
+            "name": "中国少年儿童新闻出版总社",
+            "value": "211936",
+            "value_id": 211936
+          },
+          {
+            "value_id": 148204,
+            "sequence": 64800,
+            "name": "中国少年儿童新闻出版总社（中国少年儿童出版社）",
+            "value": "148204"
+          },
+          {
+            "value": "212178",
+            "value_id": 212178,
+            "sequence": 65614,
+            "name": "中国少年儿童新闻出版社"
+          },
+          {
+            "value_id": 62152,
+            "sequence": 26100,
+            "name": "中国工人出版社",
+            "value": "62152"
+          },
+          {
+            "name": "中国工商出版社",
+            "value": "62153",
+            "value_id": 62153,
+            "sequence": 50400
+          },
+          {
+            "value_id": 62194,
+            "sequence": 57200,
+            "name": "中国市场出版社",
+            "value": "62194"
+          },
+          {
+            "value_id": 211880,
+            "sequence": 65312,
+            "name": "中国广播影视",
+            "value": "211880"
+          },
+          {
+            "value_id": 62154,
+            "sequence": 15200,
+            "name": "中国广播影视出版社",
+            "value": "62154"
+          },
+          {
+            "value_id": 212188,
+            "sequence": 65625,
+            "name": "中国建材工业",
+            "value": "212188"
+          },
+          {
+            "value_id": 62163,
+            "sequence": 28800,
+            "name": "中国建材工业出版社",
+            "value": "62163"
+          },
+          {
+            "value": "212142",
+            "value_id": 212142,
+            "sequence": 65578,
+            "name": "中国建筑出版传媒有限公司"
+          },
+          {
+            "value": "62164",
+            "value_id": 62164,
+            "sequence": 22900,
+            "name": "中国建筑工业出版社"
+          },
+          {
+            "value_id": 211962,
+            "sequence": 65394,
+            "name": "中国录音录像出版总社",
+            "value": "211962"
+          },
+          {
+            "value_id": 62202,
+            "sequence": 57600,
+            "name": "中国戏剧出版社",
+            "value": "62202"
+          },
+          {
+            "value_id": 148210,
+            "sequence": 28900,
+            "name": "中国摄影出版传媒有限责任公司",
+            "value": "148210"
+          },
+          {
+            "value_id": 62191,
+            "sequence": 26500,
+            "name": "中国摄影出版社",
+            "value": "62191"
+          },
+          {
+            "value": "211881",
+            "value_id": 211881,
+            "sequence": 65313,
+            "name": "中国政法大学"
+          },
+          {
+            "sequence": 31700,
+            "name": "中国政法大学出版社",
+            "value": "62210",
+            "value_id": 62210
+          },
+          {
+            "sequence": 37200,
+            "name": "中国文史出版社",
+            "value": "62201",
+            "value_id": 62201
+          },
+          {
+            "value_id": 212093,
+            "sequence": 65529,
+            "name": "中国文学年鉴社",
+            "value": "212093"
+          },
+          {
+            "value_id": 62200,
+            "sequence": 55300,
+            "name": "中国文联出版社",
+            "value": "62200"
+          },
+          {
+            "sequence": 65401,
+            "name": "中国新闻年鉴社",
+            "value": "211969",
+            "value_id": 211969
+          },
+          {
+            "sequence": 65539,
+            "name": "中国新闻联合出版社",
+            "value": "212103",
+            "value_id": 212103
+          },
+          {
+            "value_id": 62149,
+            "sequence": 25600,
+            "name": "中国方正出版社",
+            "value": "62149"
+          },
+          {
+            "sequence": 31600,
+            "name": "中国旅游出版社",
+            "value": "62171",
+            "value_id": 62171
+          },
+          {
+            "value_id": 62193,
+            "sequence": 38500,
+            "name": "中国时代经济出版社",
+            "value": "62193"
+          },
+          {
+            "sequence": 65647,
+            "name": "中国时代经济出版社有限公司",
+            "value": "212209",
+            "value_id": 212209
+          },
+          {
+            "value_id": 62170,
+            "sequence": 40600,
+            "name": "中国林业出版社",
+            "value": "62170"
+          },
+          {
+            "value_id": 62135,
+            "sequence": 18200,
+            "name": "中国标准出版社",
+            "value": "62135"
+          },
+          {
+            "sequence": 51400,
+            "name": "中国档案出版社",
+            "value": "62143",
+            "value_id": 62143
+          },
+          {
+            "sequence": 31100,
+            "name": "中国检察出版社",
+            "value": "62162",
+            "value_id": 62162
+          },
+          {
+            "value_id": 212199,
+            "sequence": 65637,
+            "name": "中国民主法制",
+            "value": "212199"
+          },
+          {
+            "value_id": 62174,
+            "sequence": 6300,
+            "name": "中国民主法制出版社",
+            "value": "62174"
+          },
+          {
+            "value_id": 62175,
+            "sequence": 41000,
+            "name": "中国民族摄影艺术出版社",
+            "value": "62175"
+          },
+          {
+            "value_id": 148211,
+            "sequence": 1400,
+            "name": "中国民族文化出版社",
+            "value": "148211"
+          },
+          {
+            "value_id": 62173,
+            "sequence": 33000,
+            "name": "中国民航出版社",
+            "value": "62173"
+          },
+          {
+            "value_id": 212054,
+            "sequence": 65490,
+            "name": "中国水利水电",
+            "value": "212054"
+          },
+          {
+            "value_id": 62196,
+            "sequence": 19600,
+            "name": "中国水利水电出版社",
+            "value": "62196"
+          },
+          {
+            "value_id": 62148,
+            "sequence": 11000,
+            "name": "中国法制出版社",
+            "value": "62148"
+          },
+          {
+            "value_id": 62156,
+            "sequence": 15700,
+            "name": "中国海关出版社",
+            "value": "62156"
+          },
+          {
+            "value_id": 211929,
+            "sequence": 65361,
+            "name": "中国海关出版社有限公司",
+            "value": "211929"
+          },
+          {
+            "value_id": 61900,
+            "sequence": 18400,
+            "name": "中国海洋大学出版社",
+            "value": "61900"
+          },
+          {
+            "value_id": 212083,
+            "sequence": 65519,
+            "name": "中国煤炭工业年鉴编辑部",
+            "value": "212083"
+          },
+          {
+            "value_id": 62160,
+            "sequence": 19300,
+            "name": "中国环境出版有限责任公司",
+            "value": "62160"
+          },
+          {
+            "name": "中国环境出版集团",
+            "value": "148203",
+            "value_id": 148203,
+            "sequence": 60900
+          },
+          {
+            "value_id": 62145,
+            "sequence": 48100,
+            "name": "中国电力出版社",
+            "value": "62145"
+          },
+          {
+            "sequence": 35900,
+            "name": "中国电影出版社",
+            "value": "62146",
+            "value_id": 62146
+          },
+          {
+            "value_id": 62159,
+            "sequence": 63900,
+            "name": "中国画报出版社",
+            "value": "62159"
+          },
+          {
+            "value_id": 62172,
+            "sequence": 33800,
+            "name": "中国盲文出版社",
+            "value": "62172"
+          },
+          {
+            "value_id": 62192,
+            "sequence": 33100,
+            "name": "中国石化出版社",
+            "value": "62192"
+          },
+          {
+            "value_id": 61901,
+            "sequence": 13500,
+            "name": "中国石油大学出版社",
+            "value": "61901"
+          },
+          {
+            "value": "61849",
+            "value_id": 61849,
+            "sequence": 49800,
+            "name": "中国矿业大学出版社"
+          },
+          {
+            "value_id": 62189,
+            "sequence": 55200,
+            "name": "中国社会出版社",
+            "value": "62189"
+          },
+          {
+            "value_id": 62190,
+            "sequence": 7200,
+            "name": "中国社会科学出版社",
+            "value": "62190"
+          },
+          {
+            "value_id": 212019,
+            "sequence": 65453,
+            "name": "中国社科",
+            "value": "212019"
+          },
+          {
+            "value_id": 212128,
+            "sequence": 65564,
+            "name": "中国科学技术",
+            "value": "212128"
+          },
+          {
+            "value_id": 62168,
+            "sequence": 25900,
+            "name": "中国科学技术出版社",
+            "value": "62168"
+          },
+          {
+            "value_id": 61682,
+            "sequence": 4100,
+            "name": "中国科学技术大学出版社",
+            "value": "61682"
+          },
+          {
+            "value": "167915",
+            "value_id": 167915,
+            "sequence": 3300,
+            "name": "中国科技出版传媒股份有限公司"
+          },
+          {
+            "value_id": 62197,
+            "sequence": 11600,
+            "name": "中国税务出版社",
+            "value": "62197"
+          },
+          {
+            "value": "62150",
+            "value_id": 62150,
+            "sequence": 27400,
+            "name": "中国纺织出版社"
+          },
+          {
+            "value_id": 211990,
+            "sequence": 65423,
+            "name": "中国纺织出版社有限公司",
+            "value": "211990"
+          },
+          {
+            "value_id": 62166,
+            "sequence": 6900,
+            "name": "中国经济出版社",
+            "value": "62166"
+          },
+          {
+            "value": "62199",
+            "value_id": 62199,
+            "sequence": 16800,
+            "name": "中国统计出版社"
+          },
+          {
+            "value_id": 212053,
+            "sequence": 65489,
+            "name": "中国美术学院",
+            "value": "212053"
+          },
+          {
+            "name": "中国美术学院出版社",
+            "value": "62026",
+            "value_id": 62026,
+            "sequence": 5100
+          },
+          {
+            "value_id": 62212,
+            "sequence": 32500,
+            "name": "中国致公出版社",
+            "value": "62212"
+          },
+          {
+            "value_id": 62253,
+            "sequence": 64100,
+            "name": "中国航海图书出版社",
+            "value": "62253"
+          },
+          {
+            "sequence": 51700,
+            "name": "中国藏学出版社",
+            "value": "62138",
+            "value_id": 62138
+          },
+          {
+            "sequence": 34300,
+            "name": "中国言实出版社",
+            "value": "62204",
+            "value_id": 62204
+          },
+          {
+            "name": "中国计划出版社",
+            "value": "62161",
+            "value_id": 62161,
+            "sequence": 20700
+          },
+          {
+            "value": "212203",
+            "value_id": 212203,
+            "sequence": 65641,
+            "name": "中国计量出版社"
+          },
+          {
+            "name": "中国财富出版社",
+            "value": "62136",
+            "value_id": 62136,
+            "sequence": 19500
+          },
+          {
+            "value_id": 211976,
+            "sequence": 65408,
+            "name": "中国财富出版社有限公司",
+            "value": "211976"
+          },
+          {
+            "sequence": 53300,
+            "name": "中国财政经济出版社",
+            "value": "62137",
+            "value_id": 62137
+          },
+          {
+            "value_id": 62211,
+            "sequence": 59100,
+            "name": "中国质检出版社",
+            "value": "62211"
+          },
+          {
+            "value": "148207",
+            "value_id": 148207,
+            "sequence": 12700,
+            "name": "中国质量标准出版传媒有限公司"
+          },
+          {
+            "value_id": 62180,
+            "sequence": 49500,
+            "name": "中国轻工业出版社",
+            "value": "62180"
+          },
+          {
+            "value": "62165",
+            "value_id": 62165,
+            "sequence": 39700,
+            "name": "中国金融出版社"
+          },
+          {
+            "sequence": 19200,
+            "name": "中国铁道出版社",
+            "value": "62198",
+            "value_id": 62198
+          },
+          {
+            "value_id": 148205,
+            "sequence": 12400,
+            "name": "中国铁道出版社有限公司",
+            "value": "148205"
+          },
+          {
+            "value_id": 148206,
+            "sequence": 48200,
+            "name": "中国长安出版传媒有限公司",
+            "value": "148206"
+          },
+          {
+            "sequence": 22800,
+            "name": "中国长安出版社",
+            "value": "62209",
+            "value_id": 62209
+          },
+          {
+            "name": "中国青少年音像出版社",
+            "value": "212024",
+            "value_id": 212024,
+            "sequence": 65459
+          },
+          {
+            "value_id": 62179,
+            "sequence": 44900,
+            "name": "中国青年出版社",
+            "value": "62179"
+          },
+          {
+            "value_id": 211879,
+            "sequence": 65311,
+            "name": "中国青年杂志社",
+            "value": "211879"
+          },
+          {
+            "value_id": 212107,
+            "sequence": 65543,
+            "name": "中国音乐家音像出版社",
+            "value": "212107"
+          },
+          {
+            "value_id": 212072,
+            "sequence": 65508,
+            "name": "中央党校",
+            "value": "212072"
+          },
+          {
+            "value_id": 62219,
+            "sequence": 45100,
+            "name": "中央广播电视大学出版社",
+            "value": "62219"
+          },
+          {
+            "value_id": 212115,
+            "sequence": 65551,
+            "name": "中央广播电视大学音像出版社",
+            "value": "212115"
+          },
+          {
+            "sequence": 300,
+            "name": "中央文献出版社",
+            "value": "62221",
+            "value_id": 62221
+          },
+          {
+            "value_id": 62220,
+            "sequence": 3100,
+            "name": "中央民族大学出版社",
+            "value": "62220"
+          },
+          {
+            "value_id": 211868,
+            "sequence": 65300,
+            "name": "中央电大",
+            "value": "211868"
+          },
+          {
+            "value_id": 62218,
+            "sequence": 37700,
+            "name": "中央编译出版社",
+            "value": "62218"
+          },
+          {
+            "value_id": 62222,
+            "sequence": 33400,
+            "name": "中央音乐学院出版社",
+            "value": "62222"
+          },
+          {
+            "value_id": 212096,
+            "sequence": 65532,
+            "name": "中学生学习报社",
+            "value": "212096"
+          },
+          {
+            "value_id": 148190,
+            "sequence": 34100,
+            "name": "中山大学出版社",
+            "value": "148190"
+          },
+          {
+            "value": "61777",
+            "value_id": 61777,
+            "sequence": 21000,
+            "name": "中州古籍出版社"
+          },
+          {
+            "value_id": 62214,
+            "sequence": 35700,
+            "name": "中航出版传媒有限责任公司",
+            "value": "62214"
+          },
+          {
+            "value_id": 148171,
+            "sequence": 61000,
+            "name": "中西书局",
+            "value": "148171"
+          },
+          {
+            "name": "中译出版社",
+            "value": "62224",
+            "value_id": 62224,
+            "sequence": 12600
+          },
+          {
+            "sequence": 65621,
+            "name": "乐普升",
+            "value": "212185",
+            "value_id": 212185
+          },
+          {
+            "value": "62069",
+            "value_id": 62069,
+            "sequence": 43200,
+            "name": "九州出版社"
+          },
+          {
+            "value_id": 212198,
+            "sequence": 65636,
+            "name": "九州音像出版公司",
+            "value": "212198"
+          },
+          {
+            "value_id": 212172,
+            "sequence": 65608,
+            "name": "九州音像出版社",
+            "value": "212172"
+          },
+          {
+            "value_id": 212144,
+            "sequence": 65580,
+            "name": "书与画编辑部",
+            "value": "212144"
+          },
+          {
+            "value_id": 62107,
+            "sequence": 60300,
+            "name": "书法出版社",
+            "value": "62107"
+          },
+          {
+            "value_id": 61908,
+            "sequence": 64900,
+            "name": "书海出版社",
+            "value": "61908"
+          },
+          {
+            "sequence": 65648,
+            "name": "二十一世纪",
+            "value": "212210",
+            "value_id": 212210
+          },
+          {
+            "value_id": 61851,
+            "sequence": 24300,
+            "name": "二十一世纪出版社",
+            "value": "61851"
+          },
+          {
+            "value_id": 211967,
+            "sequence": 65399,
+            "name": "二十一世纪出版社集团有限公司",
+            "value": "211967"
+          },
+          {
+            "value_id": 62007,
+            "sequence": 65100,
+            "name": "云南人民出版社",
+            "value": "62007"
+          },
+          {
+            "value_id": 62005,
+            "sequence": 36300,
+            "name": "云南大学出版社",
+            "value": "62005"
+          },
+          {
+            "value_id": 62006,
+            "sequence": 20600,
+            "name": "云南教育出版社",
+            "value": "62006"
+          },
+          {
+            "value": "62012",
+            "value_id": 62012,
+            "sequence": 6700,
+            "name": "云南民族出版社"
+          },
+          {
+            "value_id": 62010,
+            "sequence": 36400,
+            "name": "云南科技出版社",
+            "value": "62010"
+          },
+          {
+            "value_id": 62011,
+            "sequence": 53100,
+            "name": "云南美术出版社",
+            "value": "62011"
+          },
+          {
+            "value_id": 62117,
+            "sequence": 17400,
+            "name": "五洲传播出版社",
+            "value": "62117"
+          },
+          {
+            "value_id": 212153,
+            "sequence": 65589,
+            "name": "人民东方传媒有限公司",
+            "value": "212153"
+          },
+          {
+            "value_id": 62086,
+            "sequence": 14500,
+            "name": "人民东方出版传媒有限公司",
+            "value": "62086"
+          },
+          {
+            "value_id": 62088,
+            "sequence": 59500,
+            "name": "人民交通出版社",
+            "value": "62088"
+          },
+          {
+            "value": "62255",
+            "value_id": 62255,
+            "sequence": 44100,
+            "name": "人民交通出版社股份有限公司"
+          },
+          {
+            "value_id": 62092,
+            "sequence": 6200,
+            "name": "人民体育出版社",
+            "value": "62092"
+          },
+          {
+            "name": "人民军医出版社",
+            "value": "62246",
+            "value_id": 62246,
+            "sequence": 60400
+          },
+          {
+            "name": "人民出版社",
+            "value": "62085",
+            "value_id": 62085,
+            "sequence": 29200
+          },
+          {
+            "value_id": 62093,
+            "sequence": 24400,
+            "name": "人民卫生出版社",
+            "value": "62093"
+          },
+          {
+            "value_id": 211938,
+            "sequence": 65370,
+            "name": "人民卫生电子音像出版社",
+            "value": "211938"
+          },
+          {
+            "name": "人民天舟（北京）出版有限公司",
+            "value": "148202",
+            "value_id": 148202,
+            "sequence": 59800
+          },
+          {
+            "value_id": 62089,
+            "sequence": 35400,
+            "name": "人民教育出版社",
+            "value": "62089"
+          },
+          {
+            "value_id": 212057,
+            "sequence": 65493,
+            "name": "人民教育出版社有限公司",
+            "value": "212057"
+          },
+          {
+            "value_id": 62094,
+            "sequence": 50800,
+            "name": "人民文学出版社",
+            "value": "62094"
+          },
+          {
+            "name": "人民日报出版社",
+            "value": "62091",
+            "value_id": 62091,
+            "sequence": 61300
+          },
+          {
+            "value_id": 62247,
+            "sequence": 49700,
+            "name": "人民武警出版社",
+            "value": "62247"
+          },
+          {
+            "sequence": 17300,
+            "name": "人民法院出版社",
+            "value": "62087",
+            "value_id": 62087
+          },
+          {
+            "value_id": 62090,
+            "sequence": 10400,
+            "name": "人民美术出版社",
+            "value": "62090"
+          },
+          {
+            "value_id": 62096,
+            "sequence": 2800,
+            "name": "人民邮电出版社",
+            "value": "62096"
+          },
+          {
+            "value_id": 62095,
+            "sequence": 16200,
+            "name": "人民音乐出版社",
+            "value": "62095"
+          },
+          {
+            "sequence": 65345,
+            "name": "企业管理",
+            "value": "211913",
+            "value_id": 211913
+          },
+          {
+            "value_id": 62079,
+            "sequence": 2100,
+            "name": "企业管理出版社",
+            "value": "62079"
+          },
+          {
+            "value": "62004",
+            "value_id": 62004,
+            "sequence": 54800,
+            "name": "伊犁人民出版社"
+          },
+          {
+            "value_id": 212002,
+            "sequence": 65436,
+            "name": "优学派",
+            "value": "212002"
+          },
+          {
+            "value_id": 62226,
+            "sequence": 23500,
+            "name": "作家出版社",
+            "value": "62226"
+          },
+          {
+            "value_id": 62050,
+            "sequence": 9700,
+            "name": "光明日报出版社",
+            "value": "62050"
+          },
+          {
+            "sequence": 63800,
+            "name": "克孜勒苏柯尔克孜文出版社",
+            "value": "61996",
+            "value_id": 61996
+          },
+          {
+            "value_id": 62042,
+            "sequence": 32900,
+            "name": "党建读物出版社",
+            "value": "62042"
+          },
+          {
+            "value_id": 211896,
+            "sequence": 65328,
+            "name": "六品堂",
+            "value": "211896"
+          },
+          {
+            "name": "兰州大学出版社",
+            "value": "61720",
+            "value_id": 61720,
+            "sequence": 62200
+          },
+          {
+            "value_id": 62037,
+            "sequence": 44300,
+            "name": "兵器工业出版社",
+            "value": "62037"
+          },
+          {
+            "value_id": 212081,
+            "sequence": 65517,
+            "name": "内蒙人民",
+            "value": "212081"
+          },
+          {
+            "value_id": 61877,
+            "sequence": 13800,
+            "name": "内蒙古人民出版社",
+            "value": "61877"
+          },
+          {
+            "value": "61874",
+            "value_id": 61874,
+            "sequence": 47900,
+            "name": "内蒙古大学出版社"
+          },
+          {
+            "value_id": 61878,
+            "sequence": 29000,
+            "name": "内蒙古少年儿童出版社",
+            "value": "61878"
+          },
+          {
+            "value_id": 61875,
+            "sequence": 36900,
+            "name": "内蒙古教育出版社",
+            "value": "61875"
+          },
+          {
+            "value_id": 61879,
+            "sequence": 46800,
+            "name": "内蒙古文化出版社",
+            "value": "61879"
+          },
+          {
+            "value": "61876",
+            "value_id": 61876,
+            "sequence": 4000,
+            "name": "内蒙古科学技术出版社"
+          },
+          {
+            "value_id": 211872,
+            "sequence": 65304,
+            "name": "内蒙少儿",
+            "value": "211872"
+          },
+          {
+            "value_id": 62242,
+            "sequence": 30600,
+            "name": "军事医学出版社",
+            "value": "62242"
+          },
+          {
+            "value_id": 62241,
+            "sequence": 49600,
+            "name": "军事科学出版社",
+            "value": "62241"
+          },
+          {
+            "name": "军事谊文出版社",
+            "value": "62243",
+            "value_id": 62243,
+            "sequence": 42600
+          },
+          {
+            "value_id": 62078,
+            "sequence": 7100,
+            "name": "农村读物出版社",
+            "value": "62078"
+          },
+          {
+            "sequence": 9800,
+            "name": "冶金工业出版社",
+            "value": "62128",
+            "value_id": 62128
+          },
+          {
+            "sequence": 52800,
+            "name": "凤凰出版社",
+            "value": "148177",
+            "value_id": 148177
+          },
+          {
+            "value_id": 212205,
+            "sequence": 65643,
+            "name": "创意市集",
+            "value": "212205"
+          },
+          {
+            "sequence": 9000,
+            "name": "化学工业出版社",
+            "value": "62062",
+            "value_id": 62062
+          },
+          {
+            "value_id": 212044,
+            "sequence": 65480,
+            "name": "北京交通大学",
+            "value": "212044"
+          },
+          {
+            "value": "62031",
+            "value_id": 62031,
+            "sequence": 61800,
+            "name": "北京交通大学出版社"
+          },
+          {
+            "value_id": 212157,
+            "sequence": 65593,
+            "name": "北京人民",
+            "value": "212157"
+          },
+          {
+            "value_id": 61691,
+            "sequence": 24200,
+            "name": "北京人民出版社",
+            "value": "61691"
+          },
+          {
+            "sequence": 65602,
+            "name": "北京体育大学",
+            "value": "212166",
+            "value_id": 212166
+          },
+          {
+            "value_id": 62034,
+            "sequence": 64500,
+            "name": "北京体育大学出版社",
+            "value": "62034"
+          },
+          {
+            "value_id": 61683,
+            "sequence": 43700,
+            "name": "北京出版社",
+            "value": "61683"
+          },
+          {
+            "value_id": 212070,
+            "sequence": 65506,
+            "name": "北京十月文艺",
+            "value": "212070"
+          },
+          {
+            "value": "61694",
+            "value_id": 61694,
+            "sequence": 8600,
+            "name": "北京十月文艺出版社"
+          },
+          {
+            "value_id": 148162,
+            "sequence": 52600,
+            "name": "北京华语联合出版有限责任公司",
+            "value": "148162"
+          },
+          {
+            "name": "北京外语音像出版社",
+            "value": "211898",
+            "value_id": 211898,
+            "sequence": 65330
+          },
+          {
+            "value_id": 212196,
+            "sequence": 65633,
+            "name": "北京大学",
+            "value": "212196"
+          },
+          {
+            "value": "62027",
+            "value_id": 62027,
+            "sequence": 15400,
+            "name": "北京大学出版社"
+          },
+          {
+            "value_id": 212097,
+            "sequence": 65533,
+            "name": "北京大学医学",
+            "value": "212097"
+          },
+          {
+            "value_id": 62028,
+            "sequence": 40900,
+            "name": "北京大学医学出版社",
+            "value": "62028"
+          },
+          {
+            "value_id": 212092,
+            "sequence": 65528,
+            "name": "北京大学音像出版社",
+            "value": "212092"
+          },
+          {
+            "value_id": 62029,
+            "sequence": 17500,
+            "name": "北京对外经济贸易大学出版社",
+            "value": "62029"
+          },
+          {
+            "value_id": 61693,
+            "sequence": 21900,
+            "name": "北京少年儿童出版社",
+            "value": "61693"
+          },
+          {
+            "value_id": 211999,
+            "sequence": 65433,
+            "name": "北京工业大学",
+            "value": "211999"
+          },
+          {
+            "name": "北京工业大学出版社",
+            "value": "61684",
+            "value_id": 61684,
+            "sequence": 58500
+          },
+          {
+            "value_id": 211987,
+            "sequence": 65420,
+            "name": "北京工艺美术",
+            "value": "211987"
+          },
+          {
+            "value_id": 61685,
+            "sequence": 43800,
+            "name": "北京工艺美术出版社",
+            "value": "61685"
+          },
+          {
+            "value_id": 62033,
+            "sequence": 21300,
+            "name": "北京师范大学出版社",
+            "value": "62033"
+          },
+          {
+            "name": "北京希望电子出版社",
+            "value": "212008",
+            "value_id": 212008,
+            "sequence": 65442
+          },
+          {
+            "value_id": 212003,
+            "sequence": 65437,
+            "name": "北京教育",
+            "value": "212003"
+          },
+          {
+            "value_id": 61686,
+            "sequence": 16900,
+            "name": "北京教育出版社",
+            "value": "61686"
+          },
+          {
+            "value_id": 212150,
+            "sequence": 65586,
+            "name": "北京教育杂志社",
+            "value": "212150"
+          },
+          {
+            "name": "北京旅游教育出版社",
+            "value": "61689",
+            "value_id": 61689,
+            "sequence": 38700
+          },
+          {
+            "value": "211951",
+            "value_id": 211951,
+            "sequence": 65383,
+            "name": "北京日报"
+          },
+          {
+            "value_id": 61692,
+            "sequence": 36000,
+            "name": "北京日报出版社",
+            "value": "61692"
+          },
+          {
+            "value_id": 61695,
+            "sequence": 38200,
+            "name": "北京时代华文书局",
+            "value": "61695"
+          },
+          {
+            "value_id": 212204,
+            "sequence": 65642,
+            "name": "北京时代华文书局有限公司",
+            "value": "212204"
+          },
+          {
+            "value": "61698",
+            "value_id": 61698,
+            "sequence": 57300,
+            "name": "北京燕山出版社"
+          },
+          {
+            "value_id": 212162,
+            "sequence": 65598,
+            "name": "北京理工大学",
+            "value": "212162"
+          },
+          {
+            "value": "62032",
+            "value_id": 62032,
+            "sequence": 46000,
+            "name": "北京理工大学出版社"
+          },
+          {
+            "sequence": 37800,
+            "name": "北京科学技术出版社",
+            "value": "61687",
+            "value_id": 61687
+          },
+          {
+            "value_id": 211935,
+            "sequence": 65367,
+            "name": "北京科学技术出版社有限公司",
+            "value": "211935"
+          },
+          {
+            "value_id": 212139,
+            "sequence": 65575,
+            "name": "北京科技",
+            "value": "212139"
+          },
+          {
+            "value_id": 212160,
+            "sequence": 65596,
+            "name": "北京美术摄影",
+            "value": "212160"
+          },
+          {
+            "sequence": 46700,
+            "name": "北京美术摄影出版社",
+            "value": "61690",
+            "value_id": 61690
+          },
+          {
+            "value_id": 212130,
+            "sequence": 65566,
+            "name": "北京联合",
+            "value": "212130"
+          },
+          {
+            "value_id": 165755,
+            "sequence": 27000,
+            "name": "北京联合出版公司",
+            "value": "165755"
+          },
+          {
+            "sequence": 43600,
+            "name": "北京联合出版公司出版北京希望电子出版社",
+            "value": "167918",
+            "value_id": 167918
+          },
+          {
+            "value": "61688",
+            "value_id": 61688,
+            "sequence": 4900,
+            "name": "北京联合出版有限责任公司"
+          },
+          {
+            "value_id": 148163,
+            "sequence": 34800,
+            "name": "北京联合出版社",
+            "value": "148163"
+          },
+          {
+            "name": "北京航空航天大学",
+            "value": "211937",
+            "value_id": 211937,
+            "sequence": 65369
+          },
+          {
+            "value_id": 62030,
+            "sequence": 19000,
+            "name": "北京航空航天大学出版社",
+            "value": "62030"
+          },
+          {
+            "value_id": 211928,
+            "sequence": 65360,
+            "name": "北京语言大学",
+            "value": "211928"
+          },
+          {
+            "value_id": 62036,
+            "sequence": 45300,
+            "name": "北京语言大学出版社",
+            "value": "62036"
+          },
+          {
+            "value_id": 212154,
+            "sequence": 65590,
+            "name": "北京语言大学电子音像出版社",
+            "value": "212154"
+          },
+          {
+            "value": "62035",
+            "value_id": 62035,
+            "sequence": 46200,
+            "name": "北京邮电大学出版社"
+          },
+          {
+            "value_id": 61697,
+            "sequence": 26400,
+            "name": "北京首都师范大学出版社",
+            "value": "61697"
+          },
+          {
+            "value_id": 61696,
+            "sequence": 30200,
+            "name": "北京首都经济贸易大学出版社",
+            "value": "61696"
+          },
+          {
+            "name": "北岳文艺出版社",
+            "value": "61902",
+            "value_id": 61902,
+            "sequence": 6600
+          },
+          {
+            "name": "北方妇女儿童出版社",
+            "value": "61817",
+            "value_id": 61817,
+            "sequence": 41100
+          },
+          {
+            "sequence": 21600,
+            "name": "北方文艺出版社",
+            "value": "61783",
+            "value_id": 61783
+          },
+          {
+            "value_id": 61930,
+            "sequence": 23600,
+            "name": "华东师范大学出版社",
+            "value": "61930"
+          },
+          {
+            "value_id": 61929,
+            "sequence": 38600,
+            "name": "华东理工大学出版社",
+            "value": "61929"
+          },
+          {
+            "value_id": 61797,
+            "sequence": 58700,
+            "name": "华中师范大学出版社",
+            "value": "61797"
+          },
+          {
+            "name": "华中科技大学",
+            "value": "211988",
+            "value_id": 211988,
+            "sequence": 65421
+          },
+          {
+            "value_id": 61796,
+            "sequence": 59200,
+            "name": "华中科技大学出版社",
+            "value": "61796"
+          },
+          {
+            "name": "华乐出版社",
+            "value": "62057",
+            "value_id": 62057,
+            "sequence": 15500
+          },
+          {
+            "value_id": 212148,
+            "sequence": 65584,
+            "name": "华南理工大学",
+            "value": "212148"
+          },
+          {
+            "sequence": 51600,
+            "name": "华南理工大学出版社",
+            "value": "61736",
+            "value_id": 61736
+          },
+          {
+            "value_id": 62060,
+            "sequence": 11900,
+            "name": "华夏出版社",
+            "value": "62060"
+          },
+          {
+            "value_id": 62059,
+            "sequence": 21800,
+            "name": "华文出版社",
+            "value": "62059"
+          },
+          {
+            "value_id": 148217,
+            "sequence": 17600,
+            "name": "华艺出版社",
+            "value": "148217"
+          },
+          {
+            "value_id": 62061,
+            "sequence": 13200,
+            "name": "华语教学出版社",
+            "value": "62061"
+          },
+          {
+            "value_id": 62058,
+            "sequence": 31000,
+            "name": "华龄出版社",
+            "value": "62058"
+          },
+          {
+            "value_id": 61844,
+            "sequence": 40200,
+            "name": "南京东南大学出版社",
+            "value": "61844"
+          },
+          {
+            "value_id": 61842,
+            "sequence": 41800,
+            "name": "南京出版社",
+            "value": "61842"
+          },
+          {
+            "value_id": 211981,
+            "sequence": 65414,
+            "name": "南京大学",
+            "value": "211981"
+          },
+          {
+            "value_id": 61843,
+            "sequence": 25300,
+            "name": "南京大学出版社",
+            "value": "61843"
+          },
+          {
+            "value_id": 212028,
+            "sequence": 65463,
+            "name": "南京师大",
+            "value": "212028"
+          },
+          {
+            "value_id": 61846,
+            "sequence": 14200,
+            "name": "南京师范大学出版社",
+            "value": "61846"
+          },
+          {
+            "value_id": 61845,
+            "sequence": 10000,
+            "name": "南京河海大学出版社",
+            "value": "61845"
+          },
+          {
+            "name": "南开大学出版社",
+            "value": "61982",
+            "value_id": 61982,
+            "sequence": 63100
+          },
+          {
+            "value_id": 61755,
+            "sequence": 14600,
+            "name": "南方出版社",
+            "value": "61755"
+          },
+          {
+            "value_id": 148188,
+            "sequence": 38300,
+            "name": "南方日报出版社",
+            "value": "148188"
+          },
+          {
+            "name": "南海出版公司",
+            "value": "61756",
+            "value_id": 61756,
+            "sequence": 10700
+          },
+          {
+            "value_id": 212194,
+            "sequence": 65631,
+            "name": "博库网",
+            "value": "212194"
+          },
+          {
+            "value_id": 212195,
+            "sequence": 65632,
+            "name": "博物编辑部",
+            "value": "212195"
+          },
+          {
+            "value_id": 212145,
+            "sequence": 65581,
+            "name": "原子能出版社",
+            "value": "212145"
+          },
+          {
+            "name": "厦门大学出版社",
+            "value": "61711",
+            "value_id": 61711,
+            "sequence": 56000
+          },
+          {
+            "value_id": 148178,
+            "sequence": 29500,
+            "name": "古吴轩出版社",
+            "value": "148178"
+          },
+          {
+            "sequence": 26200,
+            "name": "台海出版社",
+            "value": "62108",
+            "value_id": 62108
+          },
+          {
+            "value_id": 61680,
+            "sequence": 57400,
+            "name": "合肥工业大学出版社",
+            "value": "61680"
+          },
+          {
+            "name": "吉林人民出版社",
+            "value": "61823",
+            "value_id": 61823,
+            "sequence": 56400
+          },
+          {
+            "value": "148174",
+            "value_id": 148174,
+            "sequence": 53400,
+            "name": "吉林出版集团"
+          },
+          {
+            "value": "61818",
+            "value_id": 61818,
+            "sequence": 54200,
+            "name": "吉林出版集团股份有限公司"
+          },
+          {
+            "name": "吉林大学出版社",
+            "value": "61819",
+            "value_id": 61819,
+            "sequence": 42900
+          },
+          {
+            "sequence": 5900,
+            "name": "吉林摄影出版社",
+            "value": "61824",
+            "value_id": 61824
+          },
+          {
+            "value_id": 61820,
+            "sequence": 45600,
+            "name": "吉林教育出版社",
+            "value": "61820"
+          },
+          {
+            "value_id": 61825,
+            "sequence": 21400,
+            "name": "吉林文史出版社",
+            "value": "61825"
+          },
+          {
+            "value_id": 212214,
+            "sequence": 65652,
+            "name": "吉林电子出版社",
+            "value": "212214"
+          },
+          {
+            "value": "61821",
+            "value_id": 61821,
+            "sequence": 62900,
+            "name": "吉林科学技术出版社"
+          },
+          {
+            "value_id": 61822,
+            "sequence": 51000,
+            "name": "吉林美术出版社",
+            "value": "61822"
+          },
+          {
+            "sequence": 65336,
+            "name": "吉林音像出版社",
+            "value": "211904",
+            "value_id": 211904
+          },
+          {
+            "value_id": 212189,
+            "sequence": 65626,
+            "name": "同心出版社",
+            "value": "212189"
+          },
+          {
+            "name": "同济大学出版社",
+            "value": "61962",
+            "value_id": 61962,
+            "sequence": 60500
+          },
+          {
+            "value_id": 61780,
+            "sequence": 24900,
+            "name": "哈尔滨东北林业大学出版社",
+            "value": "61780"
+          },
+          {
+            "value_id": 61778,
+            "sequence": 900,
+            "name": "哈尔滨出版社",
+            "value": "61778"
+          },
+          {
+            "name": "哈尔滨地图出版社",
+            "value": "61779",
+            "value_id": 61779,
+            "sequence": 500
+          },
+          {
+            "value_id": 211934,
+            "sequence": 65366,
+            "name": "哈尔滨工业大学",
+            "value": "211934"
+          },
+          {
+            "sequence": 8300,
+            "name": "哈尔滨工业大学出版社",
+            "value": "61782",
+            "value_id": 61782
+          },
+          {
+            "value_id": 212052,
+            "sequence": 65488,
+            "name": "哈尔滨工程大学",
+            "value": "212052"
+          },
+          {
+            "value_id": 61781,
+            "sequence": 58200,
+            "name": "哈尔滨工程大学出版社",
+            "value": "61781"
+          },
+          {
+            "value_id": 211922,
+            "sequence": 65354,
+            "name": "哲学研究杂志社",
+            "value": "211922"
+          },
+          {
+            "name": "商务印书馆",
+            "value": "62098",
+            "value_id": 62098,
+            "sequence": 5300
+          },
+          {
+            "value_id": 62099,
+            "sequence": 39400,
+            "name": "商务印书馆国际有限公司",
+            "value": "62099"
+          },
+          {
+            "name": "商务国际",
+            "value": "211946",
+            "value_id": 211946,
+            "sequence": 65378
+          },
+          {
+            "value_id": 61995,
+            "sequence": 27800,
+            "name": "喀什维吾尔文出版社",
+            "value": "61995"
+          },
+          {
+            "value_id": 61977,
+            "sequence": 39300,
+            "name": "四川人民出版社",
+            "value": "61977"
+          },
+          {
+            "value_id": 61972,
+            "sequence": 47500,
+            "name": "四川大学出版社",
+            "value": "61972"
+          },
+          {
+            "name": "四川天地出版社",
+            "value": "61979",
+            "value_id": 61979,
+            "sequence": 57700
+          },
+          {
+            "value_id": 212175,
+            "sequence": 65611,
+            "name": "四川少儿出版社",
+            "value": "212175"
+          },
+          {
+            "value": "61978",
+            "value_id": 61978,
+            "sequence": 26000,
+            "name": "四川少年儿童出版社"
+          },
+          {
+            "value_id": 61970,
+            "sequence": 64200,
+            "name": "四川巴蜀书社",
+            "value": "61970"
+          },
+          {
+            "value_id": 61973,
+            "sequence": 33700,
+            "name": "四川教育出版社",
+            "value": "61973"
+          },
+          {
+            "value_id": 61980,
+            "sequence": 55100,
+            "name": "四川文艺出版社",
+            "value": "61980"
+          },
+          {
+            "name": "四川民族出版社",
+            "value": "61976",
+            "value_id": 61976,
+            "sequence": 20000
+          },
+          {
+            "value": "211887",
+            "value_id": 211887,
+            "sequence": 65319,
+            "name": "四川电子音像出版中心"
+          },
+          {
+            "name": "四川科学技术出版社",
+            "value": "61974",
+            "value_id": 61974,
+            "sequence": 44800
+          },
+          {
+            "value_id": 61975,
+            "sequence": 20300,
+            "name": "四川美术出版社",
+            "value": "61975"
+          },
+          {
+            "value_id": 61971,
+            "sequence": 56600,
+            "name": "四川辞书出版社",
+            "value": "61971"
+          },
+          {
+            "name": "团结出版社",
+            "value": "62110",
+            "value_id": 62110,
+            "sequence": 39200
+          },
+          {
+            "value_id": 211985,
+            "sequence": 65418,
+            "name": "国家人文历史杂志社有限公司",
+            "value": "211985"
+          },
+          {
+            "value_id": 62053,
+            "sequence": 40700,
+            "name": "国家图书馆出版社",
+            "value": "62053"
+          },
+          {
+            "value_id": 212063,
+            "sequence": 65499,
+            "name": "国家开放大学",
+            "value": "212063"
+          },
+          {
+            "value_id": 62254,
+            "sequence": 26800,
+            "name": "国家开放大学出版社",
+            "value": "62254"
+          },
+          {
+            "value_id": 212131,
+            "sequence": 65567,
+            "name": "国家行政学院",
+            "value": "212131"
+          },
+          {
+            "value_id": 62052,
+            "sequence": 57800,
+            "name": "国家行政学院出版社",
+            "value": "62052"
+          },
+          {
+            "value_id": 212060,
+            "sequence": 65496,
+            "name": "国家行政管理",
+            "value": "212060"
+          },
+          {
+            "value_id": 148200,
+            "sequence": 38400,
+            "name": "国家行政管理出版社",
+            "value": "148200"
+          },
+          {
+            "value_id": 62233,
+            "sequence": 37400,
+            "name": "国防大学出版社",
+            "value": "62233"
+          },
+          {
+            "value_id": 62234,
+            "sequence": 64000,
+            "name": "国防工业出版社",
+            "value": "62234"
+          },
+          {
+            "value": "148215",
+            "value_id": 148215,
+            "sequence": 28300,
+            "name": "国防科学技术大学出版社"
+          },
+          {
+            "name": "国防科技大学出版社",
+            "value": "62235",
+            "value_id": 62235,
+            "sequence": 34600
+          },
+          {
+            "value_id": 62051,
+            "sequence": 53800,
+            "name": "国际文化出版公司",
+            "value": "62051"
+          },
+          {
+            "value_id": 62044,
+            "sequence": 51300,
+            "name": "地质出版社",
+            "value": "62044"
+          },
+          {
+            "value_id": 62043,
+            "sequence": 44000,
+            "name": "地震出版社",
+            "value": "62043"
+          },
+          {
+            "value_id": 61928,
+            "sequence": 50200,
+            "name": "复旦大学出版社",
+            "value": "61928"
+          },
+          {
+            "value_id": 211918,
+            "sequence": 65350,
+            "name": "复旦大学电子音像出版社",
+            "value": "211918"
+          },
+          {
+            "value_id": 62111,
+            "sequence": 37300,
+            "name": "外文出版社",
+            "value": "62111"
+          },
+          {
+            "value_id": 212082,
+            "sequence": 65518,
+            "name": "外语教学与研究",
+            "value": "212082"
+          },
+          {
+            "value_id": 62112,
+            "sequence": 50600,
+            "name": "外语教学与研究出版社",
+            "value": "62112"
+          },
+          {
+            "value_id": 212111,
+            "sequence": 65547,
+            "name": "外语教研",
+            "value": "212111"
+          },
+          {
+            "value_id": 148219,
+            "sequence": 56800,
+            "name": "大有书局",
+            "value": "148219"
+          },
+          {
+            "value_id": 212138,
+            "sequence": 65574,
+            "name": "大牌出版",
+            "value": "212138"
+          },
+          {
+            "value_id": 61766,
+            "sequence": 1000,
+            "name": "大象出版社",
+            "value": "61766"
+          },
+          {
+            "value_id": 61858,
+            "sequence": 12900,
+            "name": "大连出版社",
+            "value": "61858"
+          },
+          {
+            "value_id": 61859,
+            "sequence": 2000,
+            "name": "大连海事大学出版社",
+            "value": "61859"
+          },
+          {
+            "value_id": 211993,
+            "sequence": 65426,
+            "name": "大连理工大学",
+            "value": "211993"
+          },
+          {
+            "value_id": 61860,
+            "sequence": 23700,
+            "name": "大连理工大学出版社",
+            "value": "61860"
+          },
+          {
+            "value_id": 148192,
+            "sequence": 54700,
+            "name": "天地出版社",
+            "value": "148192"
+          },
+          {
+            "value_id": 62109,
+            "sequence": 50000,
+            "name": "天天出版社",
+            "value": "62109"
+          },
+          {
+            "value_id": 211968,
+            "sequence": 65400,
+            "name": "天文",
+            "value": "211968"
+          },
+          {
+            "value_id": 61988,
+            "sequence": 45200,
+            "name": "天津人民出版社",
+            "value": "61988"
+          },
+          {
+            "name": "天津人民美术出版社",
+            "value": "61989",
+            "value_id": 61989,
+            "sequence": 39600
+          },
+          {
+            "value_id": 211914,
+            "sequence": 65346,
+            "name": "天津人美",
+            "value": "211914"
+          },
+          {
+            "value": "61984",
+            "value_id": 61984,
+            "sequence": 45500,
+            "name": "天津古籍出版社"
+          },
+          {
+            "name": "天津外语电子音像出版社",
+            "value": "211965",
+            "value_id": 211965,
+            "sequence": 65397
+          },
+          {
+            "value_id": 61983,
+            "sequence": 19800,
+            "name": "天津大学出版社",
+            "value": "61983"
+          },
+          {
+            "value_id": 61985,
+            "sequence": 32000,
+            "name": "天津教育出版社",
+            "value": "61985"
+          },
+          {
+            "value_id": 212149,
+            "sequence": 65585,
+            "name": "天津文化艺术音像出版社",
+            "value": "212149"
+          },
+          {
+            "name": "天津杨柳青画社",
+            "value": "61991",
+            "value_id": 61991,
+            "sequence": 24500
+          },
+          {
+            "sequence": 32100,
+            "name": "天津社会科学院出版社",
+            "value": "61990",
+            "value_id": 61990
+          },
+          {
+            "value_id": 61987,
+            "sequence": 41700,
+            "name": "天津科学技术出版社",
+            "value": "61987"
+          },
+          {
+            "value_id": 212077,
+            "sequence": 65513,
+            "name": "天津科技",
+            "value": "212077"
+          },
+          {
+            "value_id": 61986,
+            "sequence": 36700,
+            "name": "天津科技翻译出版公司",
+            "value": "61986"
+          },
+          {
+            "name": "天津科技翻译出版有限公司",
+            "value": "148172",
+            "value_id": 148172,
+            "sequence": 3600
+          },
+          {
+            "value_id": 167914,
+            "sequence": 54300,
+            "name": "太白文艺出版社",
+            "value": "167914"
+          },
+          {
+            "value_id": 212068,
+            "sequence": 65504,
+            "name": "威伯",
+            "value": "212068"
+          },
+          {
+            "name": "孔学堂书局",
+            "value": "148195",
+            "value_id": 148195,
+            "sequence": 27300
+          },
+          {
+            "value_id": 61753,
+            "sequence": 26900,
+            "name": "孔学堂书局有限公司",
+            "value": "61753"
+          },
+          {
+            "sequence": 22600,
+            "name": "学习出版社",
+            "value": "62125",
+            "value_id": 62125
+          },
+          {
+            "value_id": 212183,
+            "sequence": 65619,
+            "name": "学具",
+            "value": "212183"
+          },
+          {
+            "value_id": 61953,
+            "sequence": 8100,
+            "name": "学林出版社",
+            "value": "61953"
+          },
+          {
+            "value_id": 62126,
+            "sequence": 41500,
+            "name": "学苑出版社",
+            "value": "62126"
+          },
+          {
+            "value_id": 61881,
+            "sequence": 9600,
+            "name": "宁夏人民出版社",
+            "value": "61881"
+          },
+          {
+            "value_id": 212061,
+            "sequence": 65497,
+            "name": "宁夏人民教育",
+            "value": "212061"
+          },
+          {
+            "value_id": 61882,
+            "sequence": 53700,
+            "name": "宁夏人民教育出版社",
+            "value": "61882"
+          },
+          {
+            "value_id": 61883,
+            "sequence": 3500,
+            "name": "宁夏阳光出版社",
+            "value": "61883"
+          },
+          {
+            "value_id": 62014,
+            "sequence": 10900,
+            "name": "宁波出版社",
+            "value": "62014"
+          },
+          {
+            "value_id": 212152,
+            "sequence": 65588,
+            "name": "安徽人民",
+            "value": "212152"
+          },
+          {
+            "value_id": 61676,
+            "sequence": 28000,
+            "name": "安徽人民出版社",
+            "value": "61676"
+          },
+          {
+            "value_id": 61672,
+            "sequence": 57900,
+            "name": "安徽大学出版社",
+            "value": "61672"
+          },
+          {
+            "name": "安徽少儿",
+            "value": "211943",
+            "value_id": 211943,
+            "sequence": 65375
+          },
+          {
+            "value_id": 61677,
+            "sequence": 52200,
+            "name": "安徽少年儿童出版社",
+            "value": "61677"
+          },
+          {
+            "value_id": 61678,
+            "sequence": 31400,
+            "name": "安徽师范大学出版社",
+            "value": "61678"
+          },
+          {
+            "value_id": 211998,
+            "sequence": 65432,
+            "name": "安徽教育",
+            "value": "211998"
+          },
+          {
+            "value": "61673",
+            "value_id": 61673,
+            "sequence": 42100,
+            "name": "安徽教育出版社"
+          },
+          {
+            "value": "211983",
+            "value_id": 211983,
+            "sequence": 65416,
+            "name": "安徽文艺"
+          },
+          {
+            "name": "安徽文艺出版社",
+            "value": "61679",
+            "value_id": 61679,
+            "sequence": 11500
+          },
+          {
+            "value_id": 61674,
+            "sequence": 29100,
+            "name": "安徽科学技术出版社",
+            "value": "61674"
+          },
+          {
+            "value": "212134",
+            "value_id": 212134,
+            "sequence": 65570,
+            "name": "安徽科技"
+          },
+          {
+            "name": "安徽美术",
+            "value": "211927",
+            "value_id": 211927,
+            "sequence": 65359
+          },
+          {
+            "value": "61675",
+            "value_id": 61675,
+            "sequence": 16400,
+            "name": "安徽美术出版社"
+          },
+          {
+            "sequence": 400,
+            "name": "宗教文化出版社",
+            "value": "62225",
+            "value_id": 62225
+          },
+          {
+            "value_id": 212140,
+            "sequence": 65576,
+            "name": "家电维修杂志社",
+            "value": "212140"
+          },
+          {
+            "value_id": 212091,
+            "sequence": 65527,
+            "name": "对外经济贸易大学出版社",
+            "value": "212091"
+          },
+          {
+            "value": "211930",
+            "value_id": 211930,
+            "sequence": 65362,
+            "name": "小作家选刊杂志社"
+          },
+          {
+            "value_id": 212025,
+            "sequence": 65460,
+            "name": "小哥白尼杂志社",
+            "value": "212025"
+          },
+          {
+            "value_id": 148169,
+            "sequence": 5700,
+            "name": "少年儿童出版社",
+            "value": "148169"
+          },
+          {
+            "value_id": 61895,
+            "sequence": 42200,
+            "name": "山东人民出版社",
+            "value": "61895"
+          },
+          {
+            "sequence": 65000,
+            "name": "山东友谊出版社",
+            "value": "61898",
+            "value_id": 61898
+          },
+          {
+            "value_id": 212197,
+            "sequence": 65634,
+            "name": "山东地图",
+            "value": "212197"
+          },
+          {
+            "name": "山东大学出版社",
+            "value": "61889",
+            "value_id": 61889,
+            "sequence": 27700
+          },
+          {
+            "value_id": 61891,
+            "sequence": 10200,
+            "name": "山东教育出版社",
+            "value": "61891"
+          },
+          {
+            "value_id": 61897,
+            "sequence": 8900,
+            "name": "山东文艺出版社",
+            "value": "61897"
+          },
+          {
+            "value_id": 167572,
+            "sequence": 65427,
+            "name": "山东电子音像出版社",
+            "value": "167572"
+          },
+          {
+            "sequence": 61100,
+            "name": "山东画报出版社",
+            "value": "61890",
+            "value_id": 61890
+          },
+          {
+            "value": "61896",
+            "value_id": 61896,
+            "sequence": 50300,
+            "name": "山东省地图出版社"
+          },
+          {
+            "value_id": 61892,
+            "sequence": 14300,
+            "name": "山东科学技术出版社",
+            "value": "61892"
+          },
+          {
+            "value_id": 61893,
+            "sequence": 62100,
+            "name": "山东美术出版社",
+            "value": "61893"
+          },
+          {
+            "sequence": 19100,
+            "name": "山东齐鲁音像出版有限公司",
+            "value": "167589",
+            "value_id": 167589
+          },
+          {
+            "name": "山西人民出版社",
+            "value": "61907",
+            "value_id": 61907,
+            "sequence": 5000
+          },
+          {
+            "value_id": 61904,
+            "sequence": 12800,
+            "name": "山西教育出版社",
+            "value": "61904"
+          },
+          {
+            "value_id": 61906,
+            "sequence": 5500,
+            "name": "山西科学技术出版社",
+            "value": "61906"
+          },
+          {
+            "value_id": 61905,
+            "sequence": 54100,
+            "name": "山西经济出版社",
+            "value": "61905"
+          },
+          {
+            "name": "岭南美术出版社",
+            "value": "148187",
+            "value_id": 148187,
+            "sequence": 3800
+          },
+          {
+            "value_id": 61814,
+            "sequence": 48600,
+            "name": "岳麓书社",
+            "value": "61814"
+          },
+          {
+            "name": "崇文书局",
+            "value": "61791",
+            "value_id": 61791,
+            "sequence": 4700
+          },
+          {
+            "sequence": 28100,
+            "name": "巴蜀书社",
+            "value": "148191",
+            "value_id": 148191
+          },
+          {
+            "value_id": 61909,
+            "sequence": 60600,
+            "name": "希望出版社",
+            "value": "61909"
+          },
+          {
+            "value_id": 211949,
+            "sequence": 65381,
+            "name": "幼学小蝌蚪",
+            "value": "211949"
+          },
+          {
+            "value_id": 61729,
+            "sequence": 49300,
+            "name": "广东人民出版社",
+            "value": "61729"
+          },
+          {
+            "value_id": 61728,
+            "sequence": 22200,
+            "name": "广东南方日报出版社",
+            "value": "61728"
+          },
+          {
+            "value_id": 212010,
+            "sequence": 65444,
+            "name": "广东大音音像出版社",
+            "value": "212010"
+          },
+          {
+            "value_id": 61726,
+            "sequence": 47300,
+            "name": "广东岭南美术出版社",
+            "value": "61726"
+          },
+          {
+            "name": "广东教育出版社",
+            "value": "61723",
+            "value_id": 61723,
+            "sequence": 17200
+          },
+          {
+            "value_id": 61731,
+            "sequence": 23400,
+            "name": "广东新世纪出版社",
+            "value": "61731"
+          },
+          {
+            "value": "167920",
+            "value_id": 167920,
+            "sequence": 30400,
+            "name": "广东新世纪出版社有限公司"
+          },
+          {
+            "value_id": 61727,
+            "sequence": 40000,
+            "name": "广东旅游出版社",
+            "value": "61727"
+          },
+          {
+            "sequence": 65464,
+            "name": "广东海燕电子音像",
+            "value": "212029",
+            "value_id": 212029
+          },
+          {
+            "sequence": 65661,
+            "name": "广东海燕电子音像出版社",
+            "value": "212223",
+            "value_id": 212223
+          },
+          {
+            "value_id": 61730,
+            "sequence": 35600,
+            "name": "广东省地图出版社",
+            "value": "61730"
+          },
+          {
+            "value_id": 61725,
+            "sequence": 52300,
+            "name": "广东科技出版社",
+            "value": "61725"
+          },
+          {
+            "value_id": 61724,
+            "sequence": 13600,
+            "name": "广东经济出版社",
+            "value": "61724"
+          },
+          {
+            "value_id": 61732,
+            "sequence": 59000,
+            "name": "广东羊城晚报出版社",
+            "value": "61732"
+          },
+          {
+            "value": "61722",
+            "value_id": 61722,
+            "sequence": 52400,
+            "name": "广东花城出版社"
+          },
+          {
+            "value_id": 212020,
+            "sequence": 65455,
+            "name": "广东花城出版社有限公司",
+            "value": "212020"
+          },
+          {
+            "value_id": 212109,
+            "sequence": 65545,
+            "name": "广东音像出版社",
+            "value": "212109"
+          },
+          {
+            "sequence": 53000,
+            "name": "广东高等教育出版社",
+            "value": "61721",
+            "value_id": 61721
+          },
+          {
+            "value_id": 61735,
+            "sequence": 30300,
+            "name": "广州中山大学出版社",
+            "value": "61735"
+          },
+          {
+            "name": "广州出版社",
+            "value": "61733",
+            "value_id": 61733,
+            "sequence": 16500
+          },
+          {
+            "value_id": 212042,
+            "sequence": 65478,
+            "name": "广州华研",
+            "value": "212042"
+          },
+          {
+            "sequence": 65341,
+            "name": "广州市新时代影音公司出版",
+            "value": "211909",
+            "value_id": 211909
+          },
+          {
+            "value_id": 61734,
+            "sequence": 37100,
+            "name": "广州暨南大学出版社",
+            "value": "61734"
+          },
+          {
+            "name": "广州音像出版社",
+            "value": "211903",
+            "value_id": 211903,
+            "sequence": 65335
+          },
+          {
+            "value_id": 61744,
+            "sequence": 8500,
+            "name": "广西人民出版社",
+            "value": "61744"
+          },
+          {
+            "value_id": 61745,
+            "sequence": 14700,
+            "name": "广西师范大学出版社",
+            "value": "61745"
+          },
+          {
+            "value_id": 61740,
+            "sequence": 43400,
+            "name": "广西教育出版社",
+            "value": "61740"
+          },
+          {
+            "value_id": 61743,
+            "sequence": 1700,
+            "name": "广西民族出版社",
+            "value": "61743"
+          },
+          {
+            "value_id": 61741,
+            "sequence": 16000,
+            "name": "广西科学技术出版社",
+            "value": "61741"
+          },
+          {
+            "value_id": 61742,
+            "sequence": 10600,
+            "name": "广西美术出版社",
+            "value": "61742"
+          },
+          {
+            "value_id": 148179,
+            "sequence": 57000,
+            "name": "广陵书社",
+            "value": "148179"
+          },
+          {
+            "value_id": 212069,
+            "sequence": 65505,
+            "name": "应急管理",
+            "value": "212069"
+          },
+          {
+            "name": "应急管理出版社",
+            "value": "148201",
+            "value_id": 148201,
+            "sequence": 38000
+          },
+          {
+            "value_id": 61829,
+            "sequence": 11400,
+            "name": "延边人民出版社",
+            "value": "61829"
+          },
+          {
+            "value_id": 61827,
+            "sequence": 24800,
+            "name": "延边大学出版社",
+            "value": "61827"
+          },
+          {
+            "name": "延边教育出版社",
+            "value": "61828",
+            "value_id": 61828,
+            "sequence": 60100
+          },
+          {
+            "sequence": 65662,
+            "name": "开心教育",
+            "value": "212224",
+            "value_id": 212224
+          },
+          {
+            "value_id": 62070,
+            "sequence": 1200,
+            "name": "开明出版社",
+            "value": "62070"
+          },
+          {
+            "value_id": 211908,
+            "sequence": 65340,
+            "name": "强林",
+            "value": "211908"
+          },
+          {
+            "value_id": 211923,
+            "sequence": 65355,
+            "name": "当代世界",
+            "value": "211923"
+          },
+          {
+            "value_id": 62040,
+            "sequence": 39100,
+            "name": "当代世界出版社",
+            "value": "62040"
+          },
+          {
+            "value_id": 212161,
+            "sequence": 65597,
+            "name": "当代中国",
+            "value": "212161"
+          },
+          {
+            "value": "62041",
+            "value_id": 62041,
+            "sequence": 51200,
+            "name": "当代中国出版社"
+          },
+          {
+            "value": "62009",
+            "value_id": 62009,
+            "sequence": 63700,
+            "name": "德宏民族出版社"
+          },
+          {
+            "sequence": 65524,
+            "name": "意林杂志社",
+            "value": "212088",
+            "value_id": 212088
+          },
+          {
+            "value_id": 212116,
+            "sequence": 65552,
+            "name": "成都地图",
+            "value": "212116"
+          },
+          {
+            "value_id": 61965,
+            "sequence": 25500,
+            "name": "成都地图出版社",
+            "value": "61965"
+          },
+          {
+            "value_id": 212009,
+            "sequence": 65443,
+            "name": "成都时代",
+            "value": "212009"
+          },
+          {
+            "value": "61967",
+            "value_id": 61967,
+            "sequence": 59300,
+            "name": "成都时代出版社"
+          },
+          {
+            "value_id": 61966,
+            "sequence": 15100,
+            "name": "成都电子科大出版社",
+            "value": "61966"
+          },
+          {
+            "value_id": 61969,
+            "sequence": 12000,
+            "name": "成都西南交大出版社",
+            "value": "61969"
+          },
+          {
+            "name": "成都西南财大出版社",
+            "value": "61968",
+            "value_id": 61968,
+            "sequence": 29900
+          },
+          {
+            "value_id": 61746,
+            "sequence": 26600,
+            "name": "接力出版社",
+            "value": "61746"
+          },
+          {
+            "value_id": 62049,
+            "sequence": 1300,
+            "name": "故宫出版社",
+            "value": "62049"
+          },
+          {
+            "sequence": 65334,
+            "name": "教育科学",
+            "value": "211902",
+            "value_id": 211902
+          },
+          {
+            "sequence": 700,
+            "name": "教育科学出版社",
+            "value": "62064",
+            "value_id": 62064
+          },
+          {
+            "value": "61712",
+            "value_id": 61712,
+            "sequence": 52500,
+            "name": "敦煌文艺出版社"
+          },
+          {
+            "name": "数码精品世界编辑部",
+            "value": "212216",
+            "value_id": 212216,
+            "sequence": 65654
+          },
+          {
+            "name": "文化发展",
+            "value": "212215",
+            "value_id": 212215,
+            "sequence": 65653
+          },
+          {
+            "value_id": 62114,
+            "sequence": 18100,
+            "name": "文化发展出版社",
+            "value": "62114"
+          },
+          {
+            "value_id": 211974,
+            "sequence": 65406,
+            "name": "文化用品",
+            "value": "211974"
+          },
+          {
+            "sequence": 9300,
+            "name": "文化艺术出版社",
+            "value": "62115",
+            "value_id": 62115
+          },
+          {
+            "value_id": 61774,
+            "sequence": 59600,
+            "name": "文心出版社",
+            "value": "61774"
+          },
+          {
+            "sequence": 62000,
+            "name": "文汇出版社",
+            "value": "148170",
+            "value_id": 148170
+          },
+          {
+            "value_id": 61699,
+            "sequence": 61900,
+            "name": "文津出版社",
+            "value": "61699"
+          },
+          {
+            "sequence": 21100,
+            "name": "文物出版社",
+            "value": "62116",
+            "value_id": 62116
+          },
+          {
+            "value": "62123",
+            "value_id": 62123,
+            "sequence": 55800,
+            "name": "新世界出版社"
+          },
+          {
+            "value_id": 212174,
+            "sequence": 65610,
+            "name": "新世纪出版社",
+            "value": "212174"
+          },
+          {
+            "sequence": 30100,
+            "name": "新华出版社",
+            "value": "62122",
+            "value_id": 62122
+          },
+          {
+            "name": "新时代出版社",
+            "value": "62248",
+            "value_id": 62248,
+            "sequence": 21500
+          },
+          {
+            "name": "新星出版社",
+            "value": "62124",
+            "value_id": 62124,
+            "sequence": 22400
+          },
+          {
+            "sequence": 65371,
+            "name": "新星球出版社",
+            "value": "211939",
+            "value_id": 211939
+          },
+          {
+            "value_id": 212158,
+            "sequence": 65594,
+            "name": "新汇集团上海声像出版社",
+            "value": "212158"
+          },
+          {
+            "name": "新汇集团上海音像有限公司",
+            "value": "211916",
+            "value_id": 211916,
+            "sequence": 65348
+          },
+          {
+            "value_id": 62001,
+            "sequence": 59700,
+            "name": "新疆人民出版社",
+            "value": "62001"
+          },
+          {
+            "value_id": 62002,
+            "sequence": 9200,
+            "name": "新疆人民卫生出版社",
+            "value": "62002"
+          },
+          {
+            "sequence": 40800,
+            "name": "新疆大学出版社",
+            "value": "61997",
+            "value_id": 61997
+          },
+          {
+            "value_id": 61998,
+            "sequence": 4800,
+            "name": "新疆教育出版社",
+            "value": "61998"
+          },
+          {
+            "value_id": 62003,
+            "sequence": 49200,
+            "name": "新疆文化出版社",
+            "value": "62003"
+          },
+          {
+            "value": "211997",
+            "value_id": 211997,
+            "sequence": 65431,
+            "name": "新疆生产建设兵团"
+          },
+          {
+            "value_id": 61701,
+            "sequence": 14400,
+            "name": "新疆生产建设兵团出版社",
+            "value": "61701"
+          },
+          {
+            "value_id": 61999,
+            "sequence": 49100,
+            "name": "新疆科学技术出版社",
+            "value": "61999"
+          },
+          {
+            "value_id": 62000,
+            "sequence": 40500,
+            "name": "新疆青少年出版社",
+            "value": "62000"
+          },
+          {
+            "value_id": 211956,
+            "sequence": 65388,
+            "name": "新经典文化",
+            "value": "211956"
+          },
+          {
+            "value_id": 61992,
+            "sequence": 61400,
+            "name": "新蕾出版社",
+            "value": "61992"
+          },
+          {
+            "value_id": 62047,
+            "sequence": 39900,
+            "name": "方志出版社",
+            "value": "62047"
+          },
+          {
+            "value_id": 212220,
+            "sequence": 65658,
+            "name": "旅游教育",
+            "value": "212220"
+          },
+          {
+            "value_id": 148164,
+            "sequence": 23200,
+            "name": "旅游教育出版社",
+            "value": "148164"
+          },
+          {
+            "value_id": 62104,
+            "sequence": 3900,
+            "name": "时事出版社",
+            "value": "62104"
+          },
+          {
+            "value_id": 61826,
+            "sequence": 11300,
+            "name": "时代文艺出版社",
+            "value": "61826"
+          },
+          {
+            "value_id": 62244,
+            "sequence": 28400,
+            "name": "昆仑出版社",
+            "value": "62244"
+          },
+          {
+            "name": "明天出版社",
+            "value": "61887",
+            "value_id": 61887,
+            "sequence": 62400
+          },
+          {
+            "value_id": 62249,
+            "sequence": 48400,
+            "name": "星球地图出版社",
+            "value": "62249"
+          },
+          {
+            "value_id": 212170,
+            "sequence": 65606,
+            "name": "春风文艺",
+            "value": "212170"
+          },
+          {
+            "name": "春风文艺出版社",
+            "value": "61857",
+            "value_id": 61857,
+            "sequence": 63200
+          },
+          {
+            "sequence": 29700,
+            "name": "晨光出版社",
+            "value": "62008",
+            "value_id": 62008
+          },
+          {
+            "value_id": 212180,
+            "sequence": 65616,
+            "name": "暨南大学出版社",
+            "value": "212180"
+          },
+          {
+            "value_id": 62039,
+            "sequence": 15300,
+            "name": "朝华出版社",
+            "value": "62039"
+          },
+          {
+            "value_id": 148197,
+            "sequence": 5200,
+            "name": "未来出版社",
+            "value": "148197"
+          },
+          {
+            "sequence": 65649,
+            "name": "机械工业",
+            "value": "212211",
+            "value_id": 212211
+          },
+          {
+            "value_id": 62063,
+            "sequence": 49900,
+            "name": "机械工业出版社",
+            "value": "62063"
+          },
+          {
+            "value_id": 28414,
+            "sequence": 65411,
+            "name": "杨柳青",
+            "value": "28414"
+          },
+          {
+            "value_id": 62013,
+            "sequence": 17000,
+            "name": "杭州出版社",
+            "value": "62013"
+          },
+          {
+            "sequence": 65343,
+            "name": "杭州名扬天纸业有",
+            "value": "211911",
+            "value_id": 211911
+          },
+          {
+            "sequence": 65438,
+            "name": "枫书坊文化出版社",
+            "value": "212004",
+            "value_id": 212004
+          },
+          {
+            "value_id": 212132,
+            "sequence": 65568,
+            "name": "株式会社玄光社",
+            "value": "212132"
+          },
+          {
+            "value_id": 61952,
+            "sequence": 42000,
+            "name": "格致出版社",
+            "value": "61952"
+          },
+          {
+            "value": "211925",
+            "value_id": 211925,
+            "sequence": 65357,
+            "name": "桂林贝贝特电子音像出版社"
+          },
+          {
+            "value_id": 61798,
+            "sequence": 12300,
+            "name": "武汉出版社",
+            "value": "61798"
+          },
+          {
+            "sequence": 50500,
+            "name": "武汉大学出版社",
+            "value": "61799",
+            "value_id": 61799
+          },
+          {
+            "name": "武汉工业大学出版社",
+            "value": "212114",
+            "value_id": 212114,
+            "sequence": 65550
+          },
+          {
+            "value_id": 61800,
+            "sequence": 46900,
+            "name": "武汉理工大学出版社",
+            "value": "61800"
+          },
+          {
+            "value_id": 211931,
+            "sequence": 65363,
+            "name": "民主与建设",
+            "value": "211931"
+          },
+          {
+            "value_id": 62076,
+            "sequence": 46100,
+            "name": "民主与建设出版社",
+            "value": "62076"
+          },
+          {
+            "value_id": 62077,
+            "sequence": 4200,
+            "name": "民族出版社",
+            "value": "62077"
+          },
+          {
+            "name": "气象出版社",
+            "value": "62080",
+            "value_id": 62080,
+            "sequence": 41900
+          },
+          {
+            "value_id": 62082,
+            "sequence": 6800,
+            "name": "求真出版社",
+            "value": "62082"
+          },
+          {
+            "name": "汕头大学出版社",
+            "value": "61737",
+            "value_id": 61737,
+            "sequence": 55700
+          },
+          {
+            "value_id": 212055,
+            "sequence": 65491,
+            "name": "江南电子音像出版社",
+            "value": "212055"
+          },
+          {
+            "sequence": 12200,
+            "name": "江苏人民出版社",
+            "value": "61840",
+            "value_id": 61840
+          },
+          {
+            "sequence": 53600,
+            "name": "江苏凤凰出版社",
+            "value": "61833",
+            "value_id": 61833
+          },
+          {
+            "value_id": 61837,
+            "sequence": 22500,
+            "name": "江苏凤凰少年儿童出版社",
+            "value": "61837"
+          },
+          {
+            "value_id": 212191,
+            "sequence": 65628,
+            "name": "江苏凤凰少年儿童出版社有限公司",
+            "value": "212191"
+          },
+          {
+            "value_id": 61834,
+            "sequence": 56900,
+            "name": "江苏凤凰教育出版社",
+            "value": "61834"
+          },
+          {
+            "value_id": 212155,
+            "sequence": 65591,
+            "name": "江苏凤凰文艺",
+            "value": "212155"
+          },
+          {
+            "value_id": 61838,
+            "sequence": 4500,
+            "name": "江苏凤凰文艺出版社",
+            "value": "61838"
+          },
+          {
+            "value_id": 211977,
+            "sequence": 65409,
+            "name": "江苏凤凰电子音像出版社",
+            "value": "211977"
+          },
+          {
+            "value_id": 61835,
+            "sequence": 43300,
+            "name": "江苏凤凰科学技术出版社",
+            "value": "61835"
+          },
+          {
+            "name": "江苏凤凰美术出版社",
+            "value": "61836",
+            "value_id": 61836,
+            "sequence": 25000
+          },
+          {
+            "value_id": 212113,
+            "sequence": 65549,
+            "name": "江苏古籍出版社",
+            "value": "212113"
+          },
+          {
+            "value_id": 61832,
+            "sequence": 27600,
+            "name": "江苏大学出版社",
+            "value": "61832"
+          },
+          {
+            "value_id": 211875,
+            "sequence": 65307,
+            "name": "江苏少年儿童出版社",
+            "value": "211875"
+          },
+          {
+            "value_id": 148181,
+            "sequence": 12100,
+            "name": "江苏教育出版社",
+            "value": "148181"
+          },
+          {
+            "value_id": 212035,
+            "sequence": 65471,
+            "name": "江苏文化音像出版社",
+            "value": "212035"
+          },
+          {
+            "value_id": 212095,
+            "sequence": 65531,
+            "name": "江苏文艺",
+            "value": "212095"
+          },
+          {
+            "sequence": 36600,
+            "name": "江苏求真译林出版有限公司",
+            "value": "148220",
+            "value_id": 148220
+          },
+          {
+            "value_id": 211910,
+            "sequence": 65342,
+            "name": "江苏科技",
+            "value": "211910"
+          },
+          {
+            "value_id": 212080,
+            "sequence": 65516,
+            "name": "江苏美术出版社",
+            "value": "212080"
+          },
+          {
+            "value_id": 61841,
+            "sequence": 27900,
+            "name": "江苏译林出版社",
+            "value": "61841"
+          },
+          {
+            "sequence": 31300,
+            "name": "江西人民出版社",
+            "value": "61856",
+            "value_id": 61856
+          },
+          {
+            "value_id": 61853,
+            "sequence": 56500,
+            "name": "江西教育出版社",
+            "value": "61853"
+          },
+          {
+            "value": "212181",
+            "value_id": 212181,
+            "sequence": 65617,
+            "name": "江西教育音像电子出版社"
+          },
+          {
+            "value_id": 61854,
+            "sequence": 17100,
+            "name": "江西科学技术出版社",
+            "value": "61854"
+          },
+          {
+            "value": "61855",
+            "value_id": 61855,
+            "sequence": 55500,
+            "name": "江西美术出版社"
+          },
+          {
+            "value_id": 61852,
+            "sequence": 31200,
+            "name": "江西高校出版社",
+            "value": "61852"
+          },
+          {
+            "name": "沈阳出版社",
+            "value": "61872",
+            "value_id": 61872,
+            "sequence": 61500
+          },
+          {
+            "value_id": 61762,
+            "sequence": 20900,
+            "name": "河北人民出版社",
+            "value": "61762"
+          },
+          {
+            "value": "61758",
+            "value_id": 61758,
+            "sequence": 32200,
+            "name": "河北大学出版社"
+          },
+          {
+            "value_id": 61763,
+            "sequence": 8800,
+            "name": "河北少年儿童出版社",
+            "value": "61763"
+          },
+          {
+            "value_id": 61759,
+            "sequence": 1900,
+            "name": "河北教育出版社",
+            "value": "61759"
+          },
+          {
+            "name": "河北科学技术出版社",
+            "value": "61760",
+            "value_id": 61760,
+            "sequence": 48800
+          },
+          {
+            "value_id": 61761,
+            "sequence": 52000,
+            "name": "河北美术出版社",
+            "value": "61761"
+          },
+          {
+            "value_id": 61771,
+            "sequence": 17900,
+            "name": "河南人民出版社",
+            "value": "61771"
+          },
+          {
+            "value_id": 61768,
+            "sequence": 29800,
+            "name": "河南大学出版社",
+            "value": "61768"
+          },
+          {
+            "value_id": 61772,
+            "sequence": 18500,
+            "name": "河南文艺出版社",
+            "value": "61772"
+          },
+          {
+            "value_id": 212226,
+            "sequence": 65664,
+            "name": "河南电子音像出版社",
+            "value": "212226"
+          },
+          {
+            "value_id": 61769,
+            "sequence": 36500,
+            "name": "河南科学技术出版社",
+            "value": "61769"
+          },
+          {
+            "value_id": 61770,
+            "sequence": 43000,
+            "name": "河南美术出版社",
+            "value": "61770"
+          },
+          {
+            "value_id": 148180,
+            "sequence": 37600,
+            "name": "河海大学出版社",
+            "value": "148180"
+          },
+          {
+            "value": "62046",
+            "value_id": 62046,
+            "sequence": 41400,
+            "name": "法律出版社"
+          },
+          {
+            "value_id": 61899,
+            "sequence": 31500,
+            "name": "泰山出版社",
+            "value": "61899"
+          },
+          {
+            "name": "测绘出版社",
+            "value": "62038",
+            "value_id": 62038,
+            "sequence": 51500
+          },
+          {
+            "value_id": 61886,
+            "sequence": 41300,
+            "name": "济南出版有限责任公司",
+            "value": "61886"
+          },
+          {
+            "value_id": 212021,
+            "sequence": 65456,
+            "name": "济南出版社",
+            "value": "212021"
+          },
+          {
+            "value_id": 62021,
+            "sequence": 27100,
+            "name": "浙江人民出版社",
+            "value": "62021"
+          },
+          {
+            "name": "浙江人民美术出版社",
+            "value": "62022",
+            "value_id": 62022,
+            "sequence": 58600
+          },
+          {
+            "name": "浙江人美出版社",
+            "value": "212102",
+            "value_id": 212102,
+            "sequence": 65538
+          },
+          {
+            "sequence": 38900,
+            "name": "浙江古籍出版社",
+            "value": "62018",
+            "value_id": 62018
+          },
+          {
+            "value": "62016",
+            "value_id": 62016,
+            "sequence": 48000,
+            "name": "浙江大学出版社"
+          },
+          {
+            "value_id": 62023,
+            "sequence": 22300,
+            "name": "浙江少年儿童出版社",
+            "value": "62023"
+          },
+          {
+            "value_id": 212066,
+            "sequence": 65502,
+            "name": "浙江少年儿童出版社有限公司",
+            "value": "212066"
+          },
+          {
+            "value_id": 62017,
+            "sequence": 6400,
+            "name": "浙江工商大学出版社",
+            "value": "62017"
+          },
+          {
+            "value_id": 62024,
+            "sequence": 1500,
+            "name": "浙江摄影出版社",
+            "value": "62024"
+          },
+          {
+            "name": "浙江教育出版社",
+            "value": "62019",
+            "value_id": 62019,
+            "sequence": 37000
+          },
+          {
+            "sequence": 60000,
+            "name": "浙江文艺出版社",
+            "value": "62025",
+            "value_id": 62025
+          },
+          {
+            "value_id": 212212,
+            "sequence": 65650,
+            "name": "浙江电子音像出版社",
+            "value": "212212"
+          },
+          {
+            "sequence": 65327,
+            "name": "浙江省出版总社",
+            "value": "211895",
+            "value_id": 211895
+          },
+          {
+            "value_id": 212098,
+            "sequence": 65534,
+            "name": "浙江省出版总社期刊出版中心",
+            "value": "212098"
+          },
+          {
+            "name": "浙江科学技术出版社",
+            "value": "62020",
+            "value_id": 62020,
+            "sequence": 29600
+          },
+          {
+            "sequence": 49400,
+            "name": "海南出版社",
+            "value": "61754",
+            "value_id": 61754
+          },
+          {
+            "value": "211953",
+            "value_id": 211953,
+            "sequence": 65385,
+            "name": "海南星河音像公司出版"
+          },
+          {
+            "name": "海天出版社",
+            "value": "148186",
+            "value_id": 148186,
+            "sequence": 8400
+          },
+          {
+            "sequence": 65393,
+            "name": "海峡书局",
+            "value": "211961",
+            "value_id": 211961
+          },
+          {
+            "value_id": 61710,
+            "sequence": 25400,
+            "name": "海峡书局出版社",
+            "value": "61710"
+          },
+          {
+            "value_id": 212041,
+            "sequence": 65477,
+            "name": "海峡文艺",
+            "value": "212041"
+          },
+          {
+            "value_id": 148182,
+            "sequence": 64300,
+            "name": "海峡文艺出版社",
+            "value": "148182"
+          },
+          {
+            "sequence": 43100,
+            "name": "海洋出版社",
+            "value": "62055",
+            "value_id": 62055
+          },
+          {
+            "value_id": 62236,
+            "sequence": 1100,
+            "name": "海潮出版社",
+            "value": "62236"
+          },
+          {
+            "value_id": 61767,
+            "sequence": 3400,
+            "name": "海燕出版社",
+            "value": "61767"
+          },
+          {
+            "name": "海豚出版社",
+            "value": "62054",
+            "value_id": 62054,
+            "sequence": 33500
+          },
+          {
+            "value": "148209",
+            "value_id": 148209,
+            "sequence": 39800,
+            "name": "海豚出版社有限责任公司"
+          },
+          {
+            "sequence": 45000,
+            "name": "海风出版社",
+            "value": "148216",
+            "value_id": 148216
+          },
+          {
+            "value_id": 61739,
+            "sequence": 34900,
+            "name": "深圳市海天出版社",
+            "value": "61739"
+          },
+          {
+            "value": "61738",
+            "value_id": 61738,
+            "sequence": 9400,
+            "name": "深圳报业集团出版社"
+          },
+          {
+            "value_id": 211947,
+            "sequence": 65379,
+            "name": "深圳文脉国际传媒有限公司",
+            "value": "211947"
+          },
+          {
+            "value_id": 212217,
+            "sequence": 65655,
+            "name": "清华大学",
+            "value": "212217"
+          },
+          {
+            "value": "62081",
+            "value_id": 62081,
+            "sequence": 20500,
+            "name": "清华大学出版社"
+          },
+          {
+            "value_id": 212176,
+            "sequence": 65612,
+            "name": "湖北九通电子音像",
+            "value": "212176"
+          },
+          {
+            "value_id": 211954,
+            "sequence": 65386,
+            "name": "湖北九通电子音像出版社",
+            "value": "211954"
+          },
+          {
+            "value_id": 61795,
+            "sequence": 57500,
+            "name": "湖北人民出版社",
+            "value": "61795"
+          },
+          {
+            "value_id": 61792,
+            "sequence": 27200,
+            "name": "湖北教育出版社",
+            "value": "61792"
+          },
+          {
+            "value": "212030",
+            "value_id": 212030,
+            "sequence": 65465,
+            "name": "湖北知音传媒股份有限公司"
+          },
+          {
+            "name": "湖北科学技术出版社",
+            "value": "61793",
+            "value_id": 61793,
+            "sequence": 63500
+          },
+          {
+            "name": "湖北美术出版社",
+            "value": "61794",
+            "value_id": 61794,
+            "sequence": 15900
+          },
+          {
+            "value_id": 61809,
+            "sequence": 52900,
+            "name": "湖南人民出版社",
+            "value": "61809"
+          },
+          {
+            "sequence": 47100,
+            "name": "湖南地图出版社",
+            "value": "61806",
+            "value_id": 61806
+          },
+          {
+            "value_id": 61805,
+            "sequence": 6500,
+            "name": "湖南大学出版社",
+            "value": "61805"
+          },
+          {
+            "value_id": 61810,
+            "sequence": 37900,
+            "name": "湖南少年儿童出版社",
+            "value": "61810"
+          },
+          {
+            "name": "湖南师范大学出版社",
+            "value": "61811",
+            "value_id": 61811,
+            "sequence": 43900
+          },
+          {
+            "sequence": 61200,
+            "name": "湖南教育出版社",
+            "value": "61815",
+            "value_id": 61815
+          },
+          {
+            "sequence": 7600,
+            "name": "湖南文艺出版社",
+            "value": "61812",
+            "value_id": 61812
+          },
+          {
+            "value_id": 212033,
+            "sequence": 65468,
+            "name": "湖南电子音像",
+            "value": "212033"
+          },
+          {
+            "value_id": 212124,
+            "sequence": 65560,
+            "name": "湖南电子音像出版社",
+            "value": "212124"
+          },
+          {
+            "name": "湖南电子音像出版社有限责任公司",
+            "value": "167919",
+            "value_id": 167919,
+            "sequence": 32800
+          },
+          {
+            "value_id": 61807,
+            "sequence": 63600,
+            "name": "湖南科学技术出版社",
+            "value": "61807"
+          },
+          {
+            "value": "61808",
+            "value_id": 61808,
+            "sequence": 200,
+            "name": "湖南美术出版社"
+          },
+          {
+            "value_id": 61813,
+            "sequence": 12500,
+            "name": "湘潭大学出版社",
+            "value": "61813"
+          },
+          {
+            "value_id": 212164,
+            "sequence": 65600,
+            "name": "源桦出版事业股份有限公司",
+            "value": "212164"
+          },
+          {
+            "value_id": 61747,
+            "sequence": 54600,
+            "name": "漓江出版社",
+            "value": "61747"
+          },
+          {
+            "value_id": 62075,
+            "sequence": 65200,
+            "name": "煤炭工业出版社",
+            "value": "62075"
+          },
+          {
+            "value_id": 61765,
+            "sequence": 48500,
+            "name": "燕山大学出版社",
+            "value": "61765"
+          },
+          {
+            "value": "212046",
+            "value_id": 212046,
+            "sequence": 65482,
+            "name": "爱好"
+          },
+          {
+            "value_id": 212037,
+            "sequence": 65473,
+            "name": "特殊出版社",
+            "value": "212037"
+          },
+          {
+            "value_id": 211940,
+            "sequence": 65372,
+            "name": "猫太子",
+            "value": "211940"
+          },
+          {
+            "value_id": 211950,
+            "sequence": 65382,
+            "name": "环球少年地理编辑部",
+            "value": "211950"
+          },
+          {
+            "name": "现代出版社",
+            "value": "62119",
+            "value_id": 62119,
+            "sequence": 34400
+          },
+          {
+            "value_id": 212147,
+            "sequence": 65583,
+            "name": "现代家庭杂志社",
+            "value": "212147"
+          },
+          {
+            "name": "现代教育出版社",
+            "value": "62120",
+            "value_id": 62120,
+            "sequence": 62600
+          },
+          {
+            "value_id": 148218,
+            "sequence": 33300,
+            "name": "珠海出版社",
+            "value": "148218"
+          },
+          {
+            "value_id": 61716,
+            "sequence": 47600,
+            "name": "甘肃人民出版社",
+            "value": "61716"
+          },
+          {
+            "value_id": 61717,
+            "sequence": 30500,
+            "name": "甘肃人民美术出版社",
+            "value": "61717"
+          },
+          {
+            "sequence": 2300,
+            "name": "甘肃少年儿童出版社",
+            "value": "61718",
+            "value_id": 61718
+          },
+          {
+            "value": "61713",
+            "value_id": 61713,
+            "sequence": 20400,
+            "name": "甘肃教育出版社"
+          },
+          {
+            "sequence": 51100,
+            "name": "甘肃文化出版社",
+            "value": "61719",
+            "value_id": 61719
+          },
+          {
+            "name": "甘肃民族出版社",
+            "value": "61715",
+            "value_id": 61715,
+            "sequence": 59400
+          },
+          {
+            "value_id": 61714,
+            "sequence": 58100,
+            "name": "甘肃科学技术出版社",
+            "value": "61714"
+          },
+          {
+            "value_id": 148213,
+            "sequence": 46500,
+            "name": "生活·读书·新知三联书店",
+            "value": "148213"
+          },
+          {
+            "sequence": 46600,
+            "name": "生活•读书•新知三联书店有限公司",
+            "value": "62101",
+            "value_id": 62101
+          },
+          {
+            "value": "62102",
+            "value_id": 62102,
+            "sequence": 22700,
+            "name": "生活书店出版有限公司"
+          },
+          {
+            "sequence": 65485,
+            "name": "生活读书新知三联书店有限公司",
+            "value": "212049",
+            "value_id": 212049
+          },
+          {
+            "value_id": 212086,
+            "sequence": 65522,
+            "name": "电子制作杂志社",
+            "value": "212086"
+          },
+          {
+            "name": "电子工业",
+            "value": "212036",
+            "value_id": 212036,
+            "sequence": 65472
+          },
+          {
+            "value": "62045",
+            "value_id": 62045,
+            "sequence": 13700,
+            "name": "电子工业出版社"
+          },
+          {
+            "value_id": 212208,
+            "sequence": 65646,
+            "name": "电子科技大学出版社",
+            "value": "212208"
+          },
+          {
+            "value_id": 212090,
+            "sequence": 65526,
+            "name": "白天鹅音像出版社",
+            "value": "212090"
+          },
+          {
+            "value_id": 62230,
+            "sequence": 4300,
+            "name": "白山出版社",
+            "value": "62230"
+          },
+          {
+            "value_id": 212014,
+            "sequence": 65448,
+            "name": "百花文艺",
+            "value": "212014"
+          },
+          {
+            "sequence": 7400,
+            "name": "百花文艺出版社",
+            "value": "61981",
+            "value_id": 61981
+          },
+          {
+            "value_id": 211986,
+            "sequence": 65419,
+            "name": "百花文艺出版社天津有限公司",
+            "value": "211986"
+          },
+          {
+            "sequence": 65315,
+            "name": "百花洲文艺",
+            "value": "211883",
+            "value_id": 211883
+          },
+          {
+            "value_id": 61850,
+            "sequence": 60700,
+            "name": "百花洲文艺出版社",
+            "value": "61850"
+          },
+          {
+            "value": "211885",
+            "value_id": 211885,
+            "sequence": 65317,
+            "name": "真彩"
+          },
+          {
+            "value": "212202",
+            "value_id": 212202,
+            "sequence": 65640,
+            "name": "知识产权"
+          },
+          {
+            "name": "知识产权出版社",
+            "value": "62130",
+            "value_id": 62130,
+            "sequence": 15600
+          },
+          {
+            "value_id": 62131,
+            "sequence": 63000,
+            "name": "知识出版社",
+            "value": "62131"
+          },
+          {
+            "value": "62103",
+            "value_id": 62103,
+            "sequence": 24100,
+            "name": "石油工业出版社"
+          },
+          {
+            "value_id": 62127,
+            "sequence": 11700,
+            "name": "研究出版社",
+            "value": "62127"
+          },
+          {
+            "value_id": 212078,
+            "sequence": 65514,
+            "name": "磨铁",
+            "value": "212078"
+          },
+          {
+            "value_id": 62100,
+            "sequence": 9100,
+            "name": "社会科学文献出版社",
+            "value": "62100"
+          },
+          {
+            "value_id": 212219,
+            "sequence": 65657,
+            "name": "社科文献",
+            "value": "212219"
+          },
+          {
+            "sequence": 65398,
+            "name": "福州青葫芦电子商务有限公司",
+            "value": "211966",
+            "value_id": 211966
+          },
+          {
+            "sequence": 4600,
+            "name": "福建人民出版社",
+            "value": "61707",
+            "value_id": 61707
+          },
+          {
+            "value_id": 61708,
+            "sequence": 44600,
+            "name": "福建少年儿童出版社",
+            "value": "61708"
+          },
+          {
+            "value_id": 61703,
+            "sequence": 44500,
+            "name": "福建教育出版社",
+            "value": "61703"
+          },
+          {
+            "value_id": 61702,
+            "sequence": 55900,
+            "name": "福建海峡文艺出版社",
+            "value": "61702"
+          },
+          {
+            "value_id": 61709,
+            "sequence": 10100,
+            "name": "福建省地图出版社",
+            "value": "61709"
+          },
+          {
+            "value_id": 61704,
+            "sequence": 53900,
+            "name": "福建科学技术出版社",
+            "value": "61704"
+          },
+          {
+            "value_id": 61706,
+            "sequence": 45800,
+            "name": "福建美术出版社",
+            "value": "61706"
+          },
+          {
+            "value_id": 61705,
+            "sequence": 4400,
+            "name": "福建鹭江出版社",
+            "value": "61705"
+          },
+          {
+            "value_id": 62167,
+            "sequence": 47700,
+            "name": "科学出版社",
+            "value": "62167"
+          },
+          {
+            "name": "科学技术文献出版社",
+            "value": "62071",
+            "value_id": 62071,
+            "sequence": 16600
+          },
+          {
+            "value_id": 62072,
+            "sequence": 2400,
+            "name": "科学普及出版社",
+            "value": "62072"
+          },
+          {
+            "value_id": 211964,
+            "sequence": 65396,
+            "name": "科技文献",
+            "value": "211964"
+          },
+          {
+            "value": "211972",
+            "value_id": 211972,
+            "sequence": 65404,
+            "name": "科普"
+          },
+          {
+            "sequence": 65656,
+            "name": "积木文化",
+            "value": "212218",
+            "value_id": 212218
+          },
+          {
+            "name": "立信会计",
+            "value": "211892",
+            "value_id": 211892,
+            "sequence": 65324
+          },
+          {
+            "value_id": 61931,
+            "sequence": 14100,
+            "name": "立信会计出版社",
+            "value": "61931"
+          },
+          {
+            "value_id": 211978,
+            "sequence": 65410,
+            "name": "童趣出版有限公司",
+            "value": "211978"
+          },
+          {
+            "value_id": 62231,
+            "sequence": 24000,
+            "name": "第二军医大学出版社",
+            "value": "62231"
+          },
+          {
+            "value_id": 62232,
+            "sequence": 50100,
+            "name": "第四军医大学出版社",
+            "value": "62232"
+          },
+          {
+            "value_id": 211995,
+            "sequence": 65429,
+            "name": "米小圈",
+            "value": "211995"
+          },
+          {
+            "value_id": 211884,
+            "sequence": 65316,
+            "name": "紫禁城出版社",
+            "value": "211884"
+          },
+          {
+            "value_id": 62056,
+            "sequence": 1800,
+            "name": "红旗出版社",
+            "value": "62056"
+          },
+          {
+            "value_id": 166310,
+            "sequence": 65469,
+            "name": "红星电子音像出版社",
+            "value": "166310"
+          },
+          {
+            "value": "62121",
+            "value_id": 62121,
+            "sequence": 59900,
+            "name": "线装书局"
+          },
+          {
+            "value_id": 62068,
+            "sequence": 40100,
+            "name": "经济日报出版社",
+            "value": "62068"
+          },
+          {
+            "value_id": 62067,
+            "sequence": 14800,
+            "name": "经济科学出版社",
+            "value": "62067"
+          },
+          {
+            "value_id": 62066,
+            "sequence": 3000,
+            "name": "经济管理出版社",
+            "value": "62066"
+          },
+          {
+            "value_id": 148189,
+            "sequence": 23800,
+            "name": "羊城晚报出版社",
+            "value": "148189"
+          },
+          {
+            "value_id": 62084,
+            "sequence": 13100,
+            "name": "群众出版社",
+            "value": "62084"
+          },
+          {
+            "sequence": 6100,
+            "name": "群言出版社",
+            "value": "62083",
+            "value_id": 62083
+          },
+          {
+            "value": "211886",
+            "value_id": 211886,
+            "sequence": 65318,
+            "name": "联合出版集团"
+          },
+          {
+            "value_id": 212039,
+            "sequence": 65475,
+            "name": "航空工业",
+            "value": "212039"
+          },
+          {
+            "value": "165577",
+            "value_id": 165577,
+            "sequence": 10500,
+            "name": "航空工业出版社"
+          },
+          {
+            "value_id": 212192,
+            "sequence": 65629,
+            "name": "航空知识杂志社",
+            "value": "212192"
+          },
+          {
+            "value_id": 212127,
+            "sequence": 65563,
+            "name": "艺术与设计出版社",
+            "value": "212127"
+          },
+          {
+            "sequence": 65515,
+            "name": "艺趣",
+            "value": "212079",
+            "value_id": 212079
+          },
+          {
+            "sequence": 65521,
+            "name": "花城出版社",
+            "value": "212085",
+            "value_id": 212085
+          },
+          {
+            "value_id": 61764,
+            "sequence": 7500,
+            "name": "花山文艺出版社",
+            "value": "61764"
+          },
+          {
+            "value_id": 61848,
+            "sequence": 16300,
+            "name": "苏州古吴轩出版社",
+            "value": "61848"
+          },
+          {
+            "name": "苏州大学出版社",
+            "value": "61847",
+            "value_id": 61847,
+            "sequence": 45700
+          },
+          {
+            "value_id": 62097,
+            "sequence": 54000,
+            "name": "荣宝斋出版社",
+            "value": "62097"
+          },
+          {
+            "value_id": 62245,
+            "sequence": 28500,
+            "name": "蓝天出版社",
+            "value": "62245"
+          },
+          {
+            "value_id": 61993,
+            "sequence": 23900,
+            "name": "藏文古籍出版社",
+            "value": "61993"
+          },
+          {
+            "value_id": 211877,
+            "sequence": 65309,
+            "name": "西北农林科技大学",
+            "value": "211877"
+          },
+          {
+            "name": "西北农林科技大学出版社",
+            "value": "61925",
+            "value_id": 61925,
+            "sequence": 24600
+          },
+          {
+            "value_id": 61923,
+            "sequence": 64400,
+            "name": "西北大学出版社",
+            "value": "61923"
+          },
+          {
+            "value": "61924",
+            "value_id": 61924,
+            "sequence": 35100,
+            "name": "西北工业大学出版社"
+          },
+          {
+            "value": "148193",
+            "value_id": 148193,
+            "sequence": 48700,
+            "name": "西南交通大学出版社"
+          },
+          {
+            "name": "西南大学出版社",
+            "value": "211933",
+            "value_id": 211933,
+            "sequence": 65365
+          },
+          {
+            "value_id": 62227,
+            "sequence": 32300,
+            "name": "西南师范大学出版社",
+            "value": "62227"
+          },
+          {
+            "name": "西南财经大学出版社",
+            "value": "211980",
+            "value_id": 211980,
+            "sequence": 65413
+          },
+          {
+            "value_id": 61922,
+            "sequence": 58000,
+            "name": "西安交通大学出版社",
+            "value": "61922"
+          },
+          {
+            "value": "61919",
+            "value_id": 61919,
+            "sequence": 40400,
+            "name": "西安出版社"
+          },
+          {
+            "value_id": 61920,
+            "sequence": 42400,
+            "name": "西安地图出版社",
+            "value": "61920"
+          },
+          {
+            "name": "西安电子科大",
+            "value": "211982",
+            "value_id": 211982,
+            "sequence": 65415
+          },
+          {
+            "value_id": 61921,
+            "sequence": 28200,
+            "name": "西安电子科技大学出版社",
+            "value": "61921"
+          },
+          {
+            "value_id": 62015,
+            "sequence": 18700,
+            "name": "西泠印社出版社",
+            "value": "62015"
+          },
+          {
+            "value_id": 62118,
+            "sequence": 62500,
+            "name": "西苑出版社",
+            "value": "62118"
+          },
+          {
+            "value": "61994",
+            "value_id": 61994,
+            "sequence": 60200,
+            "name": "西藏人民出版社"
+          },
+          {
+            "value_id": 211926,
+            "sequence": 65358,
+            "name": "西藏藏文古籍出版社",
+            "value": "211926"
+          },
+          {
+            "value_id": 62238,
+            "sequence": 7800,
+            "name": "解放军出版社",
+            "value": "62238"
+          },
+          {
+            "value_id": 62239,
+            "sequence": 10800,
+            "name": "解放军文艺出版社",
+            "value": "62239"
+          },
+          {
+            "value_id": 212146,
+            "sequence": 65582,
+            "name": "讲谈社",
+            "value": "212146"
+          },
+          {
+            "sequence": 34700,
+            "name": "译林出版社",
+            "value": "167916",
+            "value_id": 167916
+          },
+          {
+            "value_id": 212123,
+            "sequence": 65559,
+            "name": "译林编辑部",
+            "value": "212123"
+          },
+          {
+            "sequence": 55400,
+            "name": "语文出版社",
+            "value": "62129",
+            "value_id": 62129
+          },
+          {
+            "value_id": 212034,
+            "sequence": 65470,
+            "name": "读者出版传媒股份有限公司",
+            "value": "212034"
+          },
+          {
+            "value_id": 212171,
+            "sequence": 65607,
+            "name": "读者出版社",
+            "value": "212171"
+          },
+          {
+            "value_id": 212206,
+            "sequence": 65644,
+            "name": "课堂内外杂志有限责任公司",
+            "value": "212206"
+          },
+          {
+            "name": "课堂内外杂志社",
+            "value": "212087",
+            "value_id": 212087,
+            "sequence": 65523
+          },
+          {
+            "sequence": 34200,
+            "name": "贵州人民出版社",
+            "value": "61752",
+            "value_id": 61752
+          },
+          {
+            "value_id": 61748,
+            "sequence": 60800,
+            "name": "贵州大学出版社",
+            "value": "61748"
+          },
+          {
+            "value_id": 61749,
+            "sequence": 58800,
+            "name": "贵州教育出版社",
+            "value": "61749"
+          },
+          {
+            "value_id": 61751,
+            "sequence": 56700,
+            "name": "贵州民族出版社",
+            "value": "61751"
+          },
+          {
+            "name": "贵州科学技术出版社",
+            "value": "148194",
+            "value_id": 148194,
+            "sequence": 35300
+          },
+          {
+            "name": "贵州科技出版社",
+            "value": "61750",
+            "value_id": 61750,
+            "sequence": 40300
+          },
+          {
+            "value": "212200",
+            "value_id": 212200,
+            "sequence": 65638,
+            "name": "轻工"
+          },
+          {
+            "value_id": 61869,
+            "sequence": 36100,
+            "name": "辽宁人民出版社",
+            "value": "61869"
+          },
+          {
+            "value_id": 61864,
+            "sequence": 63300,
+            "name": "辽宁大学出版社",
+            "value": "61864"
+          },
+          {
+            "value_id": 61870,
+            "sequence": 48900,
+            "name": "辽宁少年儿童出版社",
+            "value": "61870"
+          },
+          {
+            "value_id": 61871,
+            "sequence": 15000,
+            "name": "辽宁师范大学出版社",
+            "value": "61871"
+          },
+          {
+            "value_id": 61865,
+            "sequence": 52100,
+            "name": "辽宁教育出版社",
+            "value": "61865"
+          },
+          {
+            "value": "61868",
+            "value_id": 61868,
+            "sequence": 35200,
+            "name": "辽宁民族出版社"
+          },
+          {
+            "value_id": 61866,
+            "sequence": 33600,
+            "name": "辽宁科学技术出版社",
+            "value": "61866"
+          },
+          {
+            "value_id": 61867,
+            "sequence": 2700,
+            "name": "辽宁美术出版社",
+            "value": "61867"
+          },
+          {
+            "value_id": 61863,
+            "sequence": 5800,
+            "name": "辽海出版社",
+            "value": "61863"
+          },
+          {
+            "value": "61949",
+            "value_id": 61949,
+            "sequence": 2500,
+            "name": "远东出版社"
+          },
+          {
+            "value_id": 61880,
+            "sequence": 8200,
+            "name": "远方出版社",
+            "value": "61880"
+          },
+          {
+            "value": "62073",
+            "value_id": 62073,
+            "sequence": 19700,
+            "name": "连环画出版社"
+          },
+          {
+            "value_id": 212179,
+            "sequence": 65615,
+            "name": "迪赛纳图书",
+            "value": "212179"
+          },
+          {
+            "value_id": 167921,
+            "sequence": 62700,
+            "name": "邮政出版社",
+            "value": "167921"
+          },
+          {
+            "value_id": 61775,
+            "sequence": 44700,
+            "name": "郑州大学出版社",
+            "value": "61775"
+          },
+          {
+            "value_id": 62228,
+            "sequence": 61600,
+            "name": "重庆出版社",
+            "value": "62228"
+          },
+          {
+            "value_id": 62229,
+            "sequence": 30900,
+            "name": "重庆大学出版社",
+            "value": "62229"
+          },
+          {
+            "value_id": 62065,
+            "sequence": 41200,
+            "name": "金城出版社",
+            "value": "62065"
+          },
+          {
+            "value_id": 62240,
+            "sequence": 24700,
+            "name": "金盾出版社",
+            "value": "62240"
+          },
+          {
+            "value_id": 62250,
+            "sequence": 3200,
+            "name": "长城出版社",
+            "value": "62250"
+          },
+          {
+            "name": "长征出版社",
+            "value": "62252",
+            "value_id": 62252,
+            "sequence": 32400
+          },
+          {
+            "sequence": 30800,
+            "name": "长春出版社",
+            "value": "61830",
+            "value_id": 61830
+          },
+          {
+            "name": "长江出版社",
+            "value": "61801",
+            "value_id": 61801,
+            "sequence": 47000
+          },
+          {
+            "value": "61802",
+            "value_id": 61802,
+            "sequence": 45900,
+            "name": "长江少年儿童出版社"
+          },
+          {
+            "value_id": 61803,
+            "sequence": 36200,
+            "name": "长江文艺出版社",
+            "value": "61803"
+          },
+          {
+            "value_id": 62251,
+            "sequence": 2600,
+            "name": "长虹出版公司",
+            "value": "62251"
+          },
+          {
+            "value_id": 148198,
+            "sequence": 18000,
+            "name": "阳光出版社",
+            "value": "148198"
+          },
+          {
+            "name": "陕西人教",
+            "value": "211955",
+            "value_id": 211955,
+            "sequence": 65387
+          },
+          {
+            "value": "61912",
+            "value_id": 61912,
+            "sequence": 18800,
+            "name": "陕西人民出版社"
+          },
+          {
+            "value_id": 61913,
+            "sequence": 19400,
+            "name": "陕西人民教育出版社",
+            "value": "61913"
+          },
+          {
+            "value_id": 61914,
+            "sequence": 16100,
+            "name": "陕西人民美术出版社",
+            "value": "61914"
+          },
+          {
+            "value_id": 212067,
+            "sequence": 65503,
+            "name": "陕西人美",
+            "value": "212067"
+          },
+          {
+            "value_id": 61917,
+            "sequence": 34000,
+            "name": "陕西太白文艺出版社",
+            "value": "61917"
+          },
+          {
+            "value_id": 61916,
+            "sequence": 42300,
+            "name": "陕西师范大学出版总社",
+            "value": "61916"
+          },
+          {
+            "name": "陕西师范大学出版总社有限公司",
+            "value": "167922",
+            "value_id": 167922,
+            "sequence": 7300
+          },
+          {
+            "value_id": 211905,
+            "sequence": 65337,
+            "name": "陕西师范大学出版社",
+            "value": "211905"
+          },
+          {
+            "value_id": 61911,
+            "sequence": 39000,
+            "name": "陕西旅游出版社",
+            "value": "61911"
+          },
+          {
+            "value_id": 61910,
+            "sequence": 600,
+            "name": "陕西科学技术出版社",
+            "value": "61910"
+          },
+          {
+            "value_id": 212213,
+            "sequence": 65651,
+            "name": "雪域音像电子出版社",
+            "value": "212213"
+          },
+          {
+            "value_id": 2076,
+            "sequence": 65454,
+            "name": "青岛",
+            "value": "2076"
+          },
+          {
+            "value": "61888",
+            "value_id": 61888,
+            "sequence": 14000,
+            "name": "青岛出版社"
+          },
+          {
+            "value_id": 148185,
+            "sequence": 18300,
+            "name": "青岛出版社有限公司",
+            "value": "148185"
+          },
+          {
+            "value_id": 211901,
+            "sequence": 65333,
+            "name": "青岛电子音像出版社",
+            "value": "211901"
+          },
+          {
+            "value_id": 212133,
+            "sequence": 65569,
+            "name": "青海人民",
+            "value": "212133"
+          },
+          {
+            "value_id": 61885,
+            "sequence": 49000,
+            "name": "青海人民出版社",
+            "value": "61885"
+          },
+          {
+            "value_id": 61884,
+            "sequence": 8700,
+            "name": "青海民族出版社",
+            "value": "61884"
+          },
+          {
+            "value_id": 148166,
+            "sequence": 42700,
+            "name": "首都师范大学出版社",
+            "value": "148166"
+          },
+          {
+            "value_id": 212031,
+            "sequence": 65466,
+            "name": "首都师范大学语文报刊社",
+            "value": "212031"
+          },
+          {
+            "value_id": 148165,
+            "sequence": 7900,
+            "name": "首都经济贸易大学出版社",
+            "value": "148165"
+          },
+          {
+            "value": "211871",
+            "value_id": 211871,
+            "sequence": 65303,
+            "name": "香港高色调出版"
+          },
+          {
+            "name": "马可孛罗文化",
+            "value": "212012",
+            "value_id": 212012,
+            "sequence": 65446
+          },
+          {
+            "name": "高等教育出版社",
+            "value": "62048",
+            "value_id": 62048,
+            "sequence": 20200
+          },
+          {
+            "value_id": 148183,
+            "sequence": 19900,
+            "name": "鹭江出版社",
+            "value": "148183"
+          },
+          {
+            "value_id": 211900,
+            "sequence": 65332,
+            "name": "麦浩斯出版",
+            "value": "211900"
+          },
+          {
+            "value_id": 61681,
+            "sequence": 17800,
+            "name": "黄山书社",
+            "value": "61681"
+          },
+          {
+            "value_id": 62237,
+            "sequence": 7700,
+            "name": "黄河出版社",
+            "value": "62237"
+          },
+          {
+            "sequence": 1600,
+            "name": "黄河水利出版社",
+            "value": "61773",
+            "value_id": 61773
+          },
+          {
+            "value": "61789",
+            "value_id": 61789,
+            "sequence": 100,
+            "name": "黑龙江人民出版社"
+          },
+          {
+            "value_id": 148175,
+            "sequence": 17700,
+            "name": "黑龙江北方文艺出版社",
+            "value": "148175"
+          },
+          {
+            "value_id": 61785,
+            "sequence": 47400,
+            "name": "黑龙江大学出版社",
+            "value": "61785"
+          },
+          {
+            "value_id": 212118,
+            "sequence": 65554,
+            "name": "黑龙江少儿",
+            "value": "212118"
+          },
+          {
+            "value_id": 61790,
+            "sequence": 38800,
+            "name": "黑龙江少年儿童出版社",
+            "value": "61790"
+          },
+          {
+            "value_id": 212045,
+            "sequence": 65481,
+            "name": "黑龙江教育",
+            "value": "212045"
+          },
+          {
+            "value_id": 61786,
+            "sequence": 26700,
+            "name": "黑龙江教育出版社",
+            "value": "61786"
+          },
+          {
+            "name": "黑龙江朝鲜民族出版社",
+            "value": "61784",
+            "value_id": 61784,
+            "sequence": 13400
+          },
+          {
+            "sequence": 63400,
+            "name": "黑龙江科学技术出版社",
+            "value": "61787",
+            "value_id": 61787
+          },
+          {
+            "value_id": 211979,
+            "sequence": 65412,
+            "name": "黑龙江科技",
+            "value": "211979"
+          },
+          {
+            "value_id": 212101,
+            "sequence": 65537,
+            "name": "黑龙江美术",
+            "value": "212101"
+          },
+          {
+            "value_id": 61788,
+            "sequence": 3700,
+            "name": "黑龙江美术出版社",
+            "value": "61788"
+          },
+          {
+            "name": "齐鲁书社",
+            "value": "148184",
+            "value_id": 148184,
+            "sequence": 35500
+          },
+          {
+            "value_id": 212141,
+            "sequence": 65577,
+            "name": "齐鲁电子音像出版社",
+            "value": "212141"
+          },
+          {
+            "value_id": 62074,
+            "sequence": 10300,
+            "name": "龙门书局",
+            "value": "62074"
+          }
+        ],
+        "feature_type_list": [
+          1,
+          14,
+          15,
+          33,
+          46,
+          49
+        ]
+      },
+      {
+        "status": 0,
+        "property_id": 449,
+        "has_sub_property": false,
+        "type": "text",
+        "required": 0,
+        "multi_select_max": 5,
+        "property_type": 0,
+        "important_type": 1,
+        "options": [
+          {
+            "sequence": 300,
+            "name": "司马光",
+            "value": "218503",
+            "value_id": 218503
+          },
+          {
+            "value_id": 218502,
+            "sequence": 200,
+            "name": "师鲁贝尔",
+            "value": "218502"
+          },
+          {
+            "value_id": 218501,
+            "sequence": 100,
+            "name": "申善熊",
+            "value": "218501"
+          }
+        ],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "cid": 1000006731,
+        "diy_type": 0,
+        "property_name": "作者",
+        "feature_type_list": [
+          14,
+          46,
+          103
+        ],
+        "measure_templates": [],
+        "category_id": 1000006731,
+        "sequence": 2,
+        "relation_id": 0
+      },
+      {
+        "has_sub_property": false,
+        "measure_templates": [],
+        "property_type": 0,
+        "status": 0,
+        "sequence": 231,
+        "property_name": "主题",
+        "type": "text",
+        "cid": 1000006731,
+        "category_id": 1000006731,
+        "multi_select_max": 5,
+        "property_id": 2656,
+        "relation_id": 0,
+        "feature_type_list": [
+          14,
+          46
+        ],
+        "required": 0,
+        "important_type": 1,
+        "options": [],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "diy_type": 0
+      },
+      {
+        "relation_id": 0,
+        "important_type": 1,
+        "category_id": 1000006731,
+        "property_type": 0,
+        "sequence": 233,
+        "measure_templates": [],
+        "status": 0,
+        "diy_type": 0,
+        "feature_type_list": [
+          14,
+          46,
+          49,
+          101,
+          103
+        ],
+        "cid": 1000006731,
+        "required": 0,
+        "property_name": "是否是套装",
+        "options": [
+          {
+            "value_id": 7310,
+            "sequence": 1,
+            "name": "否",
+            "value": "7310"
+          },
+          {
+            "value": "23964",
+            "value_id": 23964,
+            "sequence": 0,
+            "name": "是"
+          }
+        ],
+        "type": "select",
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "multi_select_max": 5,
+        "property_id": 501,
+        "has_sub_property": false
+      },
+      {
+        "diy_type": 0,
+        "important_type": 0,
+        "property_name": "配套资源",
+        "options": [
+          {
+            "value_id": 18326,
+            "sequence": 400,
+            "name": "电子课件",
+            "value": "18326"
+          },
+          {
+            "value_id": 31597,
+            "sequence": 300,
+            "name": "练习册",
+            "value": "31597"
+          },
+          {
+            "value": "10877",
+            "value_id": 10877,
+            "sequence": 100,
+            "name": "视频"
+          },
+          {
+            "value_id": 15419,
+            "sequence": 200,
+            "name": "音频",
+            "value": "15419"
+          }
+        ],
+        "cid": 1000006731,
+        "required": 0,
+        "property_id": 1043,
+        "sequence": 0,
+        "type": "select",
+        "measure_templates": [],
+        "feature_type_list": [
+          15,
+          33,
+          46,
+          49
+        ],
+        "status": 0,
+        "multi_select_max": 5,
+        "property_type": 0,
+        "has_sub_property": false,
+        "category_id": 1000006731,
+        "relation_id": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        }
+      },
+      {
+        "sequence": 0,
+        "measure_templates": [],
+        "status": 0,
+        "multi_select_max": 5,
+        "property_id": 2208,
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "property_type": 0,
+        "relation_id": 0,
+        "options": [],
+        "type": "text",
+        "cid": 1000006731,
+        "has_sub_property": false,
+        "property_name": "装帧类型",
+        "important_type": 0,
+        "required": 0,
+        "category_id": 1000006731,
+        "diy_type": 0
+      },
+      {
+        "property_id": 2950,
+        "sequence": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "cid": 1000006731,
+        "category_id": 1000006731,
+        "multi_select_max": 5,
+        "important_type": 0,
+        "has_sub_property": false,
+        "required": 0,
+        "relation_id": 0,
+        "diy_type": 0,
+        "status": 0,
+        "property_name": "副书名",
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "measure_templates": [],
+        "property_type": 0,
+        "options": [],
+        "type": "text"
+      },
+      {
+        "multi_select_max": 5,
+        "sequence": 0,
+        "important_type": 0,
+        "property_name": "版次",
+        "type": "text",
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "measure_templates": [],
+        "required": 0,
+        "status": 0,
+        "category_id": 1000006731,
+        "property_type": 0,
+        "property_id": 4048,
+        "diy_type": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "cid": 1000006731,
+        "has_sub_property": false,
+        "relation_id": 0,
+        "options": []
+      },
+      {
+        "property_type": 0,
+        "property_id": 4049,
+        "relation_id": 0,
+        "important_type": 0,
+        "has_sub_property": false,
+        "required": 0,
+        "sequence": 0,
+        "options": [],
+        "type": "text",
+        "measure_templates": [],
+        "cid": 1000006731,
+        "multi_select_max": 5,
+        "diy_type": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "status": 0,
+        "category_id": 1000006731,
+        "property_name": "印次",
+        "feature_type_list": [
+          46,
+          49
+        ]
+      },
+      {
+        "important_type": 0,
+        "options": [
+          {
+            "value_id": 13850,
+            "sequence": 200,
+            "name": "中国大陆",
+            "value": "13850"
+          },
+          {
+            "value_id": 31749,
+            "sequence": 900,
+            "name": "俄罗斯",
+            "value": "31749"
+          },
+          {
+            "value_id": 9574,
+            "sequence": 700,
+            "name": "台湾省",
+            "value": "9574"
+          },
+          {
+            "value_id": 1088,
+            "sequence": 1000,
+            "name": "德国",
+            "value": "1088"
+          },
+          {
+            "value_id": 31757,
+            "sequence": 300,
+            "name": "日本",
+            "value": "31757"
+          },
+          {
+            "value_id": 36482,
+            "sequence": 500,
+            "name": "法国",
+            "value": "36482"
+          },
+          {
+            "value_id": 14129,
+            "sequence": 100,
+            "name": "美国",
+            "value": "14129"
+          },
+          {
+            "value_id": 8826,
+            "sequence": 800,
+            "name": "英国",
+            "value": "8826"
+          },
+          {
+            "value_id": 4171,
+            "sequence": 600,
+            "name": "韩国",
+            "value": "4171"
+          },
+          {
+            "value_id": 13166,
+            "sequence": 400,
+            "name": "香港特别行政区",
+            "value": "13166"
+          }
+        ],
+        "type": "select",
+        "multi_select_max": 5,
+        "status": 0,
+        "feature_type_list": [
+          46
+        ],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "required": 0,
+        "diy_type": 1,
+        "category_id": 1000006731,
+        "property_type": 0,
+        "property_id": 2000,
+        "sequence": 1,
+        "relation_id": 0,
+        "has_sub_property": false,
+        "property_name": "作者地区",
+        "cid": 1000006731,
+        "measure_templates": []
+      },
+      {
+        "required": 0,
+        "status": 0,
+        "property_type": 0,
+        "sequence": 225,
+        "has_sub_property": false,
+        "category_id": 1000006731,
+        "property_id": 2229,
+        "diy_type": 0,
+        "options": [],
+        "feature_type_list": [
+          46
+        ],
+        "cid": 1000006731,
+        "important_type": 0,
+        "property_name": "编者",
+        "type": "text",
+        "measure_templates": [],
+        "multi_select_max": 5,
+        "relation_id": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        }
+      },
+      {
+        "cid": 1000006731,
+        "status": 0,
+        "property_id": 1138,
+        "diy_type": 0,
+        "property_pic_rule": {
+          "required": false,
+          "available": false
+        },
+        "category_id": 1000006731,
+        "property_type": 0,
+        "has_sub_property": false,
+        "feature_type_list": [
+          15,
+          33,
+          46
+        ],
+        "options": [
+          {
+            "value_id": 24386,
+            "sequence": 1,
+            "name": "信谊幼儿文学奖",
+            "value": "24386"
+          },
+          {
+            "value_id": 8245,
+            "sequence": 22,
+            "name": "全国儿童文学奖",
+            "value": "8245"
+          },
+          {
+            "value_id": 10693,
+            "sequence": 18,
+            "name": "冰心儿童文学奖",
+            "value": "10693"
+          },
+          {
+            "value_id": 32653,
+            "sequence": 34,
+            "name": "博洛尼亚童书展最佳童书",
+            "value": "32653"
+          },
+          {
+            "value_id": 17657,
+            "sequence": 16,
+            "name": "卡夫卡文学奖",
+            "value": "17657"
+          },
+          {
+            "value_id": 1962,
+            "sequence": 31,
+            "name": "台湾牧笛奖",
+            "value": "1962"
+          },
+          {
+            "value_id": 32074,
+            "sequence": 4,
+            "name": "国际安徒生大奖",
+            "value": "32074"
+          },
+          {
+            "value_id": 3314,
+            "sequence": 33,
+            "name": "宋庆龄儿童文学奖",
+            "value": "3314"
+          },
+          {
+            "value_id": 29486,
+            "sequence": 14,
+            "name": "德国儿童青少年文学奖",
+            "value": "29486"
+          },
+          {
+            "value_id": 37354,
+            "sequence": 20,
+            "name": "日本直木文学奖",
+            "value": "37354"
+          },
+          {
+            "value": "21889",
+            "value_id": 21889,
+            "sequence": 5,
+            "name": "日本绘本大奖"
+          },
+          {
+            "value_id": 36619,
+            "sequence": 26,
+            "name": "日本芥川文学奖",
+            "value": "36619"
+          },
+          {
+            "value_id": 13953,
+            "sequence": 3,
+            "name": "星云奖",
+            "value": "13953"
+          },
+          {
+            "sequence": 30,
+            "name": "法国不朽奖",
+            "value": "11521",
+            "value_id": 11521
+          },
+          {
+            "value_id": 6111,
+            "sequence": 32,
+            "name": "法国女巫奖",
+            "value": "6111"
+          },
+          {
+            "value_id": 34309,
+            "sequence": 23,
+            "name": "澳洲CBCA奖",
+            "value": "34309"
+          },
+          {
+            "name": "爱伦·坡奖",
+            "value": "9788",
+            "value_id": 9788,
+            "sequence": 28
+          },
+          {
+            "sequence": 8,
+            "name": "瑞典林格伦文学奖",
+            "value": "8521",
+            "value_id": 8521
+          },
+          {
+            "sequence": 7,
+            "name": "美国凯迪克奖",
+            "value": "18482",
+            "value_id": 18482
+          },
+          {
+            "value": "33515",
+            "value_id": 33515,
+            "sequence": 11,
+            "name": "美国国家图书奖"
+          },
+          {
+            "sequence": 10,
+            "name": "美国普利策文学奖",
+            "value": "37208",
+            "value_id": 37208
+          },
+          {
+            "value_id": 22595,
+            "sequence": 15,
+            "name": "美国纽伯瑞奖",
+            "value": "22595"
+          },
+          {
+            "value_id": 16446,
+            "sequence": 21,
+            "name": "英国凯特格林威奖",
+            "value": "16446"
+          },
+          {
+            "value_id": 7511,
+            "sequence": 25,
+            "name": "英国卡内基儿童文学奖",
+            "value": "7511"
+          },
+          {
+            "value_id": 8822,
+            "sequence": 17,
+            "name": "英国布克文学奖",
+            "value": "8822"
+          },
+          {
+            "value_id": 29990,
+            "sequence": 12,
+            "name": "英国格林威大奖",
+            "value": "29990"
+          },
+          {
+            "value_id": 35235,
+            "sequence": 27,
+            "name": "英国毛姆文学奖",
+            "value": "35235"
+          },
+          {
+            "value_id": 13726,
+            "sequence": 13,
+            "name": "英国皇家科学书奖",
+            "value": "13726"
+          },
+          {
+            "value_id": 32604,
+            "sequence": 9,
+            "name": "英国红房子奖",
+            "value": "32604"
+          },
+          {
+            "name": "英国鹅妈妈奖",
+            "value": "24628",
+            "value_id": 24628,
+            "sequence": 29
+          },
+          {
+            "name": "茅盾文学奖",
+            "value": "28376",
+            "value_id": 28376,
+            "sequence": 0
+          },
+          {
+            "value_id": 37150,
+            "sequence": 2,
+            "name": "诺贝尔文学奖",
+            "value": "37150"
+          },
+          {
+            "value_id": 12192,
+            "sequence": 24,
+            "name": "陈伯吹儿童文学奖",
+            "value": "12192"
+          },
+          {
+            "value_id": 10674,
+            "sequence": 6,
+            "name": "雨果奖",
+            "value": "10674"
+          },
+          {
+            "value_id": 37086,
+            "sequence": 19,
+            "name": "龚古尔文学奖",
+            "value": "37086"
+          }
+        ],
+        "type": "select",
+        "important_type": 0,
+        "property_name": "获奖信息",
+        "measure_templates": [],
+        "required": 0,
+        "multi_select_max": 5,
+        "sequence": 227,
+        "relation_id": 0
+      },
+      {
+        "property_type": 0,
+        "has_sub_property": false,
+        "property_name": "定价",
+        "type": "text",
+        "measure_templates": [],
+        "status": 0,
+        "options": [],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "multi_select_max": 5,
+        "property_id": 3296,
+        "sequence": 228,
+        "relation_id": 0,
+        "required": 1,
+        "category_id": 1000006731,
+        "diy_type": 0,
+        "important_type": 0,
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "cid": 1000006731
+      },
+      {
+        "type": "text",
+        "category_id": 1000006731,
+        "property_id": 1263,
+        "sequence": 230,
+        "diy_type": 0,
+        "options": [],
+        "required": 0,
+        "has_sub_property": false,
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "cid": 1000006731,
+        "relation_id": 0,
+        "measure_templates": [],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "status": 0,
+        "multi_select_max": 5,
+        "property_type": 0,
+        "important_type": 0,
+        "property_name": "译者"
+      },
+      {
+        "sequence": 236,
+        "property_name": "出版时间",
+        "measure_templates": [],
+        "status": 0,
+        "diy_type": 0,
+        "important_type": 0,
+        "has_sub_property": false,
+        "options": [],
+        "type": "text",
+        "required": 1,
+        "category_id": 1000006731,
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "cid": 1000006731,
+        "multi_select_max": 5,
+        "property_type": 0,
+        "property_id": 3271,
+        "relation_id": 0,
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        }
+      },
+      {
+        "property_id": 5078,
+        "has_sub_property": false,
+        "property_name": "商品ISBN编码（全量）",
+        "measure_templates": [],
+        "required": 0,
+        "multi_select_max": 5,
+        "relation_id": 0,
+        "diy_type": 0,
+        "type": "text",
+        "cid": 1000006731,
+        "status": 0,
+        "options": [],
+        "category_id": 1000006731,
+        "important_type": 0,
+        "feature_type_list": [
+          46,
+          49
+        ],
+        "property_pic_rule": {
+          "available": false,
+          "required": false
+        },
+        "property_type": 0,
+        "sequence": 241
+      }
+    ]
+  },
+  "log_id": "202604241659107C536FB9F6890A12D028"
+}
